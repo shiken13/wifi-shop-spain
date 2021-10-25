@@ -1,0 +1,863 @@
+#area5 {
+  margin-top: 50px;
+  list-style: inherit;
+  @include overTab {
+    margin-top: 100px;
+  }
+  .area5-upper {
+    max-width: 760px;
+    margin: 0 auto;
+    position: relative;
+    @include overTab {
+      max-width: 1300px;
+    }
+  }
+  .heading3 {
+    max-width: 760px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    position: relative;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 1.5rem;
+    border-radius: 30px;
+    background-color: rgb(236, 10, 10);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    @include overTab {
+      font-size: 40px;
+      padding-top: 30px;
+      padding-left: 20px;
+      max-width: 1300px;
+    }
+  }
+  .heading3 span {
+    position: relative;
+    z-index: 2;
+    top: -16px;
+    color: white;
+    font-weight: bold;
+  }
+  .heading3::before {
+    content: attr(data-en);
+    position: absolute;
+    top: -30px;
+    left: 60px;
+    color: rgba(255, 255, 255, 0.521);
+    font-size: 50px;
+    text-transform: uppercase;
+    z-index: 1;
+    font-style: italic;
+    @include overTab {
+      font-size: 70px;
+      top: -40px;
+      left: 60px;
+    }
+  }
+  h3 {
+    color: black;
+    font-size: 20px;
+    border-left: solid 8px orange; /*左側の線*/
+    background: whitesmoke; /*背景色*/
+    margin-bottom: 5px; /*下のバーとの余白*/
+    margin-left: 10px;
+    margin-top: 5px;
+    line-height: 1.5;
+    border-radius: 0 15px 15px 0; /*右側の角だけ丸く*/
+    padding: 0.5em;
+    width: 80%;
+    list-style-type: none !important;
+    @include overTab {
+      font-size: 25px;
+      width: 50%;
+      margin-left: 30px;
+      margin-top: 25px;
+    }
+  }
+  .list_design1 {
+    list-style: none;
+    counter-reset: list;
+    display: inline-block;
+    padding: 10px 8px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.548);
+    box-shadow: 2px 2px 4px gray;
+    margin-right: 5px;
+    margin-left: 10px;
+    @include overTab {
+      padding: 1rem 1rem;
+      margin: 1rem;
+      margin-left: 30px;
+    }
+  }
+  .list_design1 li {
+    position: relative;
+    padding: 10px 20px;
+    padding-left: 63px;
+    padding-right: 0px;
+    line-height: 30px;
+    border-bottom: 2px dotted red;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 5px;
+    @include overTab {
+      font-size: 30px;
+      margin-bottom: 30px;
+      padding: 1rem 1rem;
+      margin: 1rem;
+      padding-left: 60px;
+    }
+  }
+  .list_design1 li:before {
+    counter-increment: list;
+    content: counter(list);
+    position: absolute;
+    left: 0px;
+    width: 50px;
+    height: 62px;
+    text-align: center;
+    color: #fff;
+    line-height: 60px;
+    background: red;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .list_design1 li:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50px;
+    height: 0;
+    width: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 7px solid red;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .area5-textarea {
+    position: relative;
+    margin: 2em 0;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-bottom: 700px;
+    padding: 0.5em 1em;
+    border: solid 3px #ea551c;
+    border-radius: 30px;
+    width: 80%;
+    max-width: 760px;
+    background-color: rgba(255, 255, 255, 0.548);
+    @include overTab {
+      margin-left: 30px;
+      margin-bottom: 100px;
+      width: 45%;
+      max-width: 1300px;
+    }
+    .area5-textarea-title {
+      position: absolute;
+      display: inline-block;
+      top: -40px;
+      left: 10px;
+      padding: 0 9px;
+      height: 40px;
+      line-height: 45px;
+      font-size: 30px;
+      background: #ea551c;
+      color: #ffffff;
+      font-weight: bold;
+      border-radius: 5px 5px 0 0;
+      @include overTab {
+        font-size: 40px;
+      }
+    }
+    p {
+      font-size: 22px;
+      margin: 0;
+      padding: 0;
+      overflow-wrap: break-word;
+    }
+  }
+  #emoji7:before {
+    content: "\026A0";
+    // content: "\1F6AB";
+    padding-right: 3px;
+  }
+  #emoji8:before {
+    content: "\01F91D";
+    padding-right: 3px;
+  }
+  .video iframe {
+    position: absolute;
+    margin: 0 auto;
+    width: auto;
+    top: 122%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include overTab {
+      width: 440px;
+      height: 260px;
+      top: 25%;
+      left: 80%;
+    }
+  }
+  .mokumoku3 {
+    position: absolute;
+    z-index: 2;
+    top: -3%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    transform: rotate(15deg);
+    width: 150px;
+    height: 70px;
+    @include overTab {
+      top: 5%;
+      left: 45%;
+      width: 350px;
+      height: 120px;
+    }
+  }
+  .recommend3 {
+    position: absolute;
+    z-index: 2;
+    font-size: 11px;
+    font-weight: bold;
+    top: -2%;
+    left: 67%;
+    transform: translate(-50%, -50%);
+    transform: rotate(18deg);
+    @include overTab {
+      top: 6%;
+      left: 50%;
+      font-size: 24px;
+    }
+    &::before {
+      font-family: "Font Awesome 5 Free";
+      content: "\f521";
+      padding: 5px;
+      font-weight: 900;
+      color: #ffdc00;
+    }
+  }
+  .area5-image1,
+  .area5-image2 {
+    width: 180px;
+    position: absolute;
+    top: 106%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    @include overTab {
+      width: 300px;
+      top: 65%;
+      left: 65%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .area5-image2 {
+    width: 150px;
+    left: 75%;
+    @include overTab {
+      width: 240px;
+      top: 68%;
+      left: 85%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .kira1 {
+    width: 220px;
+    position: absolute;
+    top: 102%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    @include overTab {
+      width: 200px;
+      top: 55%;
+      left: 83%;
+    }
+  }
+  .kira2 {
+    width: 220px;
+    position: absolute;
+    top: 101%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    @include overTab {
+      width: 320px;
+      top: 55%;
+      left: 65%;
+    }
+  }
+  .kira3 {
+    width: 220px;
+    position: absolute;
+    top: 101%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    @include overTab {
+      width: 300px;
+      top: 58%;
+      left: 85%;
+    }
+  }
+  .circle3 {
+    position: absolute;
+    top: 108%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(210, 244, 247, 0.808);
+    border-radius: 50%;
+    box-shadow: 0.375em 0.375em 0 0 rgb(210, 255, 174);
+    height: 10em;
+    width: 22em;
+    @include overTab {
+      height: 20em;
+      width: 38em;
+      top: 70%;
+      left: 75%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .sim-text3 {
+    position: absolute;
+    width: 250px;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    background-color: rgb(228, 8, 8);
+    text-align: center;
+    font-size: 24px;
+    font-style: italic;
+    letter-spacing: 0.1em;
+    color: #fff;
+    text-shadow: -3px 2px 0 #000;
+    @include overTab {
+      font-size: 2.4rem;
+      width: 400px;
+      top: 75%;
+      left: 75%;
+    }
+  }
+  .area5-lower {
+    margin-top: 100px;
+    position: relative;
+    max-width: 760px;
+    margin: 0 auto;
+    @include overTab {
+      max-width: 1300px;
+    }
+    .map-back {
+      box-shadow: 1px 3px 20px 10px rgb(247, 247, 125),
+        inset 10px 3px 20px 10px rgb(247, 247, 125);
+    }
+    .japan-map {
+      position: absolute;
+      width: 160px;
+      top: 30%;
+      left: 30%;
+      transform: translate(-50%, -50%);
+      @include overTab {
+        left: 35%;
+        width: 370px;
+      }
+    }
+    .arrow1 {
+      position: absolute;
+      width: 160px;
+      top: 30%;
+      left: 30%;
+      transform: translate(-50%, -50%);
+      transform: rotate(45deg);
+      @include overTab {
+        left: 28%;
+        height: 100px;
+        width: 50px;
+      }
+    }
+    .arrow2 {
+      position: absolute;
+      width: 160px;
+      top: 37%;
+      left: 30%;
+      transform: translate(-50%, -50%);
+      transform: rotate(35deg);
+      @include overTab {
+        left: 32%;
+        height: 60px;
+        width: 50px;
+      }
+    }
+    .arrow3 {
+      position: absolute;
+      width: 160px;
+      top: 25%;
+      left: 30%;
+      transform: translate(-50%, -50%);
+      transform: rotate(-40deg);
+      @include overTab {
+        left: 36%;
+        height: 60px;
+        width: 55px;
+      }
+    }
+    .arrow4 {
+      position: absolute;
+      width: 160px;
+      top: 15%;
+      left: 30%;
+      transform: translate(-50%, -50%);
+      transform: rotate(-140deg);
+      @include overTab {
+        left: 32%;
+        height: 80px;
+        width: 105px;
+      }
+    }
+    .sagawa1,
+    .sagawa2 {
+      position: absolute;
+      width: 160px;
+      top: 10%;
+      left: 30%;
+      transform: translate(-50%, -50%);
+      @include overTab {
+        left: 20%;
+        width: 320px;
+      }
+    }
+    .logo-delivery {
+      position: absolute;
+      width: 40px;
+      top: 22%;
+      left: 56%;
+      transform: translate(-50%, -50%);
+      @include overTab {
+        // top: 38%;
+        // left: 37.5%;
+        top: 33%;
+        left: 33.5%;
+        width: 45px;
+      }
+    }
+    .sagawa2 {
+      width: 180px;
+      top: 30%;
+      left: 80%;
+      filter: drop-shadow(5px 2px 0 white);
+      @include overTab {
+        top: 44%;
+        left: 15%;
+        width: 350px;
+      }
+    }
+    .frame1 {
+      display: inline-block;
+      position: relative;
+      left: 50%;
+      width: 320px;
+      transform: translate(-50%, 0%);
+      @include overTab {
+        left: 30%;
+        width: 550px;
+      }
+      &::after {
+        position: absolute;
+        display: block;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow: inset 0 0 10px #fff /* 背景色と同じ色 */,
+          inset 0 0 10px #fff, inset 0 0 10px #fff, inset 0 0 10px #fff;
+      }
+    }
+    h2 {
+      position: absolute;
+      width: 380px;
+      top: 40%;
+      left: 55%;
+      transform: translate(-50%, -50%);
+      font-size: 2.2rem;
+      font-style: italic;
+      color: #fff;
+      text-shadow: -3px 2px 0 #000;
+      @include overTab {
+        top: 30%;
+        letter-spacing: 0.1em;
+        width: 800px;
+        left: 70%;
+        font-size: 3.8rem;
+      }
+    }
+
+    /* LINE TEL */
+    .follow-me {
+      list-style: none;
+      margin: 0 0 -8px;
+      overflow: hidden;
+      padding: 0;
+      justify-content: center;
+      margin-top: 150px;
+      @include overTab {
+        margin-top: 50px;
+      }
+    }
+    .follow-me li {
+      margin: 0 8px 8px 0;
+      padding: 0;
+    }
+    .follow-me li a::before {
+      -webkit-border-radius: 2px;
+      border-radius: 2px;
+      color: #fff;
+      display: inline-block;
+      font-family: FontAwesome;
+      font-size: 50px;
+      height: 40px; /* Button height */
+      line-height: 30px; /* Button height */
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      text-align: center;
+      width: 50px; /* Button width */
+      padding-top: 5px;
+      @include overTab {
+        width: 70px; /* Button width */
+        height: 50px; /* Button height */
+        line-height: 44px; /* Button height */
+      }
+    }
+    .follow-me li a:hover::before {
+      opacity: 0.7;
+    }
+    .follow-me li a[href*="facebook.com"]::before {
+      background-color: #3b5998;
+      content: "\f09a";
+    }
+    .follow-me li a[href*="line"]::before {
+      background-color: #00c300;
+      content: "\f3c0";
+    }
+    .follow-me li a[href*="youtube.com"]::before {
+      background-color: #cd201f;
+      content: "\f16a";
+    }
+    .follow-me li a[href*="tiktok"]::before {
+      background-color: #ffa500;
+      content: "\e07b";
+    }
+    .follow-me li a[href*="tel"]::before {
+      background-color: #e73508;
+      content: "\f098";
+    }
+
+    .tel-btn {
+      position: relative;
+      display: block;
+      border-radius: 50px;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      background: #e73508;
+      padding: 15px 0;
+      margin: auto;
+      width: 100%;
+      font-size: 20px;
+      border: 1px white solid;
+      @include overTab {
+        font-size: 28px;
+        width: 40vw;
+      }
+      &::before {
+        content: "";
+        background-size: contain;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 10px;
+        left: 15px;
+      }
+    }
+    .line-btn {
+      position: relative;
+      display: block;
+      border-radius: 50px;
+      color: white;
+      text-align: center;
+      background: #00c300;
+      padding: 10px 0;
+      margin: auto;
+      margin-bottom: 20px;
+      width: 100%;
+      font-size: 25px;
+      border: 1px white solid;
+      @include overTab {
+        padding: 15px 0;
+        font-size: 33px;
+        width: 40vw;
+      }
+      span {
+        font-weight: bold;
+      }
+      &::before {
+        content: "";
+        background-size: contain;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        @include overTab {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+  .container-area {
+    display: flex;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  body {
+    background-color: #222;
+    font-family: arial, helvetica, sans-serif;
+  }
+  @font-face {
+    font-family: "Genericons";
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/genericons-regular-webfont.woff")
+        format("woff"),
+      url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/genericons-regular-webfont.eot")
+        format("truetype");
+  }
+  .container {
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 1300px;
+  }
+  header {
+    height: auto;
+  }
+  header h1 {
+    color: #fff;
+    margin-bottom: 18px;
+    font-weight: bold;
+    text-align: left;
+  }
+  .accordion {
+    position: absolute;
+    width: auto;
+    // min-width: 800px;
+    display: block;
+    list-style-type: none;
+    overflow: hidden;
+    height: 100px;
+    font-size: 0;
+    z-index: 100;
+    @include overTab {
+      width: 1200px;
+    }
+  }
+  .tab {
+    display: inline-block;
+    background-color: #444;
+    border: white solid 2px;
+    border-radius: 20px;
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    margin-right: 10px;
+    transition: all 0.5s ease-in-out 0.1s;
+    @include overTab {
+      width: 90px;
+      height: 90px;
+    }
+  }
+  .tab:hover {
+    @include overTab {
+      width: 450px;
+    }
+  }
+  .tab:hover .social a:before {
+    margin-left: -100px;
+  }
+  .tab:hover .social a:after {
+    margin-left: 0px;
+  }
+  .tab .content {
+    background-color: #fff;
+    width: 360px;
+    height: 100px;
+    margin-left: 100px;
+    position: relative;
+    padding: 0 0 0 15px;
+  }
+  .tab .content h1 {
+    font-size: 2.5rem;
+  }
+  .tab .content p {
+    font-size: 0.85rem;
+    line-height: 1.9rem;
+    padding-right: 30px;
+  }
+  .social a:before,
+  .social a:after {
+    transition: all 0.4s ease-in-out 0.1s;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    text-indent: 0;
+    padding-top: 4px;
+    padding-left: 7px;
+    display: block;
+    font: normal 60px Genericons;
+    color: #fff;
+    @include overTab {
+      font: normal 75px Genericons;
+      padding-top: 4px;
+      padding-left: 11px;
+    }
+  }
+  .tiktok a:before,
+  .tiktok a::after {
+    padding-top: 6px;
+    padding-left: 12px;
+    display: block;
+    font: normal 55px Genericons;
+    color: white;
+    text-shadow: 4px 4px $redColor, -4px -4px $blueColor;
+    @include overTab {
+      font: normal 70px Genericons;
+      padding-top: 8px;
+      padding-left: 12px;
+    }
+  }
+  .youtube a:before,
+  .youtube a::after {
+    padding-top: 4px;
+    padding-left: 2px;
+    @include overTab {
+      font: normal 70px Genericons;
+      padding-top: 8px;
+      padding-left: 6px;
+    }
+  }
+  .social a:after {
+    font-size: 50px;
+    padding-left: 9px;
+    padding-top: 9px;
+    margin-left: 85px;
+    @include overTab {
+      font-size: 60px;
+      padding-left: 20px;
+      padding-top: 12px;
+    }
+  }
+  /* Add Icons */
+  /* Social media links: youtube  */
+  .youtube a::before {
+    font-family: FontAwesome;
+  }
+  .youtube a[href*="youtube.com"]::before {
+    background-color: #cd201f;
+    content: "\f16a";
+  }
+  .youtube a::after {
+    font-family: FontAwesome;
+  }
+  .youtube a[href*="youtube.com"]::after {
+    background-color: #cd201f;
+    content: "\f16a";
+  }
+
+  /* Social media links: LINE  */
+  .line a::before {
+    font-family: FontAwesome;
+  }
+  .line a[href*="line"]::before {
+    background-color: #00c300;
+    content: "\f3c0";
+  }
+  .line a::after {
+    font-family: FontAwesome;
+  }
+  .line a[href*="line"]::after {
+    background-color: #00c300;
+    content: "\f3c0";
+  }
+  /* Social media links: facebook  */
+  .facebook a::before {
+    font-family: FontAwesome;
+  }
+  .facebook a[href*="facebook.com"]::before {
+    background-color: #3b5998;
+    content: "\f09a";
+  }
+  .facebook a::after {
+    font-family: FontAwesome;
+  }
+  .facebook a[href*="facebook.com"]::after {
+    background-color: #3b5998;
+    content: "\f09a";
+  }
+  /* Social media links: tiktok  */
+  .tiktok a::before {
+    font-family: FontAwesome;
+  }
+  .tiktok a[href*="tiktok.com"]::before {
+    background-color: #000000;
+    content: "\e07b";
+  }
+  .tiktok a::after {
+    font-family: FontAwesome;
+  }
+  .tiktok a[href*="tiktok.com"]::after {
+    background-color: #000000;
+    content: "\e07b";
+  }
+
+  .footer-area {
+    padding-bottom: 30px;
+    @include overTab {
+      position: relative;
+      bottom: 15px;
+      left: 35%;
+      padding-bottom: 50px;
+    }
+  }
+  .footer-logo1 {
+    width: 25%;
+    padding-top: 100px;
+    @include overTab {
+      position: relative;
+      bottom: 30px;
+      left: 580px;
+      width: 8%;
+      padding-top: 0px;
+    }
+  }
+  .footer-logo2 {
+    position: relative;
+    width: 50%;
+    bottom: 30px;
+    left: 5px;
+    padding-top: 100px;
+    @include overTab {
+      left: 380px;
+      bottom: -20px;
+      width: 22%;
+      padding-top: 0px;
+    }
+  }
+}

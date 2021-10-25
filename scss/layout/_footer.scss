@@ -1,0 +1,70 @@
+footer {
+  background-color: black;
+  border-top: 1px solid #ffffff2d;
+  height: 40px;
+  padding-bottom: 70px;
+  @include overTab {
+    height: 70px;
+    padding-bottom: 40px;
+  }
+
+  .footer-nav a {
+    font-size: 16px;
+    padding: 0 10px;
+    color: white;
+    @include overTab {
+      font-size: 25px;
+    }
+  }
+  
+  .footer-box p {
+    font-size: 20px;
+  }
+
+  .copyright p {
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    @include overTab {
+      font-size: 18px;
+    }
+  }
+
+  .follow-me {
+    list-style: none;
+    margin: 0 0 -8px;
+    overflow: hidden;
+    padding: 0;
+  }
+  .follow-me li {
+    float: left;
+    margin: 0 8px 8px 0;
+    padding: 0;
+  }
+  .follow-me li a::before {
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    color: #fff;
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 36px;
+    height: 64px; /* Button height */
+    line-height: 64px; /* Button height */
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    text-align: center;
+    width: 64px; /* Button width */
+  }
+  .follow-me li a:hover::before {
+    opacity: 0.7;
+  }
+  
+  .follow-me li a[href*="dropbox.com"]::before        { background-color: #007ee5; content: "\f16b"; }
+  .follow-me li a[href*="facebook.com"]::before       { background-color: #3b5998; content: "\f09a"; }
+  .follow-me li a[href*="line"]::before               { background-color: #00c300; content: "\f3c0"; }
+  .follow-me li a[href*="twitter.com"]::before        { background-color: #55acee; content: "\f099"; }
+  .follow-me li a[href*="youtube.com"]::before        { background-color: #cd201f; content: "\f16a"; }
+  .follow-me li a[href*="tiktok"]::before              { background-color: #ffa500; content: "\e07b"; }
+
+}

@@ -1,0 +1,410 @@
+#area3{
+  list-style: inherit;
+  .area3-upper, .area3-lower{
+    max-width: 760px;
+    margin: 0 auto;
+    position: relative;
+    @include overTab {
+      max-width: 1300px;
+    }
+  }
+  .area3-lower{
+    margin-top: 40px;
+  }
+  .heading2 {
+    max-width: 760px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    position: relative;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 28px;
+    border-radius: 30px;
+    background-color: rgb(236, 10, 10);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    @include overTab {
+      font-size: 40px;
+      padding-top: 30px;
+      padding-left: 20px;
+      max-width: 1300px;
+    }
+  }
+  .heading2 span {
+    position: relative;
+    z-index: 2;
+    top: -16px;
+    color: white;
+    font-weight: bold;
+  }
+  .heading2::before {
+    content: attr(data-en);
+    position: absolute;
+    top: -30px;
+    left: 60px;
+    color: rgba(255, 255, 255, 0.521);
+    font-size: 50px;
+    text-transform: uppercase;
+    z-index: 1;
+    font-style: italic;
+    @include overTab {
+      font-size: 70px;
+      top: -40px;
+      left: 60px;
+    }
+  }
+  .list_design1 {
+    list-style: none;
+    counter-reset: list;
+    display: inline-block;
+    padding: 10px 8px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.548);
+    box-shadow: 2px 2px 4px gray;
+    margin-right: 5px;
+    margin-left: 5px;
+    @include overTab {
+      padding: 1rem 1rem;
+      margin: 1rem;
+    }
+  }
+  .list_design2 {
+    margin-bottom: 480px;
+    @include overTab {
+      margin-bottom: inherit;
+    }
+  }
+  .list_design1 li {
+    position: relative;
+    padding: 10px 20px;
+    // margin: 1rem;
+    padding-left: 63px;
+    line-height: 30px;
+    border-bottom: 2px dotted red;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 5px;
+    @include overTab {
+      font-size: 30px;
+      margin-bottom: 30px;
+      padding: 1rem 1rem;
+      margin: 1rem;
+      padding-left: 60px;
+    }
+  }
+  .list_design1 li:before {
+    counter-increment: list;
+    content: counter(list);
+    position: absolute;
+    left: 0px;
+    width: 50px;
+    height: 62px;
+    text-align: center;
+    color: #fff;
+    line-height: 60px;
+    background: red;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .list_design1 li:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50px;
+    height: 0;
+    width: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 7px solid red;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  h3 {
+    color: black;
+    font-size: 17px;
+    border-left: solid 8px orange;/*左側の線*/
+    background: whitesmoke;/*背景色*/
+    margin-bottom: 5px;/*下のバーとの余白*/
+    margin-top: 5px;
+    margin-left: 10px;
+    line-height: 1.5;
+    border-radius: 0 15px 15px 0;/*右側の角だけ丸く*/
+    padding: 0.5em;
+    width: 85%;
+    list-style-type: none!important;
+    @include overTab {
+      font-size: 25px;
+      width: 50%;
+      margin-left: 30px;
+      margin-top: 25px;
+    }
+  }
+  .area3-textarea1{
+    position: relative;
+    margin: 2em 0;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-bottom: 350px;
+    padding: 0.5em 1em;
+    border: solid 3px #ea551c;
+    border-radius: 30px;
+    width: 80%;
+    max-width: 760px;
+    background-color: rgba(255, 255, 255, 0.548);
+    @include overTab {
+      margin-left: 30px;
+      margin-bottom: 40px;
+      width: 50%;
+      max-width: 1300px;
+    }
+    .area3-textarea-title{
+      position: absolute;
+      display: inline-block;
+      top: -40px;
+      left: 10px;
+      padding: 0 9px;
+      height: 40px;
+      line-height: 45px;
+      font-size: 30px;
+      background: #ea551c;
+      color: #ffffff;
+      font-weight: bold;
+      border-radius: 5px 5px 0 0;
+      @include overTab {
+        font-size: 40px;
+      }
+    }
+    p{
+      font-size: 22px;
+      margin: 0; 
+      padding: 0;
+    }
+  }
+  // .area3-textarea2{
+  //   margin-bottom: 700px;
+  //   @include overTab {
+  //     margin-bottom: inherit;
+  //   }
+  // }
+  #emoji5:before {
+    content: "\026A0";
+    padding-right: 3px;
+  }
+  .mokumoku1{
+    position: absolute;
+    z-index: 2;
+    top: 9%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    transform: rotate(15deg);
+    width: 120px;
+    height: 50px;
+    @include overTab {
+      top: 9%;
+      left: 40%;
+      width: 350px;
+      height: 120px;
+    }
+  }
+  .mokumoku2{
+    position: absolute;
+    z-index: 2;
+    top: -6%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    transform: rotate(15deg);
+    width: 170px;
+    height: 70px;
+    @include overTab {
+      top: -12%;
+      left: 40%;
+      width: 350px;
+      height: 120px;
+    }
+  }
+  .recommend1{
+    position: absolute;
+    z-index: 2;
+    font-size: 11px;
+    font-weight: bold;
+    top: 10.5%;
+    left: 67%;
+    transform: translate(-50%, -50%);
+    transform:rotate(18deg);
+    @include overTab {
+      top: 12%;
+      left: 42%;
+      font-size: 30px;
+    }
+    &::before{
+      font-family: "Font Awesome 5 Free";
+      content:'\f521';
+      padding:5px;
+      font-weight:900;
+      color:#FFDC00;
+    }
+  }
+  .recommend2{
+    position: absolute;
+    z-index: 2;
+    font-size: 12px;
+    font-weight: bold;
+    top: -4%;
+    left: 64%;
+    transform: translate(-50%, -50%);
+    transform:rotate(18deg);
+    @include overTab {
+      top: -8%;
+      left: 44%;
+      font-size: 22px;
+    }
+    &::before{
+      font-family: "Font Awesome 5 Free";
+      content:'\f521';
+      padding:5px;
+      font-weight:900;
+      color:#FFDC00;
+    }
+  }
+  .area3-image1{
+    width: 280px;
+    position: absolute;
+    top: 233%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    @include overTab {
+      width: 300px;
+      top: 35%;
+      left: 80%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .video1 iframe {
+    position: absolute;
+    margin: 0 auto;
+    width: auto;
+    top: -25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+     @include overTab {
+      width: 440px;
+      height: 260px;
+      top: -50%;
+      left: 78%;
+    }
+  }
+  .video2 iframe {
+    position: absolute;
+    margin: 0 auto;
+    width: auto;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+     @include overTab {
+      width: 440px;
+      height: 260px;
+      top: 60%;
+      left: 78%;
+    }
+  }
+  .kira1{
+    width: 200px;
+    position: absolute;
+    top: 223%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    @include overTab {
+      width: 300px;
+      top: 23%;
+      left: 80%;
+    }
+  }
+  .kira2{
+    width: 200px;
+    position: absolute;
+    top: 223%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    @include overTab {
+      width: 300px;
+      top: 22%;
+      left: 75%;
+    }
+  }
+  .kira3{
+    width: 130px;
+    position: absolute;
+    top: 230%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    transform: rotate(90deg);
+    z-index: 5;
+    @include overTab {
+      width: 200px;
+      top: 30%;
+      left: 84%;
+    }
+  }
+  .circle1, .circle2 {
+    position: absolute;
+    top: 235%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background: rgba(229, 250, 252, 0.858);
+    border-radius: 50%;
+    box-shadow: 0.375em 0.375em 0 0 rgb(210, 255, 174);
+    height: 12em;
+    width: 22em;
+    @include overTab {
+      height: 15em;
+      width: 24em;
+      top: 40%;
+      left: 80%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  // .circle2{
+  //   top: 150%;
+  //   @include overTab {
+  //   top: 55%;
+  //   }
+  // }
+  .sim-text1, .sim-text2{
+    position: absolute;
+    width: 330px;
+    top: 240%;
+    left:50%;
+    padding: 5px 0;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    background-color:rgb(228, 8, 8) ;
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: italic; 
+    letter-spacing: .1em; 
+    color: #fff; 
+    text-shadow: -3px 2px 0 #000; 
+    @include overTab {
+    width: 350px;
+      top: 45%;
+      left: 80%;   
+    }
+  }
+  // .sim-text2{
+  //   top: 160%;
+  //   @include overTab {
+  //   top: 70%;
+  //   }
+  // }
+  .border1{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1300px;
+    border-bottom: 1px dashed red;
+  }
+
+}

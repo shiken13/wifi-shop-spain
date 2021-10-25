@@ -1,0 +1,234 @@
+main {
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  background: -moz-radial-gradient(#fff, #ffc778 40%, #f13f79);
+  background: -webkit-radial-gradient(#fff, #ffc778 40%, #f13f79);
+  background: radial-gradient(#fff, #ffc778 40%, #f13f79);
+  box-sizing: border-box;
+  background: url("../image/back.jpg") center center no-repeat;
+  background-image: url("../image/back.jpg");
+  background-size: cover;
+}
+header {
+  max-width: 1300px;
+  margin: 0 auto;
+  position: relative;
+  height: 270px;
+  @include overTab {
+    height: 950px;
+  }
+  .logo1 {
+    width: 15%;
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    box-shadow: 1px 3px 5px 5px rgb(245, 245, 56),
+      inset 1px 3px 5px 5px rgb(245, 245, 56);
+    border-radius: 50%;
+    @include overTab {
+      top: 10%;
+      box-shadow: 1px 3px 15px 5px rgb(245, 245, 56),
+        inset 1px 3px 15px 10px rgb(245, 245, 56);
+      border-radius: 50%;
+    }
+  }
+  .logo2 {
+    width: 55%;
+    position: absolute;
+    top: 5%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    @include overTab {
+      left: 58%;
+      top: 10%;
+    }
+  }
+  ul {
+    position: relative;
+    left: 35%;
+    margin: 0 auto;
+    display: flex;
+    // justify-content: space-between;
+    padding-top: 70px;
+    @include overTab {
+      padding-top: 180px;
+      padding-bottom: 20px;
+    }
+  }
+  .spain-flag {
+    width: 24%;
+    height: 70px;
+    @include overTab {
+      width: 160px;
+      height: 100px;
+    }
+  }
+  .japan-flag {
+    width: 21%;
+    height: 60px;
+    @include overTab {
+      width: 160px;
+      height: 100px;
+    }
+  }
+  .profile-area {
+    margin: 0 auto;
+    margin: 0 5px;
+    margin-top: 0px;
+    width: auto;
+    max-width: 760px;
+    position: relative;
+    @include overTab {
+      margin: 0 auto;
+      width: 800px;
+      max-width: 1300px;
+      margin-top: 0px;
+    }
+    .profile-text {
+      background-color: #c40707;
+      box-shadow: 1px 1px 3px 1px;
+      border-radius: 30px;
+      color: #fff;
+      padding: 20px 20px;
+      padding-right: 140px;
+      font-size: 16px;
+      line-height: 1.5;
+      @include overTab {
+        font-size: 35px;
+        padding: 30px 40px;
+        padding-right: inherit;
+      }
+    }
+    .profile {
+      position: absolute;
+      filter: drop-shadow(6px 2px 0 #ecca1c);
+    }
+    .profile1 {
+      top: 15%;
+      width: 120px;
+      left: 78%;
+      transform: translate(-50%, -50%);
+      @include overTab {
+        top: -15%;
+        left: 115%;
+        height: 220px;
+        width: 300px;
+      }
+    }
+    .profile2 {
+      z-index: 5;
+      top: 15%;
+      width: 120px;
+      left: 78%;
+      transform: translate(-50%, -50%);
+      transform: rotate(-20deg);
+      @include overTab {
+        top: 40%;
+        left: -30%;
+        height: 220px;
+        width: 350px;
+      }
+    }
+  }
+  #emoji1:before {
+    content: "\01F64F";
+    padding-right: 3px;
+  }
+  #emoji2:before {
+    content: "\01F1EA \01F1F8";
+    padding-right: 3px;
+  }
+  #emoji3:before {
+    content: "\01F1EF \01F1F5";
+    padding-right: 3px;
+  }
+  .video {
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0px;
+    position: relative;
+    margin-bottom: 100px;
+    @include overTab {
+      margin-bottom: inherit;
+    }
+  }
+  .video iframe {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    @include overTab {
+      width: 70%;
+      height: 60%;
+    }
+  }
+}
+
+#page_top {
+  overflow: hidden;
+  width: 80px;
+  height: 80px;
+  border: white 1px solid;
+  position: fixed;
+  right: 0px;
+  bottom: 90px;
+  background: #d1022f;
+  border-radius: 20px;
+  z-index: 1000;
+  @include overTab {
+    width: 100px;
+    height: 100px;
+  }
+  a {
+    position: relative;
+    display: block;
+    width: 80px;
+    height: 80px;
+    text-decoration: none;
+    @include overTab {
+      height: 100px; /* Button height */
+      width: 100px; /* Button width */
+      font-size: 50px;
+      line-height: 70px; /* Button height */
+    }
+    &::before {
+      content: "";
+      font-size: 25px;
+      color: #fff;
+      position: absolute;
+      width: 20px;
+      height: 10px;
+      top: -50px;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      text-align: center;
+      width: 0px;
+      border-style: solid;
+      border-width: 15px;
+      border-left-color: transparent;
+      border-top-color: transparent;
+      border-right-color: transparent;
+    }
+    &::after {
+      content: "Top";
+      font-size: 20px;
+      font-weight: bold;
+      color: #fff;
+      position: absolute;
+      top: 45px;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      text-align: center;
+      @include overTab {
+        top: 40px;
+      }
+    }
+  }
+}

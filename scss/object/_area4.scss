@@ -1,0 +1,292 @@
+#area4 {
+  margin-top: 100px;
+  list-style: inherit;
+  .area4-upper {
+    max-width: 760px;
+    margin: 0 auto;
+    position: relative;
+    @include overTab {
+      max-width: 1300px;
+    }
+  }
+  .heading3 {
+    max-width: 760px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    position: relative;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 1.4rem;
+    border-radius: 30px;
+    background-color: rgb(236, 10, 10);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    @include overTab {
+      font-size: 40px;
+      padding-top: 30px;
+      padding-left: 20px;
+      max-width: 1300px;
+    }
+  }
+  .heading3 span {
+    position: relative;
+    z-index: 2;
+    top: -16px;
+    color: white;
+    font-weight: bold;
+  }
+  .heading3::before {
+    content: attr(data-en);
+    position: absolute;
+    top: -30px;
+    left: 60px;
+    color: rgba(255, 255, 255, 0.521);
+    font-size: 50px;
+    text-transform: uppercase;
+    z-index: 1;
+    font-style: italic;
+    @include overTab {
+      font-size: 70px;
+      top: -40px;
+      left: 60px;
+    }
+  }
+  .list_design1 {
+    list-style: none;
+    counter-reset: list;
+    display: inline-block;
+    padding: 10px 8px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.548);
+    box-shadow: 2px 2px 4px gray;
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 90vw;
+    @include overTab {
+      padding: 1rem 1rem;
+      margin: 1rem;
+      width: inherit;
+    }
+  }
+  .list_design1 li {
+    position: relative;
+    padding: 10px 20px;
+    padding-left: 63px;
+    line-height: 30px;
+    border-bottom: 2px dotted red;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 5px;
+    overflow-wrap: break-word;
+    @include overTab {
+      font-size: 30px;
+      margin-bottom: 30px;
+      padding: 1rem 1rem;
+      margin: 1rem;
+      padding-left: 60px;
+    }
+  }
+  .list_design1 li:before {
+    counter-increment: list;
+    content: counter(list);
+    position: absolute;
+    left: 0px;
+    width: 50px;
+    height: 62px;
+    text-align: center;
+    color: #fff;
+    line-height: 60px;
+    background: red;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .list_design1 li:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50px;
+    height: 0;
+    width: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 7px solid red;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .area4-textarea {
+    position: relative;
+    margin: 2em 0;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-bottom: 650px;
+    padding: 0.5em 1em;
+    border: solid 3px #ea551c;
+    border-radius: 30px;
+    width: 80%;
+    max-width: 760px;
+    background-color: rgba(255, 255, 255, 0.548);
+    @include overTab {
+      margin-left: 30px;
+      margin-bottom: 100px;
+      width: 50%;
+      max-width: 1300px;
+    }
+    .area4-textarea-title {
+      position: absolute;
+      display: inline-block;
+      top: -40px;
+      left: 10px;
+      padding: 0 9px;
+      height: 40px;
+      line-height: 45px;
+      font-size: 30px;
+      background: #ea551c;
+      color: #ffffff;
+      font-weight: bold;
+      border-radius: 5px 5px 0 0;
+      @include overTab {
+        font-size: 40px;
+      }
+    }
+    p {
+      font-size: 22px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  #emoji6:before {
+    content: "\01F91D";
+    padding-right: 3px;
+  }
+  .video iframe {
+    position: absolute;
+    margin: 0 auto;
+    width: auto;
+    top: 151%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include overTab {
+      width: 440px;
+      height: 260px;
+      top: 36%;
+      left: 80%;
+    }
+  }
+  .mokumoku3 {
+    position: absolute;
+    z-index: 2;
+    top: 4%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    transform: rotate(15deg);
+    width: 150px;
+    height: 70px;
+    @include overTab {
+      top: 10%;
+      left: 40%;
+      width: 350px;
+      height: 120px;
+    }
+  }
+  .recommend3 {
+    position: absolute;
+    z-index: 2;
+    font-size: 11px;
+    font-weight: bold;
+    top: 7%;
+    left: 62%;
+    transform: translate(-50%, -50%);
+    transform: rotate(18deg);
+    @include overTab {
+      top: 15%;
+      left: 42%;
+      font-size: 25px;
+    }
+    &::before {
+      font-family: "Font Awesome 5 Free";
+      content: "\f521";
+      padding: 5px;
+      font-weight: 900;
+      color: #ffdc00;
+    }
+  }
+  .area3-image1 {
+    width: 280px;
+    position: absolute;
+    top: 115%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    @include overTab {
+      width: 300px;
+      top: 80%;
+      left: 80%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .kira1 {
+    width: 220px;
+    position: absolute;
+    top: 105%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    @include overTab {
+      width: 300px;
+      top: 70%;
+      left: 88%;
+    }
+  }
+  .kira2 {
+    width: 220px;
+    position: absolute;
+    top: 103%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    @include overTab {
+      width: 320px;
+      top: 65%;
+      left: 75%;
+    }
+  }
+  .circle3 {
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(210, 244, 247, 0.808);
+    border-radius: 50%;
+    box-shadow: 0.375em 0.375em 0 0 rgb(210, 255, 174);
+    height: 12em;
+    width: 22em;
+    @include overTab {
+      height: 15em;
+      width: 24em;
+      top: 85%;
+      left: 80%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .sim-text3 {
+    position: absolute;
+    padding: 5px 0;
+    width: 250px;
+    top: 125%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    background-color: rgb(228, 8, 8);
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: italic;
+    letter-spacing: 0.1em;
+    color: #fff;
+    text-shadow: -3px 2px 0 #000;
+    @include overTab {
+      top: 92%;
+      left: 80%;
+    }
+  }
+}
