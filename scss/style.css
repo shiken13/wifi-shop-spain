@@ -50,7 +50,7 @@ header {
 }
 @media print, screen and (min-width: 768px) {
   header {
-    height: 950px;
+    height: 900px;
   }
 }
 header .logo1 {
@@ -64,7 +64,7 @@ header .logo1 {
 }
 @media print, screen and (min-width: 768px) {
   header .logo1 {
-    top: 10%;
+    top: 11%;
     box-shadow: 1px 3px 15px 5px #f5f538, inset 1px 3px 15px 10px #f5f538;
     border-radius: 50%;
   }
@@ -73,13 +73,13 @@ header .logo2 {
   width: 55%;
   position: absolute;
   top: 5%;
-  left: 58%;
+  left: 55%;
   transform: translate(-50%, -50%);
 }
 @media print, screen and (min-width: 768px) {
   header .logo2 {
-    left: 58%;
-    top: 10%;
+    left: 55%;
+    top: 11%;
   }
 }
 header ul {
@@ -95,26 +95,6 @@ header ul {
     padding-bottom: 20px;
   }
 }
-header .spain-flag {
-  width: 24%;
-  height: 70px;
-}
-@media print, screen and (min-width: 768px) {
-  header .spain-flag {
-    width: 160px;
-    height: 100px;
-  }
-}
-header .japan-flag {
-  width: 21%;
-  height: 60px;
-}
-@media print, screen and (min-width: 768px) {
-  header .japan-flag {
-    width: 160px;
-    height: 100px;
-  }
-}
 header .profile-area {
   margin: 0 auto;
   margin: 0 5px;
@@ -122,6 +102,7 @@ header .profile-area {
   width: auto;
   max-width: 760px;
   position: relative;
+  top: 200px;
 }
 @media print, screen and (min-width: 768px) {
   header .profile-area {
@@ -144,7 +125,7 @@ header .profile-area .profile-text {
 @media print, screen and (min-width: 768px) {
   header .profile-area .profile-text {
     font-size: 35px;
-    padding: 30px 40px;
+    padding: 40px 40px;
     padding-right: inherit;
   }
 }
@@ -160,7 +141,7 @@ header .profile-area .profile1 {
 }
 @media print, screen and (min-width: 768px) {
   header .profile-area .profile1 {
-    top: -15%;
+    top: 10%;
     left: 115%;
     height: 220px;
     width: 300px;
@@ -208,7 +189,7 @@ header .video {
 }
 header .video iframe {
   position: absolute;
-  top: 40%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: auto;
@@ -541,7 +522,7 @@ footer .follow-me li a[href*=tiktok]::before {
   #area1 .area1-image2 {
     width: 320px;
     top: -15%;
-    left: 55%;
+    left: 60%;
   }
 }
 @media print, screen and (min-width: 768px) {
@@ -562,7 +543,7 @@ footer .follow-me li a[href*=tiktok]::before {
 @media print, screen and (min-width: 768px) {
   #area1 .area1-image3 {
     top: 10%;
-    left: 72%;
+    left: 70%;
     width: 280px;
   }
 }
@@ -575,10 +556,10 @@ footer .follow-me li a[href*=tiktok]::before {
 }
 @media print, screen and (min-width: 768px) {
   #area1 .area1-image5 {
-    top: 15%;
-    left: 65%;
-    width: 160px;
-    height: 150px;
+    top: -5%;
+    left: 68%;
+    width: 320px;
+    height: 200px;
   }
 }
 #area1 .area1-image7 {
@@ -606,7 +587,7 @@ footer .follow-me li a[href*=tiktok]::before {
 @media print, screen and (min-width: 768px) {
   #area1 .area1-image8 {
     top: 8%;
-    left: 74%;
+    left: 70%;
     width: 280px;
   }
 }
@@ -635,7 +616,7 @@ footer .follow-me li a[href*=tiktok]::before {
 @media print, screen and (min-width: 768px) {
   #area1 .area1-image10 {
     width: 330px;
-    left: 60%;
+    left: 65%;
   }
 }
 #area1 .intro-text1 {
@@ -1015,8 +996,8 @@ footer .follow-me li a[href*=tiktok]::before {
 }
 @media print, screen and (min-width: 768px) {
   #area1 .what-btn {
-    padding: 15px 0;
-    font-size: 33px;
+    padding: 18px 0;
+    font-size: 22px;
     width: 40vw;
   }
 }
@@ -2875,8 +2856,8 @@ footer .follow-me li a[href*=tiktok]::before {
   background-color: #3b5998;
   content: "";
 }
-#area5 .area5-lower .follow-me li a[href*=line]::before {
-  background-color: #00c300;
+#area5 .area5-lower .follow-me li a[href*="wa.me"]::before {
+  background: #25D366;
   content: "";
 }
 #area5 .area5-lower .follow-me li a[href*="youtube.com"]::before {
@@ -2920,13 +2901,13 @@ footer .follow-me li a[href*=tiktok]::before {
   top: 10px;
   left: 15px;
 }
-#area5 .area5-lower .line-btn {
+#area5 .area5-lower .what-btn {
   position: relative;
   display: block;
   border-radius: 50px;
   color: white;
   text-align: center;
-  background: #00c300;
+  background: #25D366;
   padding: 10px 0;
   margin: auto;
   margin-bottom: 20px;
@@ -2935,16 +2916,16 @@ footer .follow-me li a[href*=tiktok]::before {
   border: 1px white solid;
 }
 @media print, screen and (min-width: 768px) {
-  #area5 .area5-lower .line-btn {
+  #area5 .area5-lower .what-btn {
     padding: 15px 0;
-    font-size: 33px;
+    font-size: 22px;
     width: 40vw;
   }
 }
-#area5 .area5-lower .line-btn span {
+#area5 .area5-lower .what-btn span {
   font-weight: bold;
 }
-#area5 .area5-lower .line-btn::before {
+#area5 .area5-lower .what-btn::before {
   content: "";
   background-size: contain;
   width: 20px;
@@ -2954,7 +2935,7 @@ footer .follow-me li a[href*=tiktok]::before {
   left: 15px;
 }
 @media print, screen and (min-width: 768px) {
-  #area5 .area5-lower .line-btn::before {
+  #area5 .area5-lower .what-btn::before {
     width: 24px;
     height: 24px;
   }

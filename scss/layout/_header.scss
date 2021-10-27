@@ -16,7 +16,7 @@ header {
   position: relative;
   height: 270px;
   @include overTab {
-    height: 950px;
+    height: 900px;
   }
   .logo1 {
     width: 15%;
@@ -28,7 +28,7 @@ header {
       inset 1px 3px 5px 5px rgb(245, 245, 56);
     border-radius: 50%;
     @include overTab {
-      top: 10%;
+      top: 11%;
       box-shadow: 1px 3px 15px 5px rgb(245, 245, 56),
         inset 1px 3px 15px 10px rgb(245, 245, 56);
       border-radius: 50%;
@@ -38,11 +38,11 @@ header {
     width: 55%;
     position: absolute;
     top: 5%;
-    left: 58%;
+    left: 55%;
     transform: translate(-50%, -50%);
     @include overTab {
-      left: 58%;
-      top: 10%;
+      left: 55%;
+      top: 11%;
     }
   }
   ul {
@@ -57,22 +57,7 @@ header {
       padding-bottom: 20px;
     }
   }
-  .spain-flag {
-    width: 24%;
-    height: 70px;
-    @include overTab {
-      width: 160px;
-      height: 100px;
-    }
-  }
-  .japan-flag {
-    width: 21%;
-    height: 60px;
-    @include overTab {
-      width: 160px;
-      height: 100px;
-    }
-  }
+
   .profile-area {
     margin: 0 auto;
     margin: 0 5px;
@@ -80,6 +65,7 @@ header {
     width: auto;
     max-width: 760px;
     position: relative;
+    top: 200px;
     @include overTab {
       margin: 0 auto;
       width: 800px;
@@ -97,7 +83,7 @@ header {
       line-height: 1.5;
       @include overTab {
         font-size: 35px;
-        padding: 30px 40px;
+        padding: 40px 40px;
         padding-right: inherit;
       }
     }
@@ -111,7 +97,7 @@ header {
       left: 78%;
       transform: translate(-50%, -50%);
       @include overTab {
-        top: -15%;
+        top: 10%;
         left: 115%;
         height: 220px;
         width: 300px;
@@ -156,7 +142,7 @@ header {
   }
   .video iframe {
     position: absolute;
-    top: 40%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: auto;

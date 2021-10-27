@@ -103,7 +103,7 @@
     @include overTab {
       width:320px;
       top: -15%;
-      left: 55%;
+      left: 60%;
     }
   }
   .area1-image2-1{
@@ -123,7 +123,7 @@
       inset 10px 3px 20px 10px rgb(247, 247, 125);
     @include overTab {
       top: 10%;
-      left: 72%;
+      left: 70%;
       width: 280px;
     }
   }
@@ -135,10 +135,10 @@
     // transform: rotate(10deg);
     filter: drop-shadow(0px 0px 20px rgb(250, 250, 59));
     @include overTab {
-      top: 15%;
-      left: 65%;
-      width: 160px;
-      height: 150px;
+      top: -5%;
+      left: 68%;
+      width: 320px;
+      height: 200px;
     }
   }
   // .area1-image6 {
@@ -177,7 +177,7 @@
       inset 10px 3px 20px 10px rgb(247, 247, 125);
     @include overTab {
       top: 8%;
-      left: 74%;
+      left: 70%;
       width: 280px;
     }
   }
@@ -203,7 +203,7 @@
       inset 10px 3px 20px 10px rgb(247, 247, 125);
     @include overTab {
       width: 330px;
-      left: 60%;
+      left: 65%;
     }
   }
   .intro-text1 {
@@ -556,8 +556,8 @@
     font-size: 25px;
     border: 1px white solid;
     @include overTab {
-      padding: 15px 0;
-      font-size: 33px;
+      padding: 18px 0;
+      font-size: 22px;
       width: 40vw;
     }
     span {

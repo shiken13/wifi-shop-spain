@@ -538,9 +538,9 @@
       background-color: #3b5998;
       content: "\f09a";
     }
-    .follow-me li a[href*="line"]::before {
-      background-color: #00c300;
-      content: "\f3c0";
+    .follow-me li a[href*="wa.me"]::before {
+      background-color: #25D366;
+      content: "\f40c";
     }
     .follow-me li a[href*="youtube.com"]::before {
       background-color: #cd201f;
@@ -582,13 +582,13 @@
         left: 15px;
       }
     }
-    .line-btn {
+    .what-btn {
       position: relative;
       display: block;
       border-radius: 50px;
       color: white;
       text-align: center;
-      background: #00c300;
+      background: #25D366;
       padding: 10px 0;
       margin: auto;
       margin-bottom: 20px;
@@ -596,8 +596,8 @@
       font-size: 25px;
       border: 1px white solid;
       @include overTab {
-        padding: 15px 0;
-        font-size: 33px;
+        padding: 18px 0;
+        font-size: 22px;
         width: 40vw;
       }
       span {
@@ -782,19 +782,19 @@
   }
 
   /* Social media links: LINE  */
-  .line a::before {
+  .what a::before {
     font-family: FontAwesome;
   }
-  .line a[href*="line"]::before {
-    background-color: #00c300;
-    content: "\f3c0";
+  .what a[href*="line"]::before {
+    background-color: #25D366;
+    content: "\f40c";
   }
-  .line a::after {
+  .what a::after {
     font-family: FontAwesome;
   }
-  .line a[href*="line"]::after {
-    background-color: #00c300;
-    content: "\f3c0";
+  .what a[href*="line"]::after {
+    background-color: #25D366;
+    content: "\f40c";
   }
   /* Social media links: facebook  */
   .facebook a::before {
