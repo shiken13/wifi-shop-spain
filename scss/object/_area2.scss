@@ -218,7 +218,7 @@
     @include overTab {
       font-size: 25px;
       top: -9%;
-      left: 47%;
+      left: 49%;
     }
     &::before {
       font-family: "Font Awesome 5 Free";
@@ -325,7 +325,7 @@
     margin-bottom: 400px;
     background-color: rgba(255, 255, 255, 0.548);
     @include overTab {
-      width: 800px;
+      width: 700px;
       margin-bottom: inherit;
     }
     .area2-textarea-title {
@@ -366,12 +366,15 @@
   }
   .video {
     width: 100%;
-    padding-bottom: 56.25%;
     height: 0px;
     position: relative;
     margin-bottom: 100px;
     @include overTab {
       margin-bottom: inherit;
+      width: 440px;
+      height: 100px;
+      // top: -50%;
+      // left: 78%;
     }
   }
   .video iframe {
@@ -381,8 +384,10 @@
     transform: translate(-50%, -50%);
     width: auto;
     @include overTab {
-      width: 80%;
-      height: 80%;
+      width: 440px;
+      height: 260px;
+      top: -150%;
+      left: 230%;
     }
   }
 }

@@ -2567,7 +2567,7 @@ footer .follow-me li a[href*="tiktok"]::before {
   #area2 .point {
     font-size: 25px;
     top: -9%;
-    left: 47%;
+    left: 49%;
   }
 }
 
@@ -2709,7 +2709,7 @@ footer .follow-me li a[href*="tiktok"]::before {
 
 @media print, screen and (min-width: 768px) {
   #area2 .area2-textarea {
-    width: 800px;
+    width: 700px;
     margin-bottom: inherit;
   }
 }
@@ -2764,7 +2764,6 @@ footer .follow-me li a[href*="tiktok"]::before {
 
 #area2 .video {
   width: 100%;
-  padding-bottom: 56.25%;
   height: 0px;
   position: relative;
   margin-bottom: 100px;
@@ -2773,6 +2772,8 @@ footer .follow-me li a[href*="tiktok"]::before {
 @media print, screen and (min-width: 768px) {
   #area2 .video {
     margin-bottom: inherit;
+    width: 440px;
+    height: 100px;
   }
 }
 
@@ -2787,8 +2788,10 @@ footer .follow-me li a[href*="tiktok"]::before {
 
 @media print, screen and (min-width: 768px) {
   #area2 .video iframe {
-    width: 80%;
-    height: 80%;
+    width: 440px;
+    height: 260px;
+    top: -150%;
+    left: 230%;
   }
 }
 
@@ -3115,9 +3118,9 @@ footer .follow-me li a[href*="tiktok"]::before {
 
 @media print, screen and (min-width: 768px) {
   #area3 .recommend2 {
-    top: -8%;
-    left: 44%;
-    font-size: 22px;
+    top: -2%;
+    left: 46%;
+    font-size: 26px;
   }
 }
 
@@ -3554,8 +3557,8 @@ footer .follow-me li a[href*="tiktok"]::before {
 
 @media print, screen and (min-width: 768px) {
   #area4 .recommend3 {
-    top: 15%;
-    left: 42%;
+    top: 14%;
+    left: 45%;
     font-size: 25px;
   }
 }
@@ -4578,37 +4581,10 @@ footer .follow-me li a[href*="tiktok"]::before {
   }
 }
 
-@media print, screen and (min-width: 768px) {
-  #area5 .tab:hover {
-    width: 450px;
-  }
-}
-
-#area5 .tab:hover .social a:before {
-  margin-left: -100px;
-}
-
-#area5 .tab:hover .social a:after {
-  margin-left: 0px;
-}
-
-#area5 .tab .content {
-  background-color: #fff;
-  width: 360px;
-  height: 100px;
-  margin-left: 100px;
+#area5 .tab img {
   position: relative;
-  padding: 0 0 0 15px;
-}
-
-#area5 .tab .content h1 {
-  font-size: 2.5rem;
-}
-
-#area5 .tab .content p {
-  font-size: 0.85rem;
-  line-height: 1.9rem;
-  padding-right: 30px;
+  border-radius: 1px solid black;
+  top: 0.5px;
 }
 
 #area5 .social a:before,

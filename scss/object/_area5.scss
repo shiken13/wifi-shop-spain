@@ -683,34 +683,39 @@
       width: 90px;
       height: 90px;
     }
-  }
-  .tab:hover {
-    @include overTab {
-      width: 450px;
+    img{
+      position: relative;
+      border-radius: 1px solid black;
+      top: 0.5px;
     }
   }
-  .tab:hover .social a:before {
-    margin-left: -100px;
-  }
-  .tab:hover .social a:after {
-    margin-left: 0px;
-  }
-  .tab .content {
-    background-color: #fff;
-    width: 360px;
-    height: 100px;
-    margin-left: 100px;
-    position: relative;
-    padding: 0 0 0 15px;
-  }
-  .tab .content h1 {
-    font-size: 2.5rem;
-  }
-  .tab .content p {
-    font-size: 0.85rem;
-    line-height: 1.9rem;
-    padding-right: 30px;
-  }
+  // .tab:hover {
+  //   @include overTab {
+  //     width: 450px;
+  //   }
+  // }
+  // .tab:hover .social a:before {
+  //   margin-left: -100px;
+  // }
+  // .tab:hover .social a:after {
+  //   margin-left: 0px;
+  // }
+  // .tab .content {
+  //   background-color: #fff;
+  //   width: 360px;
+  //   height: 100px;
+  //   margin-left: 100px;
+  //   position: relative;
+  //   padding: 0 0 0 15px;
+  // }
+  // .tab .content h1 {
+  //   font-size: 2.5rem;
+  // }
+  // .tab .content p {
+  //   font-size: 0.85rem;
+  //   line-height: 1.9rem;
+  //   padding-right: 30px;
+  // }
   .social a:before,
   .social a:after {
     transition: all 0.4s ease-in-out 0.1s;

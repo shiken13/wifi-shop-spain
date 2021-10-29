@@ -255,9 +255,9 @@
     transform: translate(-50%, -50%);
     transform:rotate(18deg);
     @include overTab {
-      top: -8%;
-      left: 44%;
-      font-size: 22px;
+      top: -2%;
+      left: 46%;
+      font-size: 26px;
     }
     &::before{
       font-family: "Font Awesome 5 Free";
