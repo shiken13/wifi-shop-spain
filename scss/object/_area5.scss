@@ -73,69 +73,6 @@
       margin-top: 25px;
     }
   }
-  .list_design1 {
-    list-style: none;
-    counter-reset: list;
-    display: inline-block;
-    padding: 10px 8px;
-    border-radius: 30px;
-    background-color: rgba(255, 255, 255, 0.548);
-    box-shadow: 2px 2px 4px gray;
-    margin-right: 5px;
-    margin-left: 10px;
-    @include overTab {
-      padding: 1rem 1rem;
-      margin: 1rem;
-      margin-left: 30px;
-    }
-  }
-  .list_design1 li {
-    position: relative;
-    padding: 10px 20px;
-    padding-left: 63px;
-    padding-right: 0px;
-    line-height: 30px;
-    border-bottom: 2px dotted red;
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 5px;
-    @include overTab {
-      font-size: 30px;
-      margin-bottom: 30px;
-      padding: 1rem 1rem;
-      margin: 1rem;
-      padding-left: 60px;
-    }
-  }
-  .list_design1 li:before {
-    counter-increment: list;
-    content: counter(list);
-    position: absolute;
-    left: 0px;
-    width: 50px;
-    height: 62px;
-    text-align: center;
-    color: #fff;
-    line-height: 60px;
-    background: red;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
-  .list_design1 li:after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 50px;
-    height: 0;
-    width: 0;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-left: 7px solid red;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
   .area5-textarea {
     position: relative;
     margin: 2em 0;
@@ -187,20 +124,7 @@
     content: "\01F91D";
     padding-right: 3px;
   }
-  .video iframe {
-    position: absolute;
-    margin: 0 auto;
-    width: auto;
-    top: 122%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    @include overTab {
-      width: 440px;
-      height: 260px;
-      top: 25%;
-      left: 80%;
-    }
-  }
+
   .mokumoku3 {
     position: absolute;
     z-index: 2;
@@ -248,9 +172,9 @@
     transform: translate(-50%, -50%);
     z-index: 4;
     @include overTab {
-      width: 300px;
-      top: 65%;
-      left: 65%;
+      width: 500px;
+      top: 55%;
+      left: 75%;
       transform: translate(-50%, -50%);
     }
   }
@@ -273,7 +197,7 @@
     z-index: 5;
     @include overTab {
       width: 200px;
-      top: 55%;
+      top: 35%;
       left: 83%;
     }
   }
@@ -286,7 +210,7 @@
     z-index: 5;
     @include overTab {
       width: 320px;
-      top: 55%;
+      top: 35%;
       left: 65%;
     }
   }
@@ -299,7 +223,7 @@
     z-index: 5;
     @include overTab {
       width: 300px;
-      top: 58%;
+      top: 38%;
       left: 85%;
     }
   }
@@ -338,7 +262,7 @@
     @include overTab {
       font-size: 2.4rem;
       width: 400px;
-      top: 75%;
+      top: 80%;
       left: 75%;
     }
   }
@@ -357,76 +281,25 @@
     .japan-map {
       position: absolute;
       width: 160px;
-      top: 30%;
+      top: 35%;
       left: 30%;
       transform: translate(-50%, -50%);
       @include overTab {
-        left: 35%;
-        width: 370px;
+        left: 75%;
+        width: 500px;
       }
     }
-    .arrow1 {
-      position: absolute;
-      width: 160px;
-      top: 30%;
-      left: 30%;
-      transform: translate(-50%, -50%);
-      transform: rotate(45deg);
-      @include overTab {
-        left: 28%;
-        height: 100px;
-        width: 50px;
-      }
-    }
-    .arrow2 {
-      position: absolute;
-      width: 160px;
-      top: 37%;
-      left: 30%;
-      transform: translate(-50%, -50%);
-      transform: rotate(35deg);
-      @include overTab {
-        left: 32%;
-        height: 60px;
-        width: 50px;
-      }
-    }
-    .arrow3 {
-      position: absolute;
-      width: 160px;
-      top: 25%;
-      left: 30%;
-      transform: translate(-50%, -50%);
-      transform: rotate(-40deg);
-      @include overTab {
-        left: 36%;
-        height: 60px;
-        width: 55px;
-      }
-    }
-    .arrow4 {
-      position: absolute;
-      width: 160px;
-      top: 15%;
-      left: 30%;
-      transform: translate(-50%, -50%);
-      transform: rotate(-140deg);
-      @include overTab {
-        left: 32%;
-        height: 80px;
-        width: 105px;
-      }
-    }
+   
     .sagawa1,
     .sagawa2 {
       position: absolute;
       width: 160px;
-      top: 10%;
+      top: 56%;
       left: 30%;
       transform: translate(-50%, -50%);
       @include overTab {
-        left: 20%;
-        width: 320px;
+        left: 40%;
+        width: 350px;
       }
     }
     .logo-delivery {
@@ -436,45 +309,25 @@
       left: 56%;
       transform: translate(-50%, -50%);
       @include overTab {
-        // top: 38%;
-        // left: 37.5%;
-        top: 33%;
-        left: 33.5%;
-        width: 45px;
+        top: 46%;
+        left: 77%;
+        width: 60px;
       }
     }
     .sagawa2 {
       width: 180px;
       top: 30%;
       left: 80%;
-      filter: drop-shadow(5px 2px 0 white);
+      filter: drop-shadow(10px 2px 0 white);
       @include overTab {
-        top: 44%;
+        top: 54%;
         left: 15%;
-        width: 350px;
+        width: 430px;
       }
     }
-    .frame1 {
-      display: inline-block;
-      position: relative;
-      left: 50%;
-      width: 320px;
-      transform: translate(-50%, 0%);
-      @include overTab {
-        left: 30%;
-        width: 550px;
-      }
-      &::after {
-        position: absolute;
-        display: block;
-        content: "";
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        box-shadow: inset 0 0 10px #fff /* 背景色と同じ色 */,
-          inset 0 0 10px #fff, inset 0 0 10px #fff, inset 0 0 10px #fff;
-      }
+ 
+    .map-back{
+      opacity: 0.4;
     }
     h2 {
       position: absolute;
@@ -489,9 +342,9 @@
       @include overTab {
         top: 30%;
         letter-spacing: 0.1em;
-        width: 800px;
+        width: 750px;
         left: 70%;
-        font-size: 3.8rem;
+        font-size: 3.5rem;
       }
     }
 
@@ -618,6 +471,105 @@
       }
     }
   }
+
+
+  .map {
+    border-top: 0.5px solid #ffffff42;
+    background: url("../image/truck.jpg") center center no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    max-width: 1500px;
+    padding: 40px 0 20px;
+    height: 400px;
+    position: relative;
+    margin: 0 auto;
+    box-shadow: 1px 3px 20px 10px white,
+        inset 10px 3px 20px 10px whitesmoke;
+  }
+  .map::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.308);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  
+  .map h1,
+  .map h2 {
+    letter-spacing: 0.1em;
+    color: black;
+    text-align: center;
+    font-size: 12px;
+    z-index: 10;
+  }
+  
+  
+  .map h1 {
+    color: white;
+    position: absolute;
+    font-size: 38px;
+    margin-bottom: 30px;
+    display: inline-block;
+    text-align: left;
+    top: 20%;
+    left: 10%;
+    letter-spacing: inherit;
+    -webkit-transform: translateY(10%) translateX(-20%);
+            transform: translateY(10%) translateX(-20%);
+    font-weight: bold;
+  }
+  
+  @media print, screen and (min-width: 768px) {
+    .map h1 {
+      font-size: 2rem;
+    }
+  }
+  
+  .map h2 {
+    color: white;
+    position: absolute;
+    margin-bottom: 20px;
+    font-size: 20px;
+    top: 35%;
+    left: 10%;
+    letter-spacing: inherit;
+    -webkit-transform: translateY(10%) translateX(-10%);
+            transform: translateY(10%) translateX(-10%);
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: 0.15rem;
+  }
+  
+  @media print, screen and (min-width: 768px) {
+    .map h2 {
+      margin-bottom: inherit;
+      font-size: 1.5rem;
+    }
+  }
+  
+  .map .map-back {
+    height: 60%;
+    width: 100%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  @media print, screen and (min-width: 768px) {
+    .map .map-back {
+      height: 200px;
+      width: 70%;
+    }
+  }
+
+
   .container-area {
     display: flex;
   }
@@ -790,14 +742,14 @@
   .what a::before {
     font-family: FontAwesome;
   }
-  .what a[href*="line"]::before {
+  .what a[href*="wa.me"]::before {
     background-color: #25D366;
     content: "\f40c";
   }
   .what a::after {
     font-family: FontAwesome;
   }
-  .what a[href*="line"]::after {
+  .what a[href*="wa.me"]::after {
     background-color: #25D366;
     content: "\f40c";
   }

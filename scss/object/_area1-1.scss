@@ -245,9 +245,15 @@
       left: 45%;
       transform: translate(-50%, -50%);
       @include overTab {
-        width: 350px;
-        top: 10%;
-        left: 65%;
+        width: 160px;
+        top: 0%;
+        left: 62%;
+      }
+    }
+    .area1-1-gbps3{
+      @include overTab {
+        top: 8%;
+        left: 72%;
       }
     }
     .kira1 {

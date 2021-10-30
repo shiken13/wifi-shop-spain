@@ -131,9 +131,9 @@
       left: 45%;
       transform: translate(-50%, -50%);
       @include overTab {
-        width: 400px;
-        top: 30%;
-        left: 82%;
+        width: 450px;
+        top: 32%;
+        left: 80%;
       }
     }
     .kira1 {
@@ -145,7 +145,7 @@
       z-index: 5;
       @include overTab {
         width: 300px;
-        top: -5%;
+        top: -15%;
         left: 80%;
       }
     }
@@ -173,7 +173,7 @@
       @include overTab {
         width: 200px;
         top: 10%;
-        left: 88%;
+        left: 83%;
       }
     }
     .kira4 {
@@ -187,7 +187,7 @@
       @include overTab {
         width: 200px;
         top: 20%;
-        left: 89%;
+        left: 82%;
       }
     }
   }
