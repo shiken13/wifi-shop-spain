@@ -32,8 +32,8 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        padding-left: 35px;
         @include overTab {
+          padding-left: 35px;
           font-size: 3rem;
         }
       }
@@ -69,37 +69,36 @@
   }
   .area1-image1 {
     width: 15vw;
-    height: 11vh;
+    height: 15vh;
     display: flex;
     align-items: center;
     padding: 70px 0;
-    padding-left: 20px;
     @include overTab {
+      padding-left: 20px;
       width: 100%;
       height: 18vh;
     }
   }
   .area1-image4 {
     width: 15vw;
-    height: 10vh;
+    height: 15vh;
     display: flex;
     align-items: center;
     padding: 40px 0;
-    padding-left: 20px;
     @include overTab {
+      padding-left: 20px;
       width: 100%;
       height: 18vh;
     }
   }
   .area1-image2 {
-    width: 120px;
+    width: 90px;
     position: absolute;
-    left: 65%;
+    top: -25%;
+    left: 55%;
     transform: rotate(10deg);
     z-index: 4;
     filter: drop-shadow(0px 0px 20px rgb(250, 250, 59));
-    // box-shadow: 1px 3px 20px 10px rgb(247, 247, 125),
-    //   inset 10px 3px 20px 10px rgb(247, 247, 125);
     @include overTab {
       width:220px;
       top: -15%;
@@ -107,6 +106,7 @@
     }
   }
   .area1-image2-1{
+    left: 72%;
     @include overTab {
       width:200px;
       top: 20%;
@@ -114,6 +114,9 @@
     }
   }
   .area1-image2-2{
+    width:120px;
+    top: 35%;
+    left: 65%;
     @include overTab {
       width:280px;
       top: 18%;
@@ -121,10 +124,10 @@
     }
   }
   .area1-image3 {
-    width: 100px;
+    width: 130px;
     position: absolute;
     top: -8%;
-    left: 69%;
+    left: 65%;
     transform: rotate(10deg);
     box-shadow: 1px 3px 20px 10px rgb(247, 247, 125),
       inset 10px 3px 20px 10px rgb(247, 247, 125);
@@ -135,10 +138,10 @@
     }
   }
   .area1-image5 {
-    width: 70px;
+    width: 130px;
     position: absolute;
-    top: 25%;
-    left: 75%;
+    top: -15%;
+    left: 66%;
     filter: drop-shadow(0px 0px 20px rgb(250, 250, 59));
     @include overTab {
       top: -5%;
@@ -148,10 +151,10 @@
     }
   }
   .area1-image6 {
-    width: 80px;
+    width: 130px;
     position: absolute;
-    top: 50%;
-    left: 75%;
+    top: 45%;
+    left: 66%;
     filter: drop-shadow(0px 0px 20px rgb(250, 250, 59));
     @include overTab {
       top: -5%;
@@ -162,12 +165,12 @@
   }
   .area1-image7 {
     width: 15vw;
-    height: 10vh;
+    height: 15vh;
     display: flex;
     align-items: center;
     padding: 80px 0;
-    padding-left: 20px;
     @include overTab {
+      padding-left: 20px;
       width: 100%;
       height: 18vh;
     }
@@ -175,8 +178,8 @@
   .area1-image8 {
     width: 100px;
     position: absolute;
-    top: 52%;
-    left: 68%;
+    top: -5%;
+    left: 70%;
     transform: rotate(10deg);
     box-shadow: 1px 3px 20px 10px rgb(247, 247, 125),
       inset 10px 3px 20px 10px rgb(247, 247, 125);
@@ -188,12 +191,12 @@
   }
   .area1-image9 {
     width: 15vw;
-    height: 11vh;
+    height: 15vh;
     display: flex;
     align-items: center;
     padding: 40px 0;
-    padding-left: 20px;
     @include overTab {
+      padding-left: 20px;
       width: 100%;
       height: 18vh;
     }
@@ -220,6 +223,8 @@
     font-size: 1.2rem;
     font-weight: bold;
     padding-top: 10px;
+    position: relative;
+    z-index: 10;
     @include overTab {
       padding-left: 50px;
       width: 1000px;
@@ -227,6 +232,7 @@
     }
     .text1-title {
       color: #f3d53d;
+      font-size: 1.6rem;
       text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.342),
         -1px -1px 0 rgba(255, 255, 255, 0.342),
         -1px 1px 0 rgba(255, 255, 255, 0.342),
@@ -239,7 +245,7 @@
       }
     }
     .GB1 {
-      font-size: 1.8rem;
+      font-size: 1.2rem;
       color: #fff;
       text-shadow: 3px 3px 0 #000, -3px -3px 0 #000, -3px 3px 0 #000,
         3px -3px 0 #000, 0px 3px 0 #000, 0 -3px 0 #000, -3px 0 0 #000,
@@ -265,7 +271,7 @@
     .price2 {
       color: #e43e5a;
       font-weight: 900;
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, -1px 1px 0 #fff,
         1px -1px 0 #fff, 0px 1px 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff,
         1px 0 0 #fff;
@@ -298,12 +304,11 @@
       justify-content: center;
     }
   }
- 
   .video {
     width: 100%;
     height: 200px;
     position: relative;
-    margin-top: 100px;
+    margin-top: 50px;
     @include overTab {
       height: 400px;
     }
@@ -314,6 +319,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: auto;
+    height: 200px;
     @include overTab {
       width: 70%;
       height: 100%;
@@ -334,7 +340,9 @@
     position: relative;
     border-radius: 30px;
     margin: 0 auto;
+    @include overTab {
     width: 1200px;
+    }
     &::before {
       content: "";
       position: absolute;
@@ -343,9 +351,13 @@
       border-style: solid;
       z-index: 10;
       top: -5px;
-      right: -5px;
+      right: 0px;
       border-width: 0 50px 50px 0;
       border-color: transparent rgb(252, 251, 251) transparent transparent;
+      @include overTab {
+        top: -5px;
+        right: -5px;
+      }
     }
     &::after {
       content: "";
@@ -354,10 +366,14 @@
       height: 0;
       border-style: solid;
       z-index: 10;
-      bottom: 10px;
-      left: -5px;
+      bottom: 5px;
+      left: 0px;
       border-width: 50px 0 0 50px;
       border-color: transparent transparent transparent rgb(252, 251, 251);
+      @include overTab {
+        bottom: 10px;
+        left: -5px;
+      }
     }
     .customer1 {
       // width: 80px;
@@ -387,30 +403,32 @@
   }
 
   .fukidashi1 {
-    width: 100vw;
-    height: 130px;
-    top: -100px;
+    width: 50vw;
+    height: 80px;
+    top: -60px;
     position: absolute;
     left: 0px;
     z-index: 11;
     @include overTab {
+      height: 120px;
+      top: -100px;
       width: 25vw;
       left: 200px;
     }
   }
   .customer-text {
-    top: -78px;
-    left: 50px;
+    top: -40px;
+    left: 46px;
     position: absolute;
-    font-size: 1.0rem;
+    font-size: 1.5rem;
     font-weight: bold;
     z-index: 12;
     @include overTab {
       font-size: 3.0rem;
+      top: -78px;
       left: 250px;
     }
   }
-
   .balloon1 {
     position: relative;
     display: inline-block;
@@ -452,10 +470,14 @@
       }
     }
     .text-line {
+      max-width: 760px;
       background-image: linear-gradient(
         rgba(0, 0, 0, 0) 70%,
         rgba(238, 135, 117, 0.952) 70%
       );
+      @include overTab {
+        max-width: 1300px;
+      }
     }
   }
   .follow-me {
@@ -559,11 +581,11 @@
     color: white;
     text-align: center;
     background: #25D366;
-    padding: 15px 0;
+    padding: 18px 0;
     margin: auto;
     margin-bottom: 20px;
     width: 100%;
-    font-size: 25px;
+    font-size: 17px;
     border: 1px white solid;
     @include overTab {
       padding: 18px 0;

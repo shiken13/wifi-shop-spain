@@ -31,7 +31,7 @@ $(function(){
         breakpoint: 767,
         settings: {
           centerMode:false,
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
           centerPadding:'0px',
           centerMode:true,
