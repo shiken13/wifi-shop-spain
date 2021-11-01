@@ -186,10 +186,10 @@ header .profile-area .profile2 {
 
 @media print, screen and (min-width: 768px) {
   header .profile-area .profile2 {
-    top: 40%;
-    left: -30%;
-    height: 220px;
-    width: 350px;
+    top: 10%;
+    left: -36%;
+    height: 300px;
+    width: 480px;
   }
 }
 
@@ -621,17 +621,25 @@ footer .follow-me li a[href*="tiktok"]::before {
 
 @media print, screen and (min-width: 768px) {
   #area1 .area1-image2 {
-    width: 320px;
+    width: 220px;
     top: -15%;
-    left: 60%;
+    left: 65%;
   }
 }
 
 @media print, screen and (min-width: 768px) {
   #area1 .area1-image2-1 {
-    width: 320px;
-    top: 15%;
-    left: 75%;
+    width: 200px;
+    top: 20%;
+    left: 70%;
+  }
+}
+
+@media print, screen and (min-width: 768px) {
+  #area1 .area1-image2-2 {
+    width: 280px;
+    top: 18%;
+    left: 80%;
   }
 }
 
@@ -666,7 +674,25 @@ footer .follow-me li a[href*="tiktok"]::before {
 @media print, screen and (min-width: 768px) {
   #area1 .area1-image5 {
     top: -5%;
-    left: 68%;
+    left: 55%;
+    width: 320px;
+    height: 200px;
+  }
+}
+
+#area1 .area1-image6 {
+  width: 80px;
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  -webkit-filter: drop-shadow(0px 0px 20px #fafa3b);
+          filter: drop-shadow(0px 0px 20px #fafa3b);
+}
+
+@media print, screen and (min-width: 768px) {
+  #area1 .area1-image6 {
+    top: -5%;
+    left: 75%;
     width: 320px;
     height: 200px;
   }
@@ -941,20 +967,24 @@ footer .follow-me li a[href*="tiktok"]::before {
 }
 
 #area1 .customer .customer1 {
-  width: 30vw;
-  height: 55vh;
-  padding: 10px 15px;
+  height: 40vh;
 }
 
 @media print, screen and (min-width: 768px) {
   #area1 .customer .customer1 {
-    height: 40vh;
+    height: 30vh;
+    height: 250px;
+    margin-right: 10px;
   }
 }
 
 #area1 .customer img {
   border-radius: 40px;
+}
+
+#area1 .customer div {
   margin-right: 5px;
+  margin-left: 2px;
 }
 
 #area1 .slick-list {
@@ -3902,8 +3932,7 @@ footer .follow-me li a[href*="tiktok"]::before {
   color: #ffdc00;
 }
 
-#area5 .area5-image1,
-#area5 .area5-image2 {
+#area5 .area5-image1 {
   width: 180px;
   position: absolute;
   top: 106%;
@@ -3914,11 +3943,10 @@ footer .follow-me li a[href*="tiktok"]::before {
 }
 
 @media print, screen and (min-width: 768px) {
-  #area5 .area5-image1,
-  #area5 .area5-image2 {
-    width: 500px;
+  #area5 .area5-image1 {
+    width: 350px;
     top: 55%;
-    left: 75%;
+    left: 68%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
   }
@@ -3931,9 +3959,9 @@ footer .follow-me li a[href*="tiktok"]::before {
 
 @media print, screen and (min-width: 768px) {
   #area5 .area5-image2 {
-    width: 240px;
-    top: 68%;
-    left: 85%;
+    width: 370px;
+    top: 55%;
+    left: 88%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
   }

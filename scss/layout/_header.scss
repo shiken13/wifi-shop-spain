@@ -111,10 +111,10 @@ header {
       transform: translate(-50%, -50%);
       transform: rotate(-20deg);
       @include overTab {
-        top: 40%;
-        left: -30%;
-        height: 220px;
-        width: 350px;
+        top: 10%;
+        left: -36%;
+        height: 300px;
+        width: 480px;
       }
     }
   }

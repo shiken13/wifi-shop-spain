@@ -101,16 +101,23 @@
     // box-shadow: 1px 3px 20px 10px rgb(247, 247, 125),
     //   inset 10px 3px 20px 10px rgb(247, 247, 125);
     @include overTab {
-      width:320px;
+      width:220px;
       top: -15%;
-      left: 60%;
+      left: 65%;
     }
   }
   .area1-image2-1{
     @include overTab {
-      width:320px;
-      top: 15%;
-      left: 75%;
+      width:200px;
+      top: 20%;
+      left: 70%;
+    }
+  }
+  .area1-image2-2{
+    @include overTab {
+      width:280px;
+      top: 18%;
+      left: 80%;
     }
   }
   .area1-image3 {
@@ -132,29 +139,27 @@
     position: absolute;
     top: 25%;
     left: 75%;
-    // transform: rotate(10deg);
     filter: drop-shadow(0px 0px 20px rgb(250, 250, 59));
     @include overTab {
       top: -5%;
-      left: 68%;
+      left: 55%;
       width: 320px;
       height: 200px;
     }
   }
-  // .area1-image6 {
-  //   width: 80px;
-  //   position: absolute;
-  //   top: 50%;
-  //   left: 75%;
-  //   transform: rotate(10deg);
-  //   filter: drop-shadow(0px 0px 20px rgb(250, 250, 59));
-  //   @include overTab {
-  //     top: 30%;
-  //     left: 85%;
-  //     width: 140px;
-  //     height: 130px;
-  //   }
-  // }
+  .area1-image6 {
+    width: 80px;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    filter: drop-shadow(0px 0px 20px rgb(250, 250, 59));
+    @include overTab {
+      top: -5%;
+      left: 75%;
+      width: 320px;
+      height: 200px;
+    }
+  }
   .area1-image7 {
     width: 15vw;
     height: 10vh;
@@ -355,16 +360,20 @@
       border-color: transparent transparent transparent rgb(252, 251, 251);
     }
     .customer1 {
-      width: 30vw;
-      height: 55vh;
-      padding: 10px 15px;
+      // width: 80px;
+      height: 40vh;
       @include overTab {
-        height: 40vh;
+        height: 30vh;
+        height: 250px;
+        margin-right: 10px;
       }
     }
     img{
       border-radius: 40px;
-      margin-right: 5px;
+    }
+    div{
+      margin-right:5px ;
+      margin-left: 2px;
     }
   }
   .slick-list {
@@ -373,6 +382,7 @@
     border-radius: 30px;
     @include overTab {
       width: 1200px;
+      // margin-right: 10px;
     }
   }
 

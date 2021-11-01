@@ -163,8 +163,7 @@
       color: #ffdc00;
     }
   }
-  .area5-image1,
-  .area5-image2 {
+  .area5-image1 {
     width: 180px;
     position: absolute;
     top: 106%;
@@ -172,9 +171,9 @@
     transform: translate(-50%, -50%);
     z-index: 4;
     @include overTab {
-      width: 500px;
+      width: 350px;
       top: 55%;
-      left: 75%;
+      left: 68%;
       transform: translate(-50%, -50%);
     }
   }
@@ -182,9 +181,9 @@
     width: 150px;
     left: 75%;
     @include overTab {
-      width: 240px;
-      top: 68%;
-      left: 85%;
+      width: 370px;
+      top: 55%;
+      left: 88%;
       transform: translate(-50%, -50%);
     }
   }
