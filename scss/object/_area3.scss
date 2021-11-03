@@ -68,7 +68,7 @@
     }
   }
   .list_design2 {
-    margin-bottom: 480px;
+    margin-bottom: 400px;
     @include overTab {
       margin-bottom: inherit;
     }
@@ -145,7 +145,7 @@
     margin: 2em 0;
     margin-top: 50px;
     margin-left: 10px;
-    margin-bottom: 350px;
+    margin-bottom: 260px;
     padding: 0.5em 1em;
     border: solid 3px #ea551c;
     border-radius: 30px;
@@ -194,7 +194,7 @@
   .mokumoku1{
     position: absolute;
     z-index: 2;
-    top: 9%;
+    top: 7%;
     left: 65%;
     transform: translate(-50%, -50%);
     transform: rotate(15deg);
@@ -210,11 +210,11 @@
   .mokumoku2{
     position: absolute;
     z-index: 2;
-    top: -6%;
+    top: -4%;
     left: 55%;
     transform: translate(-50%, -50%);
     transform: rotate(15deg);
-    width: 170px;
+    width: 150px;
     height: 70px;
     @include overTab {
       top: -12%;
@@ -226,9 +226,9 @@
   .recommend1{
     position: absolute;
     z-index: 2;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: bold;
-    top: 10.5%;
+    top: 8%;
     left: 67%;
     transform: translate(-50%, -50%);
     transform:rotate(18deg);
@@ -248,10 +248,10 @@
   .recommend2{
     position: absolute;
     z-index: 2;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: bold;
-    top: -4%;
-    left: 64%;
+    top: -1.5%;
+    left: 60%;
     transform: translate(-50%, -50%);
     transform:rotate(18deg);
     @include overTab {
@@ -268,9 +268,9 @@
     }
   }
   .area3-image1{
-    width: 280px;
+    width: 250px;
     position: absolute;
-    top: 233%;
+    top: 211%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 4;
@@ -285,9 +285,10 @@
     position: absolute;
     margin: 0 auto;
     width: auto;
-    top: -25%;
+    top: -23%;
     left: 50%;
     transform: translate(-50%, -50%);
+    height: 200px;
      @include overTab {
       width: 440px;
       height: 260px;
@@ -299,9 +300,10 @@
     position: absolute;
     margin: 0 auto;
     width: auto;
-    top: 65%;
+    top: 63%;
     left: 50%;
     transform: translate(-50%, -50%);
+    height: 200px;
      @include overTab {
       width: 440px;
       height: 260px;
@@ -312,7 +314,7 @@
   .kira1{
     width: 200px;
     position: absolute;
-    top: 223%;
+    top: 202%;
     left: 70%;
     transform: translate(-50%, -50%);
     z-index: 5;
@@ -325,7 +327,7 @@
   .kira2{
     width: 200px;
     position: absolute;
-    top: 223%;
+    top: 202%;
     left: 45%;
     transform: translate(-50%, -50%);
     z-index: 5;
@@ -338,8 +340,8 @@
   .kira3{
     width: 130px;
     position: absolute;
-    top: 230%;
-    left: 75%;
+    top: 202%;
+    left: 73%;
     transform: translate(-50%, -50%);
     transform: rotate(90deg);
     z-index: 5;
@@ -351,14 +353,14 @@
   }
   .circle1, .circle2 {
     position: absolute;
-    top: 235%;
+    top: 214%;
     left:50%;
     transform: translate(-50%, -50%);
     background: rgba(229, 250, 252, 0.858);
     border-radius: 50%;
     box-shadow: 0.375em 0.375em 0 0 rgb(210, 255, 174);
-    height: 12em;
-    width: 22em;
+    height: 9em;
+    width: 20em;
     @include overTab {
       height: 15em;
       width: 24em;
@@ -375,8 +377,8 @@
   // }
   .sim-text1, .sim-text2{
     position: absolute;
-    width: 330px;
-    top: 240%;
+    width: 220px;
+    top: 218%;
     left:50%;
     padding: 5px 0;
     transform: translate(-50%, -50%);
@@ -389,7 +391,8 @@
     color: #fff; 
     text-shadow: -3px 2px 0 #000; 
     @include overTab {
-    width: 350px;
+      font-size: 1.5rem;
+      width: 350px;
       top: 45%;
       left: 80%;   
     }

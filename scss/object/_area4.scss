@@ -119,7 +119,7 @@
     margin: 2em 0;
     margin-top: 50px;
     margin-left: 10px;
-    margin-bottom: 650px;
+    margin-bottom: 500px;
     padding: 0.5em 1em;
     border: solid 3px #ea551c;
     border-radius: 30px;
@@ -163,9 +163,10 @@
     position: absolute;
     margin: 0 auto;
     width: auto;
-    top: 151%;
+    top: 148%;
     left: 50%;
     transform: translate(-50%, -50%);
+    height: 200px;
     @include overTab {
       width: 440px;
       height: 260px;
@@ -181,7 +182,7 @@
     transform: translate(-50%, -50%);
     transform: rotate(15deg);
     width: 150px;
-    height: 70px;
+    height: 60px;
     @include overTab {
       top: 10%;
       left: 40%;
@@ -192,9 +193,9 @@
   .recommend3 {
     position: absolute;
     z-index: 2;
-    font-size: 11px;
+    font-size: 15px;
     font-weight: bold;
-    top: 7%;
+    top: 6%;
     left: 62%;
     transform: translate(-50%, -50%);
     transform: rotate(18deg);
@@ -212,7 +213,7 @@
     }
   }
   .area3-image1 {
-    width: 280px;
+    width: 260px;
     position: absolute;
     top: 115%;
     left: 50%;
@@ -259,8 +260,8 @@
     background: rgba(210, 244, 247, 0.808);
     border-radius: 50%;
     box-shadow: 0.375em 0.375em 0 0 rgb(210, 255, 174);
-    height: 12em;
-    width: 22em;
+    height: 10em;
+    width: 20em;
     @include overTab {
       height: 15em;
       width: 24em;

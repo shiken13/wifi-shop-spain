@@ -12,7 +12,7 @@
     position: relative;
     padding-top: 20px;
     padding-left: 20px;
-    font-size: 30px;
+    font-size: 22px;
     border-radius: 30px;
     background-color: rgb(236, 10, 10);
     border: 1px solid rgba(255, 255, 255, 0.4);
@@ -39,7 +39,7 @@
     content: attr(data-en);
     position: absolute;
     top: -30px;
-    left: 60px;
+    left: 40px;
     color: rgba(255, 255, 255, 0.521);
     font-size: 50px;
     text-transform: uppercase;
@@ -120,73 +120,83 @@
   .area2-wifi1 {
     display: grid;
     margin: 0 auto;
-    img {
+    .area2-wifi2 {
       position: absolute;
       margin-top: 80px;
       display: block;
-      width: 250px;
+      width: 220px;
       height: auto;
       z-index: 4;
-      top: 220%;
-      left: 45%;
+      top: 240%;
+      left: 40%;
       transform: translate(-50%, -50%);
       @include overTab {
-        width: 400px;
-        top: 30%;
-        left: 82%;
+        width: 250px;
+        top: 10%;
+        left: 75%;
+      }
+    }
+    .area2-wifi3{
+      width: 260px;
+      top: 250%;
+      left: 65%;
+      @include overTab {
+      width: 350px;
+      top: 30%;
+      left: 88%;
       }
     }
     .kira1 {
       width: 120px;
       position: absolute;
-      top: 196%;
-      left: 20%;
+      top: 246%;
+      left: 24%;
       transform: translate(-50%, -50%);
       z-index: 5;
       @include overTab {
         width: 300px;
-        top: -5%;
+        top: 5%;
         left: 80%;
       }
     }
     .kira2 {
       width: 180px;
       position: absolute;
-      top: 198%;
-      left: 55%;
+      top: 248%;
+      left: 58%;
       transform: translate(-50%, -50%);
       z-index: 5;
       @include overTab {
         width: 300px;
-        top: 0%;
+        top: 10%;
         left: 80%;
       }
     }
     .kira3 {
       width: 140px;
       position: absolute;
-      top: 210%;
-      left: 55%;
-      transform: translate(-50%, -50%);
-      transform: rotate(90deg);
-      z-index: 5;
-      @include overTab {
-        width: 200px;
-        top: 10%;
-        left: 88%;
-      }
-    }
-    .kira4 {
-      width: 200px;
-      position: absolute;
-      top: 20%;
-      left: 82%;
+      top: 260%;
+      left: 59%;
       transform: translate(-50%, -50%);
       transform: rotate(90deg);
       z-index: 5;
       @include overTab {
         width: 200px;
         top: 20%;
+        left: 88%;
+      }
+    }
+    .kira4 {
+      width: 200px;
+      position: absolute;
+      top: 40%;
+      left: 82%;
+      transform: translate(-50%, -50%);
+      transform: rotate(90deg);
+      z-index: 5;
+      @include overTab {
+        width: 200px;
+        top: 30%;
         left: 89%;
       }
     }
@@ -208,9 +218,9 @@
   }
   .point {
     position: absolute;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: bold;
-    top: -5%;
+    top: -8%;
     left: 62%;
     transform: translate(-50%, -50%);
     transform: rotate(18deg);
@@ -275,13 +285,13 @@
   }
   .circle {
     position: absolute;
-    top: 265%;
-    left: 46%;
+    top: 281%;
+    left: 50%;
     transform: translate(-50%, -50%);
     background: white;
     border-radius: 50%;
     box-shadow: 0.375em 0.375em 0 0 rgb(247, 247, 125);
-    height: 11em;
+    height: 9em;
     width: 20em;
     @include overTab {
       height: 13em;
@@ -293,20 +303,21 @@
   }
   .wifi-text {
     position: absolute;
-    width: 320px;
-    top: 270%;
-    left: 45%;
+    width: 220px;
+    top: 298%;
+    left: 50%;
     padding: 5px 0;
     transform: translate(-50%, -50%);
     z-index: 5;
     background-color: rgb(228, 8, 8);
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-style: italic;
     letter-spacing: 0.1em;
     color: #fff;
     text-shadow: -3px 2px 0 #000;
     @include overTab {
+      font-size: 1.8rem;
       width: 350px;
       top: 85%;
       left: 82%;
@@ -322,7 +333,7 @@
     // width: auto;
     width: 85%;
     margin-left: 10px;
-    margin-bottom: 400px;
+    margin-bottom: 300px;
     background-color: rgba(255, 255, 255, 0.548);
     @include overTab {
       width: 700px;
@@ -366,13 +377,14 @@
   }
   .video {
     width: 100%;
+    padding-bottom: 16.25%;
     height: 0px;
     position: relative;
     margin-bottom: 100px;
     @include overTab {
+      // padding-bottom: 56.25%;
+      padding-bottom:100px;
       margin-bottom: inherit;
-      width: 440px;
-      height: 100px;
     }
   }
   .video iframe {
@@ -381,11 +393,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: auto;
+    height: 200px;
     @include overTab {
       width: 440px;
       height: 260px;
       top: -150%;
-      left: 230%;
+      left: 80%;
     }
   }
 }

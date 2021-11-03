@@ -48,3 +48,11 @@
     font-size: 14px;
   }
 }
+
+.video iframe, .video1 iframe, .video2 iframe {
+  background-color: transparent; /*背景色・透明*/
+  -webkit-box-shadow: 3px 3px 0 #e9891b; /*シャドウの設定*/
+  -moz-box-shadow: 3px 3px 0 #e9891b; /*シャドウの設定*/
+  box-shadow: 3px 3px 10px #e9891b; /*シャドウの設定*/
+  border: 3px solid #e9891b; /*ボーダーの太さ・種類・色*/
+}

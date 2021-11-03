@@ -124,10 +124,10 @@
       position: absolute;
       margin-top: 80px;
       display: block;
-      width: 250px;
+      width: 300px;
       height: auto;
       z-index: 4;
-      top: 220%;
+      top: 250%;
       left: 45%;
       transform: translate(-50%, -50%);
       @include overTab {
@@ -139,7 +139,7 @@
     .kira1 {
       width: 120px;
       position: absolute;
-      top: 196%;
+      top: 216%;
       left: 20%;
       transform: translate(-50%, -50%);
       z-index: 5;
@@ -152,7 +152,7 @@
     .kira2 {
       width: 180px;
       position: absolute;
-      top: 198%;
+      top: 218%;
       left: 55%;
       transform: translate(-50%, -50%);
       z-index: 5;
@@ -165,7 +165,7 @@
     .kira3 {
       width: 140px;
       position: absolute;
-      top: 210%;
+      top: 230%;
       left: 55%;
       transform: translate(-50%, -50%);
       transform: rotate(90deg);
@@ -208,9 +208,9 @@
   }
   .point {
     position: absolute;
-    font-size: 12px;
+    font-size: 18px;
     font-weight: bold;
-    top: -5%;
+    top: -8%;
     left: 62%;
     transform: translate(-50%, -50%);
     transform: rotate(18deg);
@@ -230,13 +230,13 @@
   }
   .circle {
     position: absolute;
-    top: 265%;
-    left: 46%;
+    top: 285%;
+    left: 50%;
     transform: translate(-50%, -50%);
     background: white;
     border-radius: 50%;
     box-shadow: 0.375em 0.375em 0 0 rgb(247, 247, 125);
-    height: 11em;
+    height: 10em;
     width: 20em;
     @include overTab {
       height: 13em;
@@ -248,20 +248,21 @@
   }
   .gbps-text {
     position: absolute;
-    width: 320px;
-    top: 270%;
-    left: 45%;
+    width: 220px;
+    top: 300%;
+    left: 50%;
     padding: 5px 0;
     transform: translate(-50%, -50%);
     z-index: 5;
     background-color: rgb(228, 8, 8);
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-style: italic;
     letter-spacing: 0.1em;
     color: #fff;
     text-shadow: -3px 2px 0 #000;
     @include overTab {
+      font-size: 1.8rem;
       width: 350px;
       top: 85%;
       left: 82%;
@@ -276,7 +277,7 @@
     border-radius: 30px;
     width: 85%;
     margin-left: 10px;
-    margin-bottom: 400px;
+    margin-bottom: 300px;
     background-color: rgba(255, 255, 255, 0.548);
     @include overTab {
       width: auto;
@@ -314,21 +315,24 @@
   }
   .video {
     width: 100%;
-    padding-bottom: 56.25%;
+    padding-bottom: 16.25%;
     height: 0px;
     position: relative;
     margin-bottom: 100px;
     @include overTab {
+      padding-bottom: 56.25%;
       margin-bottom: inherit;
     }
   }
   .video iframe {
     position: absolute;
-    top: 50%;
+    top: 57%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: auto;
+    height: 200px;
     @include overTab {
+      top: 50%;
       width: 80%;
       height: 80%;
     }

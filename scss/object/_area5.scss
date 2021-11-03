@@ -41,9 +41,9 @@
     content: attr(data-en);
     position: absolute;
     top: -30px;
-    left: 60px;
+    left: 50px;
     color: rgba(255, 255, 255, 0.521);
-    font-size: 50px;
+    font-size: 38px;
     text-transform: uppercase;
     z-index: 1;
     font-style: italic;
@@ -78,7 +78,7 @@
     margin: 2em 0;
     margin-top: 50px;
     margin-left: 10px;
-    margin-bottom: 700px;
+    margin-bottom: 350px;
     padding: 0.5em 1em;
     border: solid 3px #ea551c;
     border-radius: 30px;
@@ -164,9 +164,9 @@
     }
   }
   .area5-image1 {
-    width: 180px;
+    width: 240px;
     position: absolute;
-    top: 106%;
+    top: 112%;
     left: 30%;
     transform: translate(-50%, -50%);
     z-index: 4;
@@ -178,8 +178,9 @@
     }
   }
   .area5-image2 {
-    width: 150px;
-    left: 75%;
+    width: 240px;
+    top: 120%;
+    left: 72%;
     @include overTab {
       width: 370px;
       top: 55%;
@@ -190,7 +191,7 @@
   .kira1 {
     width: 220px;
     position: absolute;
-    top: 102%;
+    top: 105%;
     left: 58%;
     transform: translate(-50%, -50%);
     z-index: 5;
@@ -203,7 +204,7 @@
   .kira2 {
     width: 220px;
     position: absolute;
-    top: 101%;
+    top: 105%;
     left: 35%;
     transform: translate(-50%, -50%);
     z-index: 5;
@@ -216,7 +217,7 @@
   .kira3 {
     width: 220px;
     position: absolute;
-    top: 101%;
+    top: 105%;
     left: 35%;
     transform: translate(-50%, -50%);
     z-index: 5;
@@ -228,14 +229,14 @@
   }
   .circle3 {
     position: absolute;
-    top: 108%;
+    top: 122%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: rgba(210, 244, 247, 0.808);
     border-radius: 50%;
     box-shadow: 0.375em 0.375em 0 0 rgb(210, 255, 174);
     height: 10em;
-    width: 22em;
+    width: 20em;
     @include overTab {
       height: 20em;
       width: 38em;
@@ -247,7 +248,7 @@
   .sim-text3 {
     position: absolute;
     width: 250px;
-    top: 110%;
+    top: 128%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 5;
@@ -279,9 +280,9 @@
     }
     .japan-map {
       position: absolute;
-      width: 160px;
-      top: 35%;
-      left: 30%;
+      width: 320px;
+      top: 38%;
+      left: 50%;
       transform: translate(-50%, -50%);
       @include overTab {
         left: 75%;
@@ -292,9 +293,9 @@
     .sagawa1,
     .sagawa2 {
       position: absolute;
-      width: 160px;
-      top: 56%;
-      left: 30%;
+      width: 130px;
+      top: 55%;
+      left: 75%;
       transform: translate(-50%, -50%);
       @include overTab {
         left: 40%;
@@ -304,24 +305,45 @@
     .logo-delivery {
       position: absolute;
       width: 40px;
-      top: 22%;
-      left: 56%;
+      top: 45%;
+      left: 54%;
       transform: translate(-50%, -50%);
       @include overTab {
-        top: 46%;
+        top: 49%;
         left: 77%;
         width: 60px;
       }
     }
     .sagawa2 {
-      width: 180px;
-      top: 30%;
+      width: 160px;
+      top: 44%;
       left: 80%;
-      filter: drop-shadow(10px 2px 0 white);
       @include overTab {
         top: 54%;
         left: 15%;
-        width: 430px;
+        width: 300px;
+      }
+    }
+    .packing {
+      position: absolute;
+      padding: 5px 0;
+      width: 250px;
+      top: 38%;
+      left: 55%;
+      transform: translate(-50%, -50%);
+      z-index: 5;
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight:bold;
+      letter-spacing: 0.1em;
+      color: rgb(245, 76, 188);
+      text-shadow: -3px 2px 0 #000;
+      transform: rotate(20deg);
+      @include overTab {
+        font-size: 1.8rem;
+        width: 100px;
+        top: 42%;
+        left: 15%;
       }
     }
  
@@ -330,11 +352,11 @@
     }
     h2 {
       position: absolute;
-      width: 380px;
+      width: 350px;
       top: 40%;
       left: 55%;
       transform: translate(-50%, -50%);
-      font-size: 2.2rem;
+      font-size: 2.0rem;
       font-style: italic;
       color: #fff;
       text-shadow: -3px 2px 0 #000;
@@ -354,7 +376,7 @@
       overflow: hidden;
       padding: 0;
       justify-content: center;
-      margin-top: 150px;
+      margin-top: 100px;
       @include overTab {
         margin-top: 50px;
       }
@@ -415,10 +437,10 @@
       font-weight: bold;
       text-align: center;
       background: #e73508;
-      padding: 15px 0;
+      padding: 18px 0;
       margin: auto;
       width: 100%;
-      font-size: 20px;
+      font-size: 18px;
       border: 1px white solid;
       @include overTab {
         font-size: 28px;
@@ -441,11 +463,11 @@
       color: white;
       text-align: center;
       background: #25D366;
-      padding: 10px 0;
+      padding: 18px 0;
       margin: auto;
       margin-bottom: 20px;
       width: 100%;
-      font-size: 25px;
+      font-size: 15px;
       border: 1px white solid;
       @include overTab {
         padding: 18px 0;
@@ -471,20 +493,23 @@
     }
   }
 
-
   .map {
     border-top: 0.5px solid #ffffff42;
     background: url("../image/truck.jpg") center center no-repeat;
     background-position: center;
     background-size: cover;
     width: 100%;
-    max-width: 1500px;
+    max-width: 420px;
     padding: 40px 0 20px;
-    height: 400px;
+    height: 350px;
     position: relative;
     margin: 0 auto;
     box-shadow: 1px 3px 20px 10px white,
-        inset 10px 3px 20px 10px whitesmoke;
+    inset 10px 3px 20px 10px whitesmoke;
+    @include overTab {
+      height: 400px;
+      max-width: 1500px;
+    }
   }
   .map::after {
     content: "";
@@ -509,16 +534,23 @@
   .map h1 {
     color: white;
     position: absolute;
-    font-size: 38px;
+    font-size: 30px;
     margin-bottom: 30px;
     display: inline-block;
     text-align: left;
-    top: 20%;
-    left: 10%;
+    width: 370px;
+    top: 5%;
+    left: 30%;
     letter-spacing: inherit;
-    -webkit-transform: translateY(10%) translateX(-20%);
-            transform: translateY(10%) translateX(-20%);
+    -webkit-transform: translateY(10%) translateX(-50%);
+    transform: translateY(10%) translateX(-20%);
     font-weight: bold;
+    @include overTab {
+      width: inherit;
+      font-size: 38px;
+      top: 20%;
+      left: 10%;
+    }
   }
   
   @media print, screen and (min-width: 768px) {
@@ -532,14 +564,17 @@
     position: absolute;
     margin-bottom: 20px;
     font-size: 20px;
-    top: 35%;
+    top: 15%;
     left: 10%;
     letter-spacing: inherit;
     -webkit-transform: translateY(10%) translateX(-10%);
-            transform: translateY(10%) translateX(-10%);
+    transform: translateY(10%) translateX(-10%);
     font-weight: bold;
     text-align: left;
     letter-spacing: 0.15rem;
+    @include overTab {
+      top: 35%;
+    }
   }
   
   @media print, screen and (min-width: 768px) {
@@ -589,7 +624,7 @@
         format("truetype");
   }
   .container {
-    margin-top: 150px;
+    margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
@@ -611,11 +646,12 @@
     display: block;
     list-style-type: none;
     overflow: hidden;
-    height: 100px;
+    height: 250px;
     font-size: 0;
     z-index: 100;
     @include overTab {
       width: 1200px;
+      height: 150px;
     }
   }
   .tab {
@@ -629,6 +665,7 @@
     position: relative;
     margin: 0;
     margin-right: 10px;
+    margin-top: 10px;
     transition: all 0.5s ease-in-out 0.1s;
     @include overTab {
       width: 90px;
@@ -640,33 +677,7 @@
       top: 0.5px;
     }
   }
-  // .tab:hover {
-  //   @include overTab {
-  //     width: 450px;
-  //   }
-  // }
-  // .tab:hover .social a:before {
-  //   margin-left: -100px;
-  // }
-  // .tab:hover .social a:after {
-  //   margin-left: 0px;
-  // }
-  // .tab .content {
-  //   background-color: #fff;
-  //   width: 360px;
-  //   height: 100px;
-  //   margin-left: 100px;
-  //   position: relative;
-  //   padding: 0 0 0 15px;
-  // }
-  // .tab .content h1 {
-  //   font-size: 2.5rem;
-  // }
-  // .tab .content p {
-  //   font-size: 0.85rem;
-  //   line-height: 1.9rem;
-  //   padding-right: 30px;
-  // }
+
   .social a:before,
   .social a:after {
     transition: all 0.4s ease-in-out 0.1s;
@@ -785,7 +796,9 @@
 
   .footer-area {
     padding-bottom: 30px;
+    margin-top: 80px;
     @include overTab {
+      margin-top: inherit;
       position: relative;
       bottom: 15px;
       left: 35%;
