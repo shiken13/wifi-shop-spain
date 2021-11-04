@@ -280,13 +280,14 @@
     }
     .japan-map {
       position: absolute;
-      width: 320px;
-      top: 38%;
+      width: 400px;
+      top: 32%;
       left: 50%;
       transform: translate(-50%, -50%);
       @include overTab {
+        top: 35%;
         left: 75%;
-        width: 500px;
+        width: 530px;
       }
     }
    
@@ -294,9 +295,10 @@
     .sagawa2 {
       position: absolute;
       width: 130px;
-      top: 55%;
-      left: 75%;
+      top: 57%;
+      left: 40%;
       transform: translate(-50%, -50%);
+      z-index: 5;
       @include overTab {
         left: 40%;
         width: 350px;
@@ -304,9 +306,9 @@
     }
     .logo-delivery {
       position: absolute;
-      width: 40px;
-      top: 45%;
-      left: 54%;
+      width: 50px;
+      top: 41%;
+      left: 55%;
       transform: translate(-50%, -50%);
       @include overTab {
         top: 49%;
@@ -315,25 +317,25 @@
       }
     }
     .sagawa2 {
-      width: 160px;
-      top: 44%;
+      width: 220px;
+      top: 54%;
       left: 80%;
       @include overTab {
         top: 54%;
         left: 15%;
-        width: 300px;
+        width: 380px;
       }
     }
     .packing {
       position: absolute;
       padding: 5px 0;
       width: 250px;
-      top: 38%;
+      top: 45%;
       left: 55%;
       transform: translate(-50%, -50%);
       z-index: 5;
       text-align: center;
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       font-weight:bold;
       letter-spacing: 0.1em;
       color: rgb(245, 76, 188);
