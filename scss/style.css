@@ -46,7 +46,7 @@ header {
   max-width: 1300px;
   margin: 0 auto;
   position: relative;
-  height: 270px;
+  height: 370px;
 }
 @media print, screen and (min-width: 768px) {
   header {
@@ -56,7 +56,7 @@ header {
 header .logo1 {
   width: 15%;
   position: absolute;
-  top: 5%;
+  top: -10%;
   left: 15%;
   transform: translate(-50%, -50%);
   box-shadow: 1px 3px 5px 5px #f5f538, inset 1px 3px 5px 5px #f5f538;
@@ -64,7 +64,7 @@ header .logo1 {
 }
 @media print, screen and (min-width: 768px) {
   header .logo1 {
-    top: 11%;
+    top: 2%;
     box-shadow: 1px 3px 15px 5px #f5f538, inset 1px 3px 15px 10px #f5f538;
     border-radius: 50%;
   }
@@ -72,14 +72,14 @@ header .logo1 {
 header .logo2 {
   width: 55%;
   position: absolute;
-  top: 5%;
+  top: -10%;
   left: 55%;
   transform: translate(-50%, -50%);
 }
 @media print, screen and (min-width: 768px) {
   header .logo2 {
     left: 55%;
-    top: 11%;
+    top: 2%;
   }
 }
 header ul {
@@ -102,10 +102,11 @@ header .profile-area {
   width: auto;
   max-width: 760px;
   position: relative;
-  top: 200px;
+  top: 100px;
 }
 @media print, screen and (min-width: 768px) {
   header .profile-area {
+    top: 200px;
     margin: 0 auto;
     width: 800px;
     max-width: 1300px;
@@ -118,15 +119,16 @@ header .profile-area .profile-text {
   border-radius: 30px;
   color: #fff;
   padding: 20px 20px;
-  padding-right: 140px;
   font-size: 16px;
   line-height: 1.5;
+  margin-top: 80px;
 }
 @media print, screen and (min-width: 768px) {
   header .profile-area .profile-text {
     font-size: 35px;
     padding: 40px 40px;
     padding-right: inherit;
+    margin-top: 100px;
   }
 }
 header .profile-area .profile {
@@ -149,18 +151,17 @@ header .profile-area .profile1 {
 }
 header .profile-area .profile2 {
   z-index: 5;
-  top: 15%;
-  width: 120px;
-  left: 78%;
+  top: -80%;
+  width: 300px;
+  left: 50%;
   transform: translate(-50%, -50%);
-  transform: rotate(-20deg);
 }
 @media print, screen and (min-width: 768px) {
   header .profile-area .profile2 {
-    top: 40%;
-    left: -30%;
-    height: 220px;
-    width: 350px;
+    top: -50%;
+    left: 50%;
+    height: 200px;
+    width: 400px;
   }
 }
 header #emoji1:before {
@@ -177,25 +178,30 @@ header #emoji3:before {
 }
 header .video {
   width: 100%;
-  padding-bottom: 56.25%;
+  padding-bottom: 36.25%;
   height: 0px;
   position: relative;
   margin-bottom: 100px;
 }
 @media print, screen and (min-width: 768px) {
   header .video {
+    padding-bottom: 56.25%;
     margin-bottom: inherit;
   }
 }
 header .video iframe {
   position: absolute;
-  top: 65%;
+  top: 155%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: auto;
+  height: 200px;
 }
 @media print, screen and (min-width: 768px) {
   header .video iframe {
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 70%;
     height: 60%;
   }
@@ -315,6 +321,17 @@ header .video iframe {
   justify-content: center;
   border-radius: 5px;
   font-size: 14px;
+}
+
+.video iframe, .video1 iframe, .video2 iframe {
+  background-color: transparent;
+  /*背景色・透明*/
+  /*シャドウの設定*/
+  /*シャドウの設定*/
+  box-shadow: 3px 3px 10px #e9891b;
+  /*シャドウの設定*/
+  border: 3px solid #e9891b;
+  /*ボーダーの太さ・種類・色*/
 }
 
 footer {
@@ -448,10 +465,10 @@ footer .follow-me li a[href*=tiktok]::before {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding-left: 35px;
 }
 @media print, screen and (min-width: 768px) {
   #area1 .introduce-content .area1-list p {
+    padding-left: 35px;
     font-size: 3rem;
   }
 }
@@ -484,59 +501,77 @@ footer .follow-me li a[href*=tiktok]::before {
 }
 #area1 .area1-image1 {
   width: 15vw;
-  height: 11vh;
+  height: 15vh;
   display: flex;
   align-items: center;
-  padding: 70px 0;
-  padding-left: 20px;
+  padding: 50px 0;
 }
 @media print, screen and (min-width: 768px) {
   #area1 .area1-image1 {
+    padding: 70px 0;
+    padding-left: 20px;
     width: 100%;
     height: 18vh;
   }
 }
 #area1 .area1-image4 {
   width: 15vw;
-  height: 10vh;
+  height: 15vh;
   display: flex;
   align-items: center;
-  padding: 40px 0;
-  padding-left: 20px;
+  padding: 20px 0;
 }
 @media print, screen and (min-width: 768px) {
   #area1 .area1-image4 {
+    padding: 50px 0;
+    padding-left: 20px;
     width: 100%;
     height: 18vh;
   }
 }
 #area1 .area1-image2 {
-  width: 120px;
+  width: 90px;
   position: absolute;
-  left: 65%;
+  top: -25%;
+  left: 55%;
   transform: rotate(10deg);
   z-index: 4;
   filter: drop-shadow(0px 0px 20px #fafa3b);
 }
 @media print, screen and (min-width: 768px) {
   #area1 .area1-image2 {
-    width: 320px;
+    width: 220px;
     top: -15%;
-    left: 60%;
+    left: 65%;
   }
+}
+#area1 .area1-image2-1 {
+  left: 72%;
 }
 @media print, screen and (min-width: 768px) {
   #area1 .area1-image2-1 {
-    width: 320px;
-    top: 15%;
-    left: 75%;
+    width: 200px;
+    top: 20%;
+    left: 70%;
+  }
+}
+#area1 .area1-image2-2 {
+  width: 120px;
+  top: 35%;
+  left: 65%;
+}
+@media print, screen and (min-width: 768px) {
+  #area1 .area1-image2-2 {
+    width: 280px;
+    top: 18%;
+    left: 80%;
   }
 }
 #area1 .area1-image3 {
-  width: 100px;
+  width: 110px;
   position: absolute;
-  top: -8%;
-  left: 69%;
+  top: 0%;
+  left: 68%;
   transform: rotate(10deg);
   box-shadow: 1px 3px 20px 10px #f7f77d, inset 10px 3px 20px 10px #f7f77d;
 }
@@ -548,30 +583,46 @@ footer .follow-me li a[href*=tiktok]::before {
   }
 }
 #area1 .area1-image5 {
-  width: 70px;
+  width: 130px;
   position: absolute;
-  top: 25%;
-  left: 75%;
+  top: -10%;
+  left: 66%;
   filter: drop-shadow(0px 0px 20px #fafa3b);
 }
 @media print, screen and (min-width: 768px) {
   #area1 .area1-image5 {
     top: -5%;
-    left: 68%;
+    left: 55%;
+    width: 320px;
+    height: 200px;
+  }
+}
+#area1 .area1-image6 {
+  width: 130px;
+  position: absolute;
+  top: 30%;
+  left: 66%;
+  filter: drop-shadow(0px 0px 20px #fafa3b);
+}
+@media print, screen and (min-width: 768px) {
+  #area1 .area1-image6 {
+    top: -5%;
+    left: 75%;
     width: 320px;
     height: 200px;
   }
 }
 #area1 .area1-image7 {
   width: 15vw;
-  height: 10vh;
+  height: 15vh;
   display: flex;
   align-items: center;
-  padding: 80px 0;
-  padding-left: 20px;
+  padding: 55px 0;
 }
 @media print, screen and (min-width: 768px) {
   #area1 .area1-image7 {
+    padding: 70px 0;
+    padding-left: 20px;
     width: 100%;
     height: 18vh;
   }
@@ -579,8 +630,8 @@ footer .follow-me li a[href*=tiktok]::before {
 #area1 .area1-image8 {
   width: 100px;
   position: absolute;
-  top: 52%;
-  left: 68%;
+  top: -5%;
+  left: 70%;
   transform: rotate(10deg);
   box-shadow: 1px 3px 20px 10px #f7f77d, inset 10px 3px 20px 10px #f7f77d;
 }
@@ -593,20 +644,21 @@ footer .follow-me li a[href*=tiktok]::before {
 }
 #area1 .area1-image9 {
   width: 15vw;
-  height: 11vh;
+  height: 15vh;
   display: flex;
   align-items: center;
-  padding: 40px 0;
-  padding-left: 20px;
+  padding: 30px 0;
 }
 @media print, screen and (min-width: 768px) {
   #area1 .area1-image9 {
+    padding: 40px 0;
+    padding-left: 20px;
     width: 100%;
     height: 18vh;
   }
 }
 #area1 .area1-image10 {
-  width: 120px;
+  width: 110px;
   position: absolute;
   left: 65%;
   transform: rotate(10deg);
@@ -615,8 +667,22 @@ footer .follow-me li a[href*=tiktok]::before {
 }
 @media print, screen and (min-width: 768px) {
   #area1 .area1-image10 {
-    width: 330px;
-    left: 65%;
+    width: 200px;
+    left: 63%;
+  }
+}
+#area1 .area1-image11 {
+  box-shadow: none;
+  width: 150px;
+  top: 10%;
+  left: 60%;
+  filter: drop-shadow(0px 0px 20px #fafa3b);
+}
+@media print, screen and (min-width: 768px) {
+  #area1 .area1-image11 {
+    width: 300px;
+    top: -10%;
+    left: 76%;
   }
 }
 #area1 .intro-text1 {
@@ -625,9 +691,11 @@ footer .follow-me li a[href*=tiktok]::before {
   text-align: left;
   width: auto;
   padding: 5px 0px;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   font-weight: bold;
   padding-top: 10px;
+  position: relative;
+  z-index: 10;
 }
 @media print, screen and (min-width: 768px) {
   #area1 .intro-text1 {
@@ -638,6 +706,7 @@ footer .follow-me li a[href*=tiktok]::before {
 }
 #area1 .intro-text1 .text1-title {
   color: #f3d53d;
+  font-size: 1.5rem;
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.342), -1px -1px 0 rgba(255, 255, 255, 0.342), -1px 1px 0 rgba(255, 255, 255, 0.342), 1px -1px 0 rgba(255, 255, 255, 0.342), 0px 1px 0 rgba(255, 255, 255, 0.342), 0 -1px 0 rgba(255, 255, 255, 0.342), -1px 0 0 rgba(255, 255, 255, 0.342), 1px 0 0 rgba(255, 255, 255, 0.342);
 }
 @media print, screen and (min-width: 768px) {
@@ -646,7 +715,7 @@ footer .follow-me li a[href*=tiktok]::before {
   }
 }
 #area1 .intro-text1 .GB1 {
-  font-size: 1.8rem;
+  font-size: 1rem;
   color: #fff;
   text-shadow: 3px 3px 0 #000, -3px -3px 0 #000, -3px 3px 0 #000, 3px -3px 0 #000, 0px 3px 0 #000, 0 -3px 0 #000, -3px 0 0 #000, 3px 0 0 #000;
 }
@@ -672,7 +741,7 @@ footer .follow-me li a[href*=tiktok]::before {
 #area1 .intro-text1 .price2 {
   color: #e43e5a;
   font-weight: 900;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, -1px 1px 0 #fff, 1px -1px 0 #fff, 0px 1px 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff, 1px 0 0 #fff;
 }
 @media print, screen and (min-width: 768px) {
@@ -715,7 +784,7 @@ footer .follow-me li a[href*=tiktok]::before {
   width: 100%;
   height: 200px;
   position: relative;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 @media print, screen and (min-width: 768px) {
   #area1 .video {
@@ -728,6 +797,7 @@ footer .follow-me li a[href*=tiktok]::before {
   left: 50%;
   transform: translate(-50%, -50%);
   width: auto;
+  height: 200px;
 }
 @media print, screen and (min-width: 768px) {
   #area1 .video iframe {
@@ -751,7 +821,11 @@ footer .follow-me li a[href*=tiktok]::before {
   position: relative;
   border-radius: 30px;
   margin: 0 auto;
-  width: 1200px;
+}
+@media print, screen and (min-width: 768px) {
+  #area1 .customer {
+    width: 1200px;
+  }
 }
 #area1 .customer::before {
   content: "";
@@ -761,9 +835,15 @@ footer .follow-me li a[href*=tiktok]::before {
   border-style: solid;
   z-index: 10;
   top: -5px;
-  right: -5px;
+  right: 0px;
   border-width: 0 50px 50px 0;
   border-color: transparent #fcfbfb transparent transparent;
+}
+@media print, screen and (min-width: 768px) {
+  #area1 .customer::before {
+    top: -5px;
+    right: -5px;
+  }
 }
 #area1 .customer::after {
   content: "";
@@ -772,24 +852,33 @@ footer .follow-me li a[href*=tiktok]::before {
   height: 0;
   border-style: solid;
   z-index: 10;
-  bottom: 10px;
-  left: -5px;
+  bottom: 5px;
+  left: 0px;
   border-width: 50px 0 0 50px;
   border-color: transparent transparent transparent #fcfbfb;
 }
+@media print, screen and (min-width: 768px) {
+  #area1 .customer::after {
+    bottom: 10px;
+    left: -5px;
+  }
+}
 #area1 .customer .customer1 {
-  width: 30vw;
-  height: 55vh;
-  padding: 10px 15px;
+  height: 25vh;
 }
 @media print, screen and (min-width: 768px) {
   #area1 .customer .customer1 {
-    height: 40vh;
+    height: 30vh;
+    height: 250px;
+    margin-right: 10px;
   }
 }
 #area1 .customer img {
   border-radius: 40px;
+}
+#area1 .customer div {
   margin-right: 5px;
+  margin-left: 2px;
 }
 #area1 .slick-list {
   margin: 0 auto;
@@ -802,30 +891,33 @@ footer .follow-me li a[href*=tiktok]::before {
   }
 }
 #area1 .fukidashi1 {
-  width: 100vw;
-  height: 130px;
-  top: -100px;
+  width: 50vw;
+  height: 80px;
+  top: -60px;
   position: absolute;
   left: 0px;
   z-index: 11;
 }
 @media print, screen and (min-width: 768px) {
   #area1 .fukidashi1 {
+    height: 120px;
+    top: -100px;
     width: 25vw;
     left: 200px;
   }
 }
 #area1 .customer-text {
-  top: -78px;
-  left: 50px;
+  top: -40px;
+  left: 46px;
   position: absolute;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
   z-index: 12;
 }
 @media print, screen and (min-width: 768px) {
   #area1 .customer-text {
     font-size: 3rem;
+    top: -78px;
     left: 250px;
   }
 }
@@ -875,7 +967,13 @@ footer .follow-me li a[href*=tiktok]::before {
   }
 }
 #area1 .balloon1 .text-line {
+  max-width: 760px;
   background-image: linear-gradient(rgba(0, 0, 0, 0) 70%, rgba(238, 135, 117, 0.952) 70%);
+}
+@media print, screen and (min-width: 768px) {
+  #area1 .balloon1 .text-line {
+    max-width: 1300px;
+  }
 }
 #area1 .follow-me {
   list-style: none;
@@ -959,10 +1057,10 @@ footer .follow-me li a[href*=tiktok]::before {
   font-weight: bold;
   text-align: center;
   background: #e73508;
-  padding: 15px 0;
+  padding: 18px 0;
   margin: auto;
   width: 100%;
-  font-size: 20px;
+  font-size: 18px;
   border: 1px white solid;
 }
 @media print, screen and (min-width: 768px) {
@@ -987,11 +1085,11 @@ footer .follow-me li a[href*=tiktok]::before {
   color: white;
   text-align: center;
   background: #25D366;
-  padding: 15px 0;
+  padding: 18px 0;
   margin: auto;
   margin-bottom: 20px;
   width: 100%;
-  font-size: 25px;
+  font-size: 15px;
   border: 1px white solid;
 }
 @media print, screen and (min-width: 768px) {
@@ -1060,6 +1158,858 @@ footer .follow-me li a[href*=tiktok]::before {
   }
 }
 
+#area1-1 {
+  margin-top: 100px;
+  list-style: inherit;
+}
+#area1-1 .area1-1-wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+#area1-1 .heading1 {
+  max-width: 760px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  position: relative;
+  padding-top: 20px;
+  padding-left: 20px;
+  font-size: 30px;
+  border-radius: 30px;
+  background-color: #ec0a0a;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+@media print, screen and (min-width: 768px) {
+  #area1-1 .heading1 {
+    font-size: 40px;
+    padding-top: 30px;
+    padding-left: 20px;
+    max-width: 1300px;
+  }
+}
+#area1-1 .heading1 span {
+  position: relative;
+  z-index: 2;
+  top: -16px;
+  color: white;
+  font-weight: bold;
+}
+#area1-1 .heading-text {
+  visibility: hidden;
+}
+#area1-1 .heading1::before {
+  content: attr(data-en);
+  position: absolute;
+  top: -30px;
+  left: 60px;
+  color: rgba(255, 255, 255, 0.521);
+  font-size: 50px;
+  text-transform: uppercase;
+  z-index: 1;
+  font-style: italic;
+}
+@media print, screen and (min-width: 768px) {
+  #area1-1 .heading1::before {
+    font-size: 70px;
+    top: -40px;
+    left: 60px;
+  }
+}
+#area1-1 .list_design1 {
+  list-style: none;
+  counter-reset: list;
+  display: inline-block;
+  padding: 10px 8px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.548);
+  box-shadow: 2px 2px 4px gray;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+@media print, screen and (min-width: 768px) {
+  #area1-1 .list_design1 {
+    padding: 1rem 1rem;
+    margin: 1rem;
+  }
+}
+#area1-1 .list_design1 li {
+  position: relative;
+  padding: 10px 20px;
+  padding-left: 63px;
+  line-height: 30px;
+  border-bottom: 2px dotted red;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+@media print, screen and (min-width: 768px) {
+  #area1-1 .list_design1 li {
+    font-size: 30px;
+    margin-bottom: 30px;
+    padding: 1rem 1rem;
+    margin: 1rem;
+    padding-left: 60px;
+  }
+}
+#area1-1 .list_design1 li:before {
+  counter-increment: list;
+  content: counter(list);
+  position: absolute;
+  left: 0px;
+  width: 50px;
+  height: 62px;
+  text-align: center;
+  color: #fff;
+  line-height: 60px;
+  background: red;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#area1-1 .list_design1 li:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50px;
+  height: 0;
+  width: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 7px solid red;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#area1-1 .area1-1-upper {
+  position: relative;
+  margin-bottom: 40px;
+}
+#area1-1 .area1-1-wifi1 {
+  display: grid;
+  margin: 0 auto;
+}
+#area1-1 .area1-1-wifi1 img {
+  position: absolute;
+  margin-top: 80px;
+  display: block;
+  width: 160px;
+  height: auto;
+  z-index: 4;
+  top: 275%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+@media print, screen and (min-width: 768px) {
+  #area1-1 .area1-1-wifi1 img {
+    width: 270px;
+    top: 50%;
+    left: 85%;
+  }
+}
+#area1-1 .area1-1-wifi1 .kira1 {
+  width: 120px;
+  position: absolute;
+  top: 256%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+@media print, screen and (min-width: 768px) {
+  #area1-1 .area1-1-wifi1 .kira1 {
+    width: 250px;
+    top: 25%;
+    left: 80%;
+  }
+}
+#area1-1 .area1-1-wifi1 .kira2 {
+  width: 180px;
+  position: absolute;
+  top: 258%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+@media print, screen and (min-width: 768px) {
+  #area1-1 .area1-1-wifi1 .kira2 {
+    width: 250px;
+    top: 25%;
+    left: 80%;
+  }
+}
+#area1-1 .area1-1-wifi1 .kira3 {
+  width: 140px;
+  position: absolute;
+  top: 265%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  transform: rotate(90deg);
+  z-index: 5;
+}
+@media print, screen and (min-width: 768px) {
+  #area1-1 .area1-1-wifi1 .kira3 {
+    width: 150px;
+    top: 30%;
+    left: 88%;
+  }
+}
+#area1-1 .area1-1-wifi1 .kira4 {
+  width: 200px;
+  position: absolute;
+  top: 30%;
+  left: 82%;
+  transform: translate(-50%, -50%);
+  transform: rotate(90deg);
+  z-index: 5;
+}
+@media print, screen and (min-width: 768px) {
+  #area1-1 .area1-1-wifi1 .kira4 {
+    width: 200px;
+    top: 40%;
+    left: 89%;
+  }
+}
+#area1-1 .area1-1-wifi1 .circle {
+  position: absolute;
+  top: 315%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0.375em 0.375em 0 0 #f7f77d;
+  height: 5em;
+  width: 15em;
+}
+@media print, screen and (min-width: 768px) {
+  #area1-1 .area1-1-wifi1 .circle {
+    height: 10em;
+    width: 20em;
+    top: 85%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+  }
+}
+#area1-1 .area1-1-gbps1 {
+  display: grid;
+  margin: 0 auto;
+}
+#area1-1 .area1-1-gbps1 img {
+  position: absolute;
+  margin-top: 80px;
+  display: block;
+  width: 180px;
+  height: auto;
+  z-index: 4;
+  top: 225%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+}
+@media print, screen and (min-width: 768px) {
+  #area1-1 .area1-1-gbps1 img {
+    width: 240px;
+    top: 20%;
+    left: 68%;
+  }
+}
+#area1-1 .area1-1-gbps1 .area1-1-gbps3 {
+  top: 220%;
+  left: 70%;
+  width: 150px;
+}
+@media print, screen and (min-width: 768px) {
+  #area1-1 .area1-1-gbps1 .area1-1-gbps3 {
+    width: 200px;
+    top: 15%;
+    left: 84%;
+  }
+}
+#area1-1 .area1-1-gbps1 .kira1 {
+  width: 120px;
+  position: absolute;
+  top: 190%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+@media print, screen and (min-width: 768px) {
+  #area1-1 .area1-1-gbps1 .kira1 {
+    width: 240px;
+    top: -20%;
+    left: 78%;
+  }
+}
+#area1-1 .area1-1-gbps1 .kira2 {
+  width: 180px;
+  position: absolute;
+  top: 190%;
+  left: 58%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+@media print, screen and (min-width: 768px) {
+  #area1-1 .area1-1-gbps1 .kira2 {
+    width: 250px;
+    top: -20%;
+    left: 70%;
+  }
+}
+#area1-1 .area1-1-gbps1 .kira3 {
+  width: 200px;
+  position: absolute;
+  top: 180%;
+  left: 82%;
+  transform: translate(-50%, -50%);
+  transform: rotate(90deg);
+  z-index: 5;
+}
+@media print, screen and (min-width: 768px) {
+  #area1-1 .area1-1-gbps1 .kira3 {
+    width: 200px;
+    top: 5%;
+    left: 82%;
+  }
+}
+#area1-1 .area1-1-gbps1 .circle {
+  position: absolute;
+  top: 265%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0.375em 0.375em 0 0 #f7f77d;
+  height: 7em;
+  width: 18em;
+}
+@media print, screen and (min-width: 768px) {
+  #area1-1 .area1-1-gbps1 .circle {
+    height: 10em;
+    width: 28em;
+    top: 65%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+  }
+}
+#area1-1 .area1-1-gbps1 .gbps-text {
+  position: absolute;
+  width: 220px;
+  top: 278%;
+  left: 50%;
+  padding: 5px 0;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  background-color: #e40808;
+  text-align: center;
+  font-size: 1.6rem;
+  font-style: italic;
+  letter-spacing: 0.1em;
+  color: #fff;
+  text-shadow: -3px 2px 0 #000;
+}
+@media print, screen and (min-width: 768px) {
+  #area1-1 .area1-1-gbps1 .gbps-text {
+    font-size: 2rem;
+    width: 240px;
+    top: 78%;
+    left: 76%;
+    transform: translate(-50%, -50%);
+  }
+}
+#area1-1 .mokumoku {
+  position: absolute;
+  top: -12%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  transform: rotate(15deg);
+  width: 150px;
+  height: 60px;
+}
+@media print, screen and (min-width: 768px) {
+  #area1-1 .mokumoku {
+    top: -20%;
+    left: 25%;
+    width: 300px;
+    height: 120px;
+  }
+}
+#area1-1 .point {
+  position: absolute;
+  font-size: 15px;
+  font-weight: bold;
+  top: -7%;
+  left: 64%;
+  transform: translate(-50%, -50%);
+  transform: rotate(18deg);
+  z-index: 6;
+}
+@media print, screen and (min-width: 768px) {
+  #area1-1 .point {
+    font-size: 25px;
+    top: -9%;
+    left: 30%;
+  }
+}
+#area1-1 .point::before {
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  padding: 5px;
+  font-weight: 900;
+  color: #ffdc00;
+}
+#area1-1 .area1-1-textarea {
+  position: relative;
+  margin: 3em 0;
+  padding: 0.5em 1em;
+  border: solid 3px #ea551c;
+  border-radius: 30px;
+  width: 85%;
+  margin-left: 10px;
+  margin-bottom: 300px;
+  background-color: rgba(255, 255, 255, 0.548);
+}
+@media print, screen and (min-width: 768px) {
+  #area1-1 .area1-1-textarea {
+    width: auto;
+    margin-bottom: inherit;
+  }
+}
+#area1-1 .area1-1-textarea .area1-1-textarea-title {
+  position: absolute;
+  display: inline-block;
+  top: -40px;
+  left: 10px;
+  padding: 0 9px;
+  height: 40px;
+  line-height: 45px;
+  font-size: 30px;
+  background: #ea551c;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 5px 5px 0 0;
+}
+@media print, screen and (min-width: 768px) {
+  #area1-1 .area1-1-textarea .area1-1-textarea-title {
+    font-size: 40px;
+  }
+}
+#area1-1 .area1-1-textarea #emoji4:before {
+  content: "🤝";
+  padding-right: 3px;
+}
+#area1-1 .area1-1-textarea .text-display {
+  display: none;
+}
+@media print, screen and (min-width: 768px) {
+  #area1-1 .area1-1-textarea .text-display {
+    display: block;
+  }
+}
+#area1-1 .area1-1-textarea p {
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+}
+@media print, screen and (min-width: 768px) {
+  #area1-1 .area1-1-textarea p {
+    font-size: 30px;
+  }
+}
+#area1-1 .video {
+  width: 100%;
+  padding-bottom: 16.25%;
+  height: 0px;
+  position: relative;
+  margin-bottom: 100px;
+}
+@media print, screen and (min-width: 768px) {
+  #area1-1 .video {
+    padding-bottom: 56.25%;
+    margin-bottom: inherit;
+  }
+}
+#area1-1 .video iframe {
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: 200px;
+}
+@media print, screen and (min-width: 768px) {
+  #area1-1 .video iframe {
+    top: 50%;
+    width: 80%;
+    height: 80%;
+  }
+}
+
+#area1-2 {
+  margin-top: 100px;
+  list-style: inherit;
+}
+#area1-2 .area1-2-wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+#area1-2 .heading1 {
+  max-width: 760px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  position: relative;
+  padding-top: 20px;
+  padding-left: 20px;
+  font-size: 30px;
+  border-radius: 30px;
+  background-color: #ec0a0a;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+@media print, screen and (min-width: 768px) {
+  #area1-2 .heading1 {
+    font-size: 40px;
+    padding-top: 30px;
+    padding-left: 20px;
+    max-width: 1300px;
+  }
+}
+#area1-2 .heading1 span {
+  position: relative;
+  z-index: 2;
+  top: -16px;
+  color: white;
+  font-weight: bold;
+}
+#area1-2 .heading-text {
+  visibility: hidden;
+}
+#area1-2 .heading1::before {
+  content: attr(data-en);
+  position: absolute;
+  top: -30px;
+  left: 60px;
+  color: rgba(255, 255, 255, 0.521);
+  font-size: 50px;
+  text-transform: uppercase;
+  z-index: 1;
+  font-style: italic;
+}
+@media print, screen and (min-width: 768px) {
+  #area1-2 .heading1::before {
+    font-size: 70px;
+    top: -40px;
+    left: 60px;
+  }
+}
+#area1-2 .list_design1 {
+  list-style: none;
+  counter-reset: list;
+  display: inline-block;
+  padding: 10px 8px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.548);
+  box-shadow: 2px 2px 4px gray;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+@media print, screen and (min-width: 768px) {
+  #area1-2 .list_design1 {
+    padding: 1rem 1rem;
+    margin: 1rem;
+  }
+}
+#area1-2 .list_design1 li {
+  position: relative;
+  padding: 10px 20px;
+  padding-left: 63px;
+  line-height: 30px;
+  border-bottom: 2px dotted red;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+@media print, screen and (min-width: 768px) {
+  #area1-2 .list_design1 li {
+    font-size: 30px;
+    margin-bottom: 30px;
+    padding: 1rem 1rem;
+    margin: 1rem;
+    padding-left: 60px;
+  }
+}
+#area1-2 .list_design1 li:before {
+  counter-increment: list;
+  content: counter(list);
+  position: absolute;
+  left: 0px;
+  width: 50px;
+  height: 62px;
+  text-align: center;
+  color: #fff;
+  line-height: 60px;
+  background: red;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#area1-2 .list_design1 li:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50px;
+  height: 0;
+  width: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 7px solid red;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#area1-2 .area1-2-upper {
+  position: relative;
+  margin-bottom: 40px;
+}
+#area1-2 .area1-2-gbps1 {
+  display: grid;
+  margin: 0 auto;
+}
+#area1-2 .area1-2-gbps1 img {
+  position: absolute;
+  margin-top: 80px;
+  display: block;
+  width: 300px;
+  height: auto;
+  z-index: 4;
+  top: 250%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+@media print, screen and (min-width: 768px) {
+  #area1-2 .area1-2-gbps1 img {
+    width: 450px;
+    top: 32%;
+    left: 80%;
+  }
+}
+#area1-2 .area1-2-gbps1 .kira1 {
+  width: 120px;
+  position: absolute;
+  top: 216%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+@media print, screen and (min-width: 768px) {
+  #area1-2 .area1-2-gbps1 .kira1 {
+    width: 300px;
+    top: -15%;
+    left: 80%;
+  }
+}
+#area1-2 .area1-2-gbps1 .kira2 {
+  width: 180px;
+  position: absolute;
+  top: 218%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+@media print, screen and (min-width: 768px) {
+  #area1-2 .area1-2-gbps1 .kira2 {
+    width: 300px;
+    top: 0%;
+    left: 80%;
+  }
+}
+#area1-2 .area1-2-gbps1 .kira3 {
+  width: 140px;
+  position: absolute;
+  top: 230%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  transform: rotate(90deg);
+  z-index: 5;
+}
+@media print, screen and (min-width: 768px) {
+  #area1-2 .area1-2-gbps1 .kira3 {
+    width: 200px;
+    top: 10%;
+    left: 83%;
+  }
+}
+#area1-2 .area1-2-gbps1 .kira4 {
+  width: 200px;
+  position: absolute;
+  top: 20%;
+  left: 82%;
+  transform: translate(-50%, -50%);
+  transform: rotate(90deg);
+  z-index: 5;
+}
+@media print, screen and (min-width: 768px) {
+  #area1-2 .area1-2-gbps1 .kira4 {
+    width: 200px;
+    top: 20%;
+    left: 82%;
+  }
+}
+#area1-2 .mokumoku {
+  position: absolute;
+  top: -12%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  transform: rotate(15deg);
+  width: 150px;
+  height: 60px;
+}
+@media print, screen and (min-width: 768px) {
+  #area1-2 .mokumoku {
+    top: -20%;
+    left: 45%;
+    width: 300px;
+    height: 120px;
+  }
+}
+#area1-2 .point {
+  position: absolute;
+  font-size: 18px;
+  font-weight: bold;
+  top: -8%;
+  left: 62%;
+  transform: translate(-50%, -50%);
+  transform: rotate(18deg);
+  z-index: 6;
+}
+@media print, screen and (min-width: 768px) {
+  #area1-2 .point {
+    font-size: 25px;
+    top: -9%;
+    left: 49%;
+  }
+}
+#area1-2 .point::before {
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  padding: 5px;
+  font-weight: 900;
+  color: #ffdc00;
+}
+#area1-2 .circle {
+  position: absolute;
+  top: 285%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0.375em 0.375em 0 0 #f7f77d;
+  height: 10em;
+  width: 20em;
+}
+@media print, screen and (min-width: 768px) {
+  #area1-2 .circle {
+    height: 13em;
+    width: 30em;
+    top: 70%;
+    left: 81%;
+    transform: translate(-50%, -50%);
+  }
+}
+#area1-2 .gbps-text {
+  position: absolute;
+  width: 220px;
+  top: 300%;
+  left: 50%;
+  padding: 5px 0;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  background-color: #e40808;
+  text-align: center;
+  font-size: 1.6rem;
+  font-style: italic;
+  letter-spacing: 0.1em;
+  color: #fff;
+  text-shadow: -3px 2px 0 #000;
+}
+@media print, screen and (min-width: 768px) {
+  #area1-2 .gbps-text {
+    font-size: 1.8rem;
+    width: 350px;
+    top: 85%;
+    left: 82%;
+    transform: translate(-50%, -50%);
+  }
+}
+#area1-2 .area1-2-textarea {
+  position: relative;
+  margin: 3em 0;
+  padding: 0.5em 1em;
+  border: solid 3px #ea551c;
+  border-radius: 30px;
+  width: 85%;
+  margin-left: 10px;
+  margin-bottom: 300px;
+  background-color: rgba(255, 255, 255, 0.548);
+}
+@media print, screen and (min-width: 768px) {
+  #area1-2 .area1-2-textarea {
+    width: auto;
+    margin-bottom: inherit;
+  }
+}
+#area1-2 .area1-2-textarea .area1-2-textarea-title {
+  position: absolute;
+  display: inline-block;
+  top: -40px;
+  left: 10px;
+  padding: 0 9px;
+  height: 40px;
+  line-height: 45px;
+  font-size: 30px;
+  background: #ea551c;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 5px 5px 0 0;
+}
+@media print, screen and (min-width: 768px) {
+  #area1-2 .area1-2-textarea .area1-2-textarea-title {
+    font-size: 40px;
+  }
+}
+#area1-2 .area1-2-textarea #emoji4:before {
+  content: "🤝";
+  padding-right: 3px;
+}
+#area1-2 .area1-2-textarea p {
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+}
+@media print, screen and (min-width: 768px) {
+  #area1-2 .area1-2-textarea p {
+    font-size: 30px;
+  }
+}
+#area1-2 .video {
+  width: 100%;
+  padding-bottom: 16.25%;
+  height: 0px;
+  position: relative;
+  margin-bottom: 100px;
+}
+@media print, screen and (min-width: 768px) {
+  #area1-2 .video {
+    padding-bottom: 56.25%;
+    margin-bottom: inherit;
+  }
+}
+#area1-2 .video iframe {
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: 200px;
+}
+@media print, screen and (min-width: 768px) {
+  #area1-2 .video iframe {
+    top: 50%;
+    width: 80%;
+    height: 80%;
+  }
+}
+
 #area2 {
   margin-top: 100px;
   list-style: inherit;
@@ -1075,7 +2025,7 @@ footer .follow-me li a[href*=tiktok]::before {
   position: relative;
   padding-top: 20px;
   padding-left: 20px;
-  font-size: 30px;
+  font-size: 22px;
   border-radius: 30px;
   background-color: #ec0a0a;
   border: 1px solid rgba(255, 255, 255, 0.4);
@@ -1102,7 +2052,7 @@ footer .follow-me li a[href*=tiktok]::before {
   content: attr(data-en);
   position: absolute;
   top: -30px;
-  left: 60px;
+  left: 40px;
   color: rgba(255, 255, 255, 0.521);
   font-size: 50px;
   text-transform: uppercase;
@@ -1187,59 +2137,71 @@ footer .follow-me li a[href*=tiktok]::before {
   display: grid;
   margin: 0 auto;
 }
-#area2 .area2-wifi1 img {
+#area2 .area2-wifi1 .area2-wifi2 {
   position: absolute;
   margin-top: 80px;
   display: block;
-  width: 250px;
+  width: 220px;
   height: auto;
   z-index: 4;
-  top: 220%;
-  left: 45%;
+  top: 240%;
+  left: 40%;
   transform: translate(-50%, -50%);
 }
 @media print, screen and (min-width: 768px) {
-  #area2 .area2-wifi1 img {
-    width: 400px;
+  #area2 .area2-wifi1 .area2-wifi2 {
+    width: 250px;
+    top: 10%;
+    left: 75%;
+  }
+}
+#area2 .area2-wifi1 .area2-wifi3 {
+  width: 260px;
+  top: 250%;
+  left: 65%;
+}
+@media print, screen and (min-width: 768px) {
+  #area2 .area2-wifi1 .area2-wifi3 {
+    width: 370px;
     top: 30%;
-    left: 82%;
+    left: 88%;
   }
 }
 #area2 .area2-wifi1 .kira1 {
   width: 120px;
   position: absolute;
-  top: 196%;
-  left: 20%;
+  top: 246%;
+  left: 24%;
   transform: translate(-50%, -50%);
   z-index: 5;
 }
 @media print, screen and (min-width: 768px) {
   #area2 .area2-wifi1 .kira1 {
     width: 300px;
-    top: -5%;
+    top: 5%;
     left: 80%;
   }
 }
 #area2 .area2-wifi1 .kira2 {
   width: 180px;
   position: absolute;
-  top: 198%;
-  left: 55%;
+  top: 248%;
+  left: 58%;
   transform: translate(-50%, -50%);
   z-index: 5;
 }
 @media print, screen and (min-width: 768px) {
   #area2 .area2-wifi1 .kira2 {
     width: 300px;
-    top: 0%;
+    top: 10%;
     left: 80%;
   }
 }
 #area2 .area2-wifi1 .kira3 {
   width: 140px;
   position: absolute;
-  top: 210%;
-  left: 55%;
+  top: 260%;
+  left: 59%;
   transform: translate(-50%, -50%);
   transform: rotate(90deg);
   z-index: 5;
@@ -1247,14 +2209,14 @@ footer .follow-me li a[href*=tiktok]::before {
 @media print, screen and (min-width: 768px) {
   #area2 .area2-wifi1 .kira3 {
     width: 200px;
-    top: 10%;
+    top: 20%;
     left: 88%;
   }
 }
 #area2 .area2-wifi1 .kira4 {
   width: 200px;
   position: absolute;
-  top: 20%;
+  top: 40%;
   left: 82%;
   transform: translate(-50%, -50%);
   transform: rotate(90deg);
@@ -1263,7 +2225,7 @@ footer .follow-me li a[href*=tiktok]::before {
 @media print, screen and (min-width: 768px) {
   #area2 .area2-wifi1 .kira4 {
     width: 200px;
-    top: 20%;
+    top: 30%;
     left: 89%;
   }
 }
@@ -1286,9 +2248,9 @@ footer .follow-me li a[href*=tiktok]::before {
 }
 #area2 .point {
   position: absolute;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: bold;
-  top: -5%;
+  top: -8%;
   left: 62%;
   transform: translate(-50%, -50%);
   transform: rotate(18deg);
@@ -1298,7 +2260,7 @@ footer .follow-me li a[href*=tiktok]::before {
   #area2 .point {
     font-size: 25px;
     top: -9%;
-    left: 47%;
+    left: 49%;
   }
 }
 #area2 .point::before {
@@ -1361,13 +2323,13 @@ footer .follow-me li a[href*=tiktok]::before {
 }
 #area2 .circle {
   position: absolute;
-  top: 265%;
-  left: 46%;
+  top: 281%;
+  left: 50%;
   transform: translate(-50%, -50%);
   background: white;
   border-radius: 50%;
   box-shadow: 0.375em 0.375em 0 0 #f7f77d;
-  height: 11em;
+  height: 9em;
   width: 20em;
 }
 @media print, screen and (min-width: 768px) {
@@ -1381,15 +2343,15 @@ footer .follow-me li a[href*=tiktok]::before {
 }
 #area2 .wifi-text {
   position: absolute;
-  width: 320px;
-  top: 270%;
-  left: 45%;
+  width: 220px;
+  top: 298%;
+  left: 50%;
   padding: 5px 0;
   transform: translate(-50%, -50%);
   z-index: 5;
   background-color: #e40808;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-style: italic;
   letter-spacing: 0.1em;
   color: #fff;
@@ -1397,6 +2359,7 @@ footer .follow-me li a[href*=tiktok]::before {
 }
 @media print, screen and (min-width: 768px) {
   #area2 .wifi-text {
+    font-size: 1.8rem;
     width: 350px;
     top: 85%;
     left: 82%;
@@ -1411,12 +2374,12 @@ footer .follow-me li a[href*=tiktok]::before {
   border-radius: 30px;
   width: 85%;
   margin-left: 10px;
-  margin-bottom: 400px;
+  margin-bottom: 300px;
   background-color: rgba(255, 255, 255, 0.548);
 }
 @media print, screen and (min-width: 768px) {
   #area2 .area2-textarea {
-    width: 800px;
+    width: 700px;
     margin-bottom: inherit;
   }
 }
@@ -1463,13 +2426,14 @@ footer .follow-me li a[href*=tiktok]::before {
 }
 #area2 .video {
   width: 100%;
-  padding-bottom: 56.25%;
+  padding-bottom: 16.25%;
   height: 0px;
   position: relative;
   margin-bottom: 100px;
 }
 @media print, screen and (min-width: 768px) {
   #area2 .video {
+    padding-bottom: 100px;
     margin-bottom: inherit;
   }
 }
@@ -1479,11 +2443,14 @@ footer .follow-me li a[href*=tiktok]::before {
   left: 50%;
   transform: translate(-50%, -50%);
   width: auto;
+  height: 200px;
 }
 @media print, screen and (min-width: 768px) {
   #area2 .video iframe {
-    width: 80%;
-    height: 80%;
+    width: 440px;
+    height: 260px;
+    top: -150%;
+    left: 80%;
   }
 }
 
@@ -1566,7 +2533,7 @@ footer .follow-me li a[href*=tiktok]::before {
   }
 }
 #area3 .list_design2 {
-  margin-bottom: 480px;
+  margin-bottom: 400px;
 }
 @media print, screen and (min-width: 768px) {
   #area3 .list_design2 {
@@ -1650,7 +2617,7 @@ footer .follow-me li a[href*=tiktok]::before {
   margin: 2em 0;
   margin-top: 50px;
   margin-left: 10px;
-  margin-bottom: 350px;
+  margin-bottom: 260px;
   padding: 0.5em 1em;
   border: solid 3px #ea551c;
   border-radius: 30px;
@@ -1697,7 +2664,7 @@ footer .follow-me li a[href*=tiktok]::before {
 #area3 .mokumoku1 {
   position: absolute;
   z-index: 2;
-  top: 9%;
+  top: 7%;
   left: 65%;
   transform: translate(-50%, -50%);
   transform: rotate(15deg);
@@ -1715,11 +2682,11 @@ footer .follow-me li a[href*=tiktok]::before {
 #area3 .mokumoku2 {
   position: absolute;
   z-index: 2;
-  top: -6%;
+  top: -4%;
   left: 55%;
   transform: translate(-50%, -50%);
   transform: rotate(15deg);
-  width: 170px;
+  width: 150px;
   height: 70px;
 }
 @media print, screen and (min-width: 768px) {
@@ -1733,9 +2700,9 @@ footer .follow-me li a[href*=tiktok]::before {
 #area3 .recommend1 {
   position: absolute;
   z-index: 2;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: bold;
-  top: 10.5%;
+  top: 8%;
   left: 67%;
   transform: translate(-50%, -50%);
   transform: rotate(18deg);
@@ -1757,18 +2724,18 @@ footer .follow-me li a[href*=tiktok]::before {
 #area3 .recommend2 {
   position: absolute;
   z-index: 2;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: bold;
-  top: -4%;
-  left: 64%;
+  top: -1.5%;
+  left: 60%;
   transform: translate(-50%, -50%);
   transform: rotate(18deg);
 }
 @media print, screen and (min-width: 768px) {
   #area3 .recommend2 {
-    top: -8%;
-    left: 44%;
-    font-size: 22px;
+    top: -2%;
+    left: 46%;
+    font-size: 26px;
   }
 }
 #area3 .recommend2::before {
@@ -1779,9 +2746,9 @@ footer .follow-me li a[href*=tiktok]::before {
   color: #FFDC00;
 }
 #area3 .area3-image1 {
-  width: 280px;
+  width: 250px;
   position: absolute;
-  top: 233%;
+  top: 211%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 4;
@@ -1798,9 +2765,10 @@ footer .follow-me li a[href*=tiktok]::before {
   position: absolute;
   margin: 0 auto;
   width: auto;
-  top: -25%;
+  top: -23%;
   left: 50%;
   transform: translate(-50%, -50%);
+  height: 200px;
 }
 @media print, screen and (min-width: 768px) {
   #area3 .video1 iframe {
@@ -1814,9 +2782,10 @@ footer .follow-me li a[href*=tiktok]::before {
   position: absolute;
   margin: 0 auto;
   width: auto;
-  top: 65%;
+  top: 63%;
   left: 50%;
   transform: translate(-50%, -50%);
+  height: 200px;
 }
 @media print, screen and (min-width: 768px) {
   #area3 .video2 iframe {
@@ -1829,7 +2798,7 @@ footer .follow-me li a[href*=tiktok]::before {
 #area3 .kira1 {
   width: 200px;
   position: absolute;
-  top: 223%;
+  top: 202%;
   left: 70%;
   transform: translate(-50%, -50%);
   z-index: 5;
@@ -1844,7 +2813,7 @@ footer .follow-me li a[href*=tiktok]::before {
 #area3 .kira2 {
   width: 200px;
   position: absolute;
-  top: 223%;
+  top: 202%;
   left: 45%;
   transform: translate(-50%, -50%);
   z-index: 5;
@@ -1859,8 +2828,8 @@ footer .follow-me li a[href*=tiktok]::before {
 #area3 .kira3 {
   width: 130px;
   position: absolute;
-  top: 230%;
-  left: 75%;
+  top: 202%;
+  left: 73%;
   transform: translate(-50%, -50%);
   transform: rotate(90deg);
   z-index: 5;
@@ -1874,14 +2843,14 @@ footer .follow-me li a[href*=tiktok]::before {
 }
 #area3 .circle1, #area3 .circle2 {
   position: absolute;
-  top: 235%;
+  top: 214%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: rgba(229, 250, 252, 0.858);
   border-radius: 50%;
   box-shadow: 0.375em 0.375em 0 0 #d2ffae;
-  height: 12em;
-  width: 22em;
+  height: 9em;
+  width: 20em;
 }
 @media print, screen and (min-width: 768px) {
   #area3 .circle1, #area3 .circle2 {
@@ -1894,8 +2863,8 @@ footer .follow-me li a[href*=tiktok]::before {
 }
 #area3 .sim-text1, #area3 .sim-text2 {
   position: absolute;
-  width: 330px;
-  top: 240%;
+  width: 220px;
+  top: 218%;
   left: 50%;
   padding: 5px 0;
   transform: translate(-50%, -50%);
@@ -1910,6 +2879,7 @@ footer .follow-me li a[href*=tiktok]::before {
 }
 @media print, screen and (min-width: 768px) {
   #area3 .sim-text1, #area3 .sim-text2 {
+    font-size: 1.5rem;
     width: 350px;
     top: 45%;
     left: 80%;
@@ -2052,7 +3022,7 @@ footer .follow-me li a[href*=tiktok]::before {
   margin: 2em 0;
   margin-top: 50px;
   margin-left: 10px;
-  margin-bottom: 650px;
+  margin-bottom: 500px;
   padding: 0.5em 1em;
   border: solid 3px #ea551c;
   border-radius: 30px;
@@ -2100,9 +3070,10 @@ footer .follow-me li a[href*=tiktok]::before {
   position: absolute;
   margin: 0 auto;
   width: auto;
-  top: 151%;
+  top: 148%;
   left: 50%;
   transform: translate(-50%, -50%);
+  height: 200px;
 }
 @media print, screen and (min-width: 768px) {
   #area4 .video iframe {
@@ -2120,7 +3091,7 @@ footer .follow-me li a[href*=tiktok]::before {
   transform: translate(-50%, -50%);
   transform: rotate(15deg);
   width: 150px;
-  height: 70px;
+  height: 60px;
 }
 @media print, screen and (min-width: 768px) {
   #area4 .mokumoku3 {
@@ -2133,17 +3104,17 @@ footer .follow-me li a[href*=tiktok]::before {
 #area4 .recommend3 {
   position: absolute;
   z-index: 2;
-  font-size: 11px;
+  font-size: 15px;
   font-weight: bold;
-  top: 7%;
+  top: 6%;
   left: 62%;
   transform: translate(-50%, -50%);
   transform: rotate(18deg);
 }
 @media print, screen and (min-width: 768px) {
   #area4 .recommend3 {
-    top: 15%;
-    left: 42%;
+    top: 14%;
+    left: 45%;
     font-size: 25px;
   }
 }
@@ -2155,7 +3126,7 @@ footer .follow-me li a[href*=tiktok]::before {
   color: #ffdc00;
 }
 #area4 .area3-image1 {
-  width: 280px;
+  width: 260px;
   position: absolute;
   top: 115%;
   left: 50%;
@@ -2208,8 +3179,8 @@ footer .follow-me li a[href*=tiktok]::before {
   background: rgba(210, 244, 247, 0.808);
   border-radius: 50%;
   box-shadow: 0.375em 0.375em 0 0 #d2ffae;
-  height: 12em;
-  width: 22em;
+  height: 10em;
+  width: 20em;
 }
 @media print, screen and (min-width: 768px) {
   #area4 .circle3 {
@@ -2298,9 +3269,9 @@ footer .follow-me li a[href*=tiktok]::before {
   content: attr(data-en);
   position: absolute;
   top: -30px;
-  left: 60px;
+  left: 50px;
   color: rgba(255, 255, 255, 0.521);
-  font-size: 50px;
+  font-size: 38px;
   text-transform: uppercase;
   z-index: 1;
   font-style: italic;
@@ -2338,77 +3309,12 @@ footer .follow-me li a[href*=tiktok]::before {
     margin-top: 25px;
   }
 }
-#area5 .list_design1 {
-  list-style: none;
-  counter-reset: list;
-  display: inline-block;
-  padding: 10px 8px;
-  border-radius: 30px;
-  background-color: rgba(255, 255, 255, 0.548);
-  box-shadow: 2px 2px 4px gray;
-  margin-right: 5px;
-  margin-left: 10px;
-}
-@media print, screen and (min-width: 768px) {
-  #area5 .list_design1 {
-    padding: 1rem 1rem;
-    margin: 1rem;
-    margin-left: 30px;
-  }
-}
-#area5 .list_design1 li {
-  position: relative;
-  padding: 10px 20px;
-  padding-left: 63px;
-  padding-right: 0px;
-  line-height: 30px;
-  border-bottom: 2px dotted red;
-  color: #333;
-  font-size: 24px;
-  margin-bottom: 5px;
-}
-@media print, screen and (min-width: 768px) {
-  #area5 .list_design1 li {
-    font-size: 30px;
-    margin-bottom: 30px;
-    padding: 1rem 1rem;
-    margin: 1rem;
-    padding-left: 60px;
-  }
-}
-#area5 .list_design1 li:before {
-  counter-increment: list;
-  content: counter(list);
-  position: absolute;
-  left: 0px;
-  width: 50px;
-  height: 62px;
-  text-align: center;
-  color: #fff;
-  line-height: 60px;
-  background: red;
-  top: 50%;
-  transform: translateY(-50%);
-}
-#area5 .list_design1 li:after {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 50px;
-  height: 0;
-  width: 0;
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  border-left: 7px solid red;
-  top: 50%;
-  transform: translateY(-50%);
-}
 #area5 .area5-textarea {
   position: relative;
   margin: 2em 0;
   margin-top: 50px;
   margin-left: 10px;
-  margin-bottom: 700px;
+  margin-bottom: 350px;
   padding: 0.5em 1em;
   border: solid 3px #ea551c;
   border-radius: 30px;
@@ -2457,22 +3363,6 @@ footer .follow-me li a[href*=tiktok]::before {
   content: "🤝";
   padding-right: 3px;
 }
-#area5 .video iframe {
-  position: absolute;
-  margin: 0 auto;
-  width: auto;
-  top: 122%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-@media print, screen and (min-width: 768px) {
-  #area5 .video iframe {
-    width: 440px;
-    height: 260px;
-    top: 25%;
-    left: 80%;
-  }
-}
 #area5 .mokumoku3 {
   position: absolute;
   z-index: 2;
@@ -2515,40 +3405,39 @@ footer .follow-me li a[href*=tiktok]::before {
   font-weight: 900;
   color: #ffdc00;
 }
-#area5 .area5-image1,
-#area5 .area5-image2 {
-  width: 180px;
+#area5 .area5-image1 {
+  width: 240px;
   position: absolute;
-  top: 106%;
+  top: 112%;
   left: 30%;
   transform: translate(-50%, -50%);
   z-index: 4;
 }
 @media print, screen and (min-width: 768px) {
-  #area5 .area5-image1,
-#area5 .area5-image2 {
-    width: 300px;
-    top: 65%;
-    left: 65%;
+  #area5 .area5-image1 {
+    width: 350px;
+    top: 55%;
+    left: 68%;
     transform: translate(-50%, -50%);
   }
 }
 #area5 .area5-image2 {
-  width: 150px;
-  left: 75%;
+  width: 240px;
+  top: 120%;
+  left: 72%;
 }
 @media print, screen and (min-width: 768px) {
   #area5 .area5-image2 {
-    width: 240px;
-    top: 68%;
-    left: 85%;
+    width: 370px;
+    top: 55%;
+    left: 88%;
     transform: translate(-50%, -50%);
   }
 }
 #area5 .kira1 {
   width: 220px;
   position: absolute;
-  top: 102%;
+  top: 105%;
   left: 58%;
   transform: translate(-50%, -50%);
   z-index: 5;
@@ -2556,14 +3445,14 @@ footer .follow-me li a[href*=tiktok]::before {
 @media print, screen and (min-width: 768px) {
   #area5 .kira1 {
     width: 200px;
-    top: 55%;
+    top: 35%;
     left: 83%;
   }
 }
 #area5 .kira2 {
   width: 220px;
   position: absolute;
-  top: 101%;
+  top: 105%;
   left: 35%;
   transform: translate(-50%, -50%);
   z-index: 5;
@@ -2571,14 +3460,14 @@ footer .follow-me li a[href*=tiktok]::before {
 @media print, screen and (min-width: 768px) {
   #area5 .kira2 {
     width: 320px;
-    top: 55%;
+    top: 35%;
     left: 65%;
   }
 }
 #area5 .kira3 {
   width: 220px;
   position: absolute;
-  top: 101%;
+  top: 105%;
   left: 35%;
   transform: translate(-50%, -50%);
   z-index: 5;
@@ -2586,20 +3475,20 @@ footer .follow-me li a[href*=tiktok]::before {
 @media print, screen and (min-width: 768px) {
   #area5 .kira3 {
     width: 300px;
-    top: 58%;
+    top: 38%;
     left: 85%;
   }
 }
 #area5 .circle3 {
   position: absolute;
-  top: 108%;
+  top: 122%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: rgba(210, 244, 247, 0.808);
   border-radius: 50%;
   box-shadow: 0.375em 0.375em 0 0 #d2ffae;
   height: 10em;
-  width: 22em;
+  width: 20em;
 }
 @media print, screen and (min-width: 768px) {
   #area5 .circle3 {
@@ -2613,7 +3502,7 @@ footer .follow-me li a[href*=tiktok]::before {
 #area5 .sim-text3 {
   position: absolute;
   width: 250px;
-  top: 110%;
+  top: 128%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 5;
@@ -2629,7 +3518,7 @@ footer .follow-me li a[href*=tiktok]::before {
   #area5 .sim-text3 {
     font-size: 2.4rem;
     width: 400px;
-    top: 75%;
+    top: 80%;
     left: 75%;
   }
 }
@@ -2650,149 +3539,94 @@ footer .follow-me li a[href*=tiktok]::before {
 }
 #area5 .area5-lower .japan-map {
   position: absolute;
-  width: 160px;
-  top: 30%;
-  left: 30%;
+  width: 400px;
+  top: 32%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 @media print, screen and (min-width: 768px) {
   #area5 .area5-lower .japan-map {
-    left: 35%;
-    width: 370px;
-  }
-}
-#area5 .area5-lower .arrow1 {
-  position: absolute;
-  width: 160px;
-  top: 30%;
-  left: 30%;
-  transform: translate(-50%, -50%);
-  transform: rotate(45deg);
-}
-@media print, screen and (min-width: 768px) {
-  #area5 .area5-lower .arrow1 {
-    left: 28%;
-    height: 100px;
-    width: 50px;
-  }
-}
-#area5 .area5-lower .arrow2 {
-  position: absolute;
-  width: 160px;
-  top: 37%;
-  left: 30%;
-  transform: translate(-50%, -50%);
-  transform: rotate(35deg);
-}
-@media print, screen and (min-width: 768px) {
-  #area5 .area5-lower .arrow2 {
-    left: 32%;
-    height: 60px;
-    width: 50px;
-  }
-}
-#area5 .area5-lower .arrow3 {
-  position: absolute;
-  width: 160px;
-  top: 25%;
-  left: 30%;
-  transform: translate(-50%, -50%);
-  transform: rotate(-40deg);
-}
-@media print, screen and (min-width: 768px) {
-  #area5 .area5-lower .arrow3 {
-    left: 36%;
-    height: 60px;
-    width: 55px;
-  }
-}
-#area5 .area5-lower .arrow4 {
-  position: absolute;
-  width: 160px;
-  top: 15%;
-  left: 30%;
-  transform: translate(-50%, -50%);
-  transform: rotate(-140deg);
-}
-@media print, screen and (min-width: 768px) {
-  #area5 .area5-lower .arrow4 {
-    left: 32%;
-    height: 80px;
-    width: 105px;
+    top: 35%;
+    left: 75%;
+    width: 530px;
   }
 }
 #area5 .area5-lower .sagawa1,
 #area5 .area5-lower .sagawa2 {
   position: absolute;
-  width: 160px;
-  top: 10%;
-  left: 30%;
+  width: 130px;
+  top: 57%;
+  left: 40%;
   transform: translate(-50%, -50%);
+  z-index: 5;
 }
 @media print, screen and (min-width: 768px) {
   #area5 .area5-lower .sagawa1,
 #area5 .area5-lower .sagawa2 {
-    left: 20%;
-    width: 320px;
+    left: 40%;
+    width: 350px;
   }
 }
 #area5 .area5-lower .logo-delivery {
   position: absolute;
-  width: 40px;
-  top: 22%;
-  left: 56%;
+  width: 50px;
+  top: 41%;
+  left: 55%;
   transform: translate(-50%, -50%);
 }
 @media print, screen and (min-width: 768px) {
   #area5 .area5-lower .logo-delivery {
-    top: 33%;
-    left: 33.5%;
-    width: 45px;
+    top: 49%;
+    left: 77%;
+    width: 60px;
   }
 }
 #area5 .area5-lower .sagawa2 {
-  width: 180px;
-  top: 30%;
+  width: 220px;
+  top: 54%;
   left: 80%;
-  filter: drop-shadow(5px 2px 0 white);
 }
 @media print, screen and (min-width: 768px) {
   #area5 .area5-lower .sagawa2 {
-    top: 44%;
+    top: 54%;
     left: 15%;
-    width: 350px;
+    width: 380px;
   }
 }
-#area5 .area5-lower .frame1 {
-  display: inline-block;
-  position: relative;
-  left: 50%;
-  width: 320px;
-  transform: translate(-50%, 0%);
+#area5 .area5-lower .packing {
+  position: absolute;
+  padding: 5px 0;
+  width: 250px;
+  top: 45%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: #f54cbc;
+  text-shadow: -3px 2px 0 #000;
+  transform: rotate(20deg);
 }
 @media print, screen and (min-width: 768px) {
-  #area5 .area5-lower .frame1 {
-    left: 30%;
-    width: 550px;
+  #area5 .area5-lower .packing {
+    font-size: 1.8rem;
+    width: 100px;
+    top: 42%;
+    left: 15%;
   }
 }
-#area5 .area5-lower .frame1::after {
-  position: absolute;
-  display: block;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  box-shadow: inset 0 0 10px #fff, inset 0 0 10px #fff, inset 0 0 10px #fff, inset 0 0 10px #fff;
+#area5 .area5-lower .map-back {
+  opacity: 0.4;
 }
 #area5 .area5-lower h2 {
   position: absolute;
-  width: 380px;
+  width: 350px;
   top: 40%;
   left: 55%;
   transform: translate(-50%, -50%);
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-style: italic;
   color: #fff;
   text-shadow: -3px 2px 0 #000;
@@ -2801,9 +3635,9 @@ footer .follow-me li a[href*=tiktok]::before {
   #area5 .area5-lower h2 {
     top: 30%;
     letter-spacing: 0.1em;
-    width: 800px;
+    width: 750px;
     left: 70%;
-    font-size: 3.8rem;
+    font-size: 3.5rem;
   }
 }
 #area5 .area5-lower .follow-me {
@@ -2812,7 +3646,7 @@ footer .follow-me li a[href*=tiktok]::before {
   overflow: hidden;
   padding: 0;
   justify-content: center;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 @media print, screen and (min-width: 768px) {
   #area5 .area5-lower .follow-me {
@@ -2857,8 +3691,8 @@ footer .follow-me li a[href*=tiktok]::before {
   content: "";
 }
 #area5 .area5-lower .follow-me li a[href*="wa.me"]::before {
-  background: #25D366;
-  content: "";
+  background-color: #25D366;
+  content: "";
 }
 #area5 .area5-lower .follow-me li a[href*="youtube.com"]::before {
   background-color: #cd201f;
@@ -2880,10 +3714,10 @@ footer .follow-me li a[href*=tiktok]::before {
   font-weight: bold;
   text-align: center;
   background: #e73508;
-  padding: 15px 0;
+  padding: 18px 0;
   margin: auto;
   width: 100%;
-  font-size: 20px;
+  font-size: 18px;
   border: 1px white solid;
 }
 @media print, screen and (min-width: 768px) {
@@ -2908,16 +3742,16 @@ footer .follow-me li a[href*=tiktok]::before {
   color: white;
   text-align: center;
   background: #25D366;
-  padding: 10px 0;
+  padding: 18px 0;
   margin: auto;
   margin-bottom: 20px;
   width: 100%;
-  font-size: 25px;
+  font-size: 15px;
   border: 1px white solid;
 }
 @media print, screen and (min-width: 768px) {
   #area5 .area5-lower .what-btn {
-    padding: 15px 0;
+    padding: 18px 0;
     font-size: 22px;
     width: 40vw;
   }
@@ -2940,6 +3774,106 @@ footer .follow-me li a[href*=tiktok]::before {
     height: 24px;
   }
 }
+#area5 .map {
+  border-top: 0.5px solid #ffffff42;
+  background: url("../image/truck.jpg") center center no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  max-width: 420px;
+  padding: 40px 0 20px;
+  height: 350px;
+  position: relative;
+  margin: 0 auto;
+  box-shadow: 1px 3px 20px 10px white, inset 10px 3px 20px 10px whitesmoke;
+}
+@media print, screen and (min-width: 768px) {
+  #area5 .map {
+    height: 400px;
+    max-width: 1500px;
+  }
+}
+#area5 .map::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.308);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+#area5 .map h1,
+#area5 .map h2 {
+  letter-spacing: 0.1em;
+  color: black;
+  text-align: center;
+  font-size: 12px;
+  z-index: 10;
+}
+#area5 .map h1 {
+  color: white;
+  position: absolute;
+  font-size: 30px;
+  margin-bottom: 30px;
+  display: inline-block;
+  text-align: left;
+  width: 370px;
+  top: 5%;
+  left: 30%;
+  letter-spacing: inherit;
+  transform: translateY(10%) translateX(-20%);
+  font-weight: bold;
+}
+@media print, screen and (min-width: 768px) {
+  #area5 .map h1 {
+    width: inherit;
+    font-size: 38px;
+    top: 20%;
+    left: 10%;
+  }
+}
+@media print, screen and (min-width: 768px) {
+  #area5 .map h1 {
+    font-size: 2rem;
+  }
+}
+#area5 .map h2 {
+  color: white;
+  position: absolute;
+  margin-bottom: 20px;
+  font-size: 20px;
+  top: 15%;
+  left: 10%;
+  letter-spacing: inherit;
+  transform: translateY(10%) translateX(-10%);
+  font-weight: bold;
+  text-align: left;
+  letter-spacing: 0.15rem;
+}
+@media print, screen and (min-width: 768px) {
+  #area5 .map h2 {
+    top: 35%;
+  }
+}
+@media print, screen and (min-width: 768px) {
+  #area5 .map h2 {
+    margin-bottom: inherit;
+    font-size: 1.5rem;
+  }
+}
+#area5 .map .map-back {
+  height: 60%;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+@media print, screen and (min-width: 768px) {
+  #area5 .map .map-back {
+    height: 200px;
+    width: 70%;
+  }
+}
 #area5 .container-area {
   display: flex;
 }
@@ -2959,7 +3893,7 @@ footer .follow-me li a[href*=tiktok]::before {
   }
 }
 #area5 .container {
-  margin-top: 150px;
+  margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
   width: 90%;
@@ -2980,13 +3914,14 @@ footer .follow-me li a[href*=tiktok]::before {
   display: block;
   list-style-type: none;
   overflow: hidden;
-  height: 100px;
+  height: 250px;
   font-size: 0;
   z-index: 100;
 }
 @media print, screen and (min-width: 768px) {
   #area5 .accordion {
     width: 1200px;
+    height: 150px;
   }
 }
 #area5 .tab {
@@ -3000,6 +3935,7 @@ footer .follow-me li a[href*=tiktok]::before {
   position: relative;
   margin: 0;
   margin-right: 10px;
+  margin-top: 10px;
   transition: all 0.5s ease-in-out 0.1s;
 }
 @media print, screen and (min-width: 768px) {
@@ -3008,32 +3944,10 @@ footer .follow-me li a[href*=tiktok]::before {
     height: 90px;
   }
 }
-@media print, screen and (min-width: 768px) {
-  #area5 .tab:hover {
-    width: 450px;
-  }
-}
-#area5 .tab:hover .social a:before {
-  margin-left: -100px;
-}
-#area5 .tab:hover .social a:after {
-  margin-left: 0px;
-}
-#area5 .tab .content {
-  background-color: #fff;
-  width: 360px;
-  height: 100px;
-  margin-left: 100px;
+#area5 .tab img {
   position: relative;
-  padding: 0 0 0 15px;
-}
-#area5 .tab .content h1 {
-  font-size: 2.5rem;
-}
-#area5 .tab .content p {
-  font-size: 0.85rem;
-  line-height: 1.9rem;
-  padding-right: 30px;
+  border-radius: 1px solid black;
+  top: 0.5px;
 }
 #area5 .social a:before,
 #area5 .social a:after {
@@ -3113,19 +4027,19 @@ footer .follow-me li a[href*=tiktok]::before {
   background-color: #cd201f;
   content: "";
 }
-#area5 .line a::before {
+#area5 .what a::before {
   font-family: FontAwesome;
 }
-#area5 .line a[href*=line]::before {
-  background-color: #00c300;
-  content: "";
+#area5 .what a[href*="wa.me"]::before {
+  background-color: #25D366;
+  content: "";
 }
-#area5 .line a::after {
+#area5 .what a::after {
   font-family: FontAwesome;
 }
-#area5 .line a[href*=line]::after {
-  background-color: #00c300;
-  content: "";
+#area5 .what a[href*="wa.me"]::after {
+  background-color: #25D366;
+  content: "";
 }
 #area5 .facebook a::before {
   font-family: FontAwesome;
@@ -3157,9 +4071,11 @@ footer .follow-me li a[href*=tiktok]::before {
 }
 #area5 .footer-area {
   padding-bottom: 30px;
+  margin-top: 80px;
 }
 @media print, screen and (min-width: 768px) {
   #area5 .footer-area {
+    margin-top: inherit;
     position: relative;
     bottom: 15px;
     left: 35%;
