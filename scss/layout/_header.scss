@@ -107,16 +107,16 @@ header {
     }
     .profile2 {
       z-index: 5;
-      top: -80%;
-      width: 300px;
+      top: -76%;
+      width: 290px;
       left: 50%;
       transform: translate(-50%, -50%);
       // transform: rotate(-20deg);
       @include overTab {
-        top: -45%;
+        top: -36%;
         left: 50%;
-        height: 230px;
-        width: 420px;
+        height: 210px;
+        width: 410px;
       }
     }
   }

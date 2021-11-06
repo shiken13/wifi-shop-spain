@@ -177,8 +177,8 @@ header .profile-area .profile1 {
 
 header .profile-area .profile2 {
   z-index: 5;
-  top: -80%;
-  width: 300px;
+  top: -76%;
+  width: 290px;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -186,10 +186,10 @@ header .profile-area .profile2 {
 
 @media print, screen and (min-width: 768px) {
   header .profile-area .profile2 {
-    top: -45%;
+    top: -36%;
     left: 50%;
-    height: 230px;
-    width: 420px;
+    height: 210px;
+    width: 410px;
   }
 }
 
@@ -1041,7 +1041,7 @@ footer .follow-me li a[href*="tiktok"]::before {
 }
 
 #area1 .customer .customer1 {
-  height: 25vh;
+  height: 205px;
 }
 
 @media print, screen and (min-width: 768px) {
