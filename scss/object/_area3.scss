@@ -18,7 +18,7 @@
     position: relative;
     padding-top: 20px;
     padding-left: 20px;
-    font-size: 28px;
+    font-size: 24px;
     border-radius: 30px;
     background-color: rgb(236, 10, 10);
     border: 1px solid rgba(255, 255, 255, 0.4);
@@ -145,7 +145,7 @@
     margin: 2em 0;
     margin-top: 50px;
     margin-left: 10px;
-    margin-bottom: 260px;
+    margin-bottom: 500px;
     padding: 0.5em 1em;
     border: solid 3px #ea551c;
     border-radius: 30px;
@@ -207,22 +207,6 @@
       height: 120px;
     }
   }
-  .mokumoku2{
-    position: absolute;
-    z-index: 2;
-    top: -4%;
-    left: 55%;
-    transform: translate(-50%, -50%);
-    transform: rotate(15deg);
-    width: 150px;
-    height: 70px;
-    @include overTab {
-      top: -12%;
-      left: 40%;
-      width: 350px;
-      height: 120px;
-    }
-  }
   .recommend1{
     position: absolute;
     z-index: 2;
@@ -270,7 +254,7 @@
   .area3-image1{
     width: 250px;
     position: absolute;
-    top: 211%;
+    top: 111%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 4;
@@ -285,36 +269,22 @@
     position: absolute;
     margin: 0 auto;
     width: auto;
-    top: -23%;
+    top: 139%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: 200px;
      @include overTab {
       width: 440px;
       height: 260px;
-      top: -50%;
-      left: 78%;
+      top: 80%;
+      left: 80%;
     }
   }
-  .video2 iframe {
-    position: absolute;
-    margin: 0 auto;
-    width: auto;
-    top: 63%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 200px;
-     @include overTab {
-      width: 440px;
-      height: 260px;
-      top: 60%;
-      left: 78%;
-    }
-  }
+
   .kira1{
     width: 200px;
     position: absolute;
-    top: 202%;
+    top: 103%;
     left: 70%;
     transform: translate(-50%, -50%);
     z-index: 5;
@@ -327,7 +297,7 @@
   .kira2{
     width: 200px;
     position: absolute;
-    top: 202%;
+    top: 103%;
     left: 45%;
     transform: translate(-50%, -50%);
     z-index: 5;
@@ -340,7 +310,7 @@
   .kira3{
     width: 130px;
     position: absolute;
-    top: 202%;
+    top: 103%;
     left: 73%;
     transform: translate(-50%, -50%);
     transform: rotate(90deg);
@@ -353,7 +323,7 @@
   }
   .circle1, .circle2 {
     position: absolute;
-    top: 214%;
+    top: 115%;
     left:50%;
     transform: translate(-50%, -50%);
     background: rgba(229, 250, 252, 0.858);
@@ -378,7 +348,7 @@
   .sim-text1, .sim-text2{
     position: absolute;
     width: 220px;
-    top: 218%;
+    top: 119%;
     left:50%;
     padding: 5px 0;
     transform: translate(-50%, -50%);
