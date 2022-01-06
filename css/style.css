@@ -1055,7 +1055,7 @@ footer .follow-me li a[href*="tiktok"]::before {
 }
 
 #area1 .fukidashi1 {
-  width: 300px;
+  width: 320px;
   height: 80px;
   top: -60px;
   position: absolute;
@@ -2885,6 +2885,7 @@ footer .follow-me li a[href*="tiktok"]::before {
           box-shadow: 2px 2px 4px gray;
   margin-right: 5px;
   margin-left: 5px;
+  padding-right: 20px;
 }
 
 @media print, screen and (min-width: 768px) {
