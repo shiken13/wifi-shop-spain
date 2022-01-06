@@ -128,7 +128,7 @@
       width: 220px;
       height: auto;
       z-index: 4;
-      top: 210%;
+      top: 230%;
       left: 40%;
       transform: translate(-50%, -50%);
       @include overTab {
@@ -139,7 +139,7 @@
     }
     .area2-wifi3{
       width: 260px;
-      top: 210%;
+      top: 230%;
       left: 65%;
       @include overTab {
       width: 370px;
@@ -150,7 +150,7 @@
     .kira1 {
       width: 120px;
       position: absolute;
-      top: 216%;
+      top: 236%;
       left: 24%;
       transform: translate(-50%, -50%);
       z-index: 5;
@@ -163,7 +163,7 @@
     .kira2 {
       width: 180px;
       position: absolute;
-      top: 218%;
+      top: 238%;
       left: 58%;
       transform: translate(-50%, -50%);
       z-index: 5;
@@ -176,7 +176,7 @@
     .kira3 {
       width: 140px;
       position: absolute;
-      top: 220%;
+      top: 240%;
       left: 59%;
       transform: translate(-50%, -50%);
       transform: rotate(90deg);
@@ -287,7 +287,7 @@
   }
   .circle {
     position: absolute;
-    top: 255%;
+    top: 275%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: white;
@@ -306,7 +306,7 @@
   .wifi-text {
     position: absolute;
     width: 220px;
-    top: 268%;
+    top: 288%;
     left: 50%;
     padding: 5px 0;
     transform: translate(-50%, -50%);
@@ -332,10 +332,9 @@
     padding: 0.5em 1em;
     border: solid 3px #ea551c;
     border-radius: 30px;
-    // width: auto;
     width: 85%;
     margin-left: 10px;
-    margin-bottom: 300px;
+    margin-bottom: 370px;
     background-color: rgba(255, 255, 255, 0.548);
     @include overTab {
       width: 700px;

@@ -597,10 +597,10 @@ footer .follow-me li a[href*="tiktok"]::before {
 }
 
 #area1 .area1-image2 {
-  width: 90px;
+  width: 80px;
   position: absolute;
   top: -25%;
-  left: 55%;
+  left: 45%;
   -webkit-transform: rotate(10deg);
           transform: rotate(10deg);
   z-index: 4;
@@ -617,7 +617,7 @@ footer .follow-me li a[href*="tiktok"]::before {
 }
 
 #area1 .area1-image2-1 {
-  left: 72%;
+  left: 62%;
 }
 
 @media print, screen and (min-width: 768px) {
@@ -630,8 +630,8 @@ footer .follow-me li a[href*="tiktok"]::before {
 
 #area1 .area1-image2-2 {
   width: 100px;
-  top: 15%;
-  left: 78%;
+  top: -5%;
+  left: 75%;
 }
 
 @media print, screen and (min-width: 768px) {
@@ -1055,7 +1055,7 @@ footer .follow-me li a[href*="tiktok"]::before {
 }
 
 #area1 .fukidashi1 {
-  width: 70vw;
+  width: 300px;
   height: 80px;
   top: -60px;
   position: absolute;
@@ -1558,7 +1558,7 @@ footer .follow-me li a[href*="tiktok"]::before {
   width: 160px;
   height: auto;
   z-index: 4;
-  top: 245%;
+  top: 270%;
   left: 35%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1573,7 +1573,7 @@ footer .follow-me li a[href*="tiktok"]::before {
 }
 
 #area1-1 .area1-1-gbps1 .area1-1-gbps3 {
-  top: 240%;
+  top: 265%;
   left: 70%;
   width: 130px;
 }
@@ -1589,7 +1589,7 @@ footer .follow-me li a[href*="tiktok"]::before {
 #area1-1 .area1-1-gbps1 .kira1 {
   width: 120px;
   position: absolute;
-  top: 210%;
+  top: 230%;
   left: 25%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1607,7 +1607,7 @@ footer .follow-me li a[href*="tiktok"]::before {
 #area1-1 .area1-1-gbps1 .kira2 {
   width: 180px;
   position: absolute;
-  top: 210%;
+  top: 230%;
   left: 58%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1625,7 +1625,7 @@ footer .follow-me li a[href*="tiktok"]::before {
 #area1-1 .area1-1-gbps1 .kira3 {
   width: 200px;
   position: absolute;
-  top: 180%;
+  top: 200%;
   left: 82%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1644,7 +1644,7 @@ footer .follow-me li a[href*="tiktok"]::before {
 
 #area1-1 .area1-1-gbps1 .circle {
   position: absolute;
-  top: 290%;
+  top: 315%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1670,7 +1670,7 @@ footer .follow-me li a[href*="tiktok"]::before {
 #area1-1 .area1-1-gbps1 .gbps-text {
   position: absolute;
   width: 220px;
-  top: 298%;
+  top: 322%;
   left: 50%;
   padding: 5px 0;
   -webkit-transform: translate(-50%, -50%);
@@ -1756,7 +1756,7 @@ footer .follow-me li a[href*="tiktok"]::before {
   border-radius: 30px;
   width: 85%;
   margin-left: 10px;
-  margin-bottom: 300px;
+  margin-bottom: 380px;
   background-color: rgba(255, 255, 255, 0.548);
 }
 
@@ -1934,7 +1934,7 @@ footer .follow-me li a[href*="tiktok"]::before {
   line-height: 20px;
   border-bottom: 2px dotted red;
   color: #333;
-  font-size: 22px;
+  font-size: 17px;
   margin-bottom: 5px;
 }
 
@@ -1997,7 +1997,7 @@ footer .follow-me li a[href*="tiktok"]::before {
   width: 280px;
   height: auto;
   z-index: 4;
-  top: 310%;
+  top: 350%;
   left: 45%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -2014,7 +2014,7 @@ footer .follow-me li a[href*="tiktok"]::before {
 #area1-2 .area1-2-gbps1 .kira1 {
   width: 120px;
   position: absolute;
-  top: 266%;
+  top: 306%;
   left: 20%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -2032,7 +2032,7 @@ footer .follow-me li a[href*="tiktok"]::before {
 #area1-2 .area1-2-gbps1 .kira2 {
   width: 180px;
   position: absolute;
-  top: 268%;
+  top: 308%;
   left: 55%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -2050,7 +2050,7 @@ footer .follow-me li a[href*="tiktok"]::before {
 #area1-2 .area1-2-gbps1 .kira3 {
   width: 140px;
   position: absolute;
-  top: 280%;
+  top: 310%;
   left: 55%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -2141,7 +2141,7 @@ footer .follow-me li a[href*="tiktok"]::before {
 
 #area1-2 .circle {
   position: absolute;
-  top: 365%;
+  top: 410%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -2167,7 +2167,7 @@ footer .follow-me li a[href*="tiktok"]::before {
 #area1-2 .gbps-text {
   position: absolute;
   width: 220px;
-  top: 380%;
+  top: 420%;
   left: 50%;
   padding: 5px 0;
   -webkit-transform: translate(-50%, -50%);
@@ -2201,7 +2201,7 @@ footer .follow-me li a[href*="tiktok"]::before {
   border-radius: 30px;
   width: 85%;
   margin-left: 10px;
-  margin-bottom: 300px;
+  margin-bottom: 350px;
   background-color: rgba(255, 255, 255, 0.548);
 }
 
@@ -2433,7 +2433,7 @@ footer .follow-me li a[href*="tiktok"]::before {
   width: 220px;
   height: auto;
   z-index: 4;
-  top: 210%;
+  top: 230%;
   left: 40%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -2449,7 +2449,7 @@ footer .follow-me li a[href*="tiktok"]::before {
 
 #area2 .area2-wifi1 .area2-wifi3 {
   width: 260px;
-  top: 210%;
+  top: 230%;
   left: 65%;
 }
 
@@ -2464,7 +2464,7 @@ footer .follow-me li a[href*="tiktok"]::before {
 #area2 .area2-wifi1 .kira1 {
   width: 120px;
   position: absolute;
-  top: 216%;
+  top: 236%;
   left: 24%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -2482,7 +2482,7 @@ footer .follow-me li a[href*="tiktok"]::before {
 #area2 .area2-wifi1 .kira2 {
   width: 180px;
   position: absolute;
-  top: 218%;
+  top: 238%;
   left: 58%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -2500,7 +2500,7 @@ footer .follow-me li a[href*="tiktok"]::before {
 #area2 .area2-wifi1 .kira3 {
   width: 140px;
   position: absolute;
-  top: 220%;
+  top: 240%;
   left: 59%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -2654,7 +2654,7 @@ footer .follow-me li a[href*="tiktok"]::before {
 
 #area2 .circle {
   position: absolute;
-  top: 255%;
+  top: 275%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -2680,7 +2680,7 @@ footer .follow-me li a[href*="tiktok"]::before {
 #area2 .wifi-text {
   position: absolute;
   width: 220px;
-  top: 268%;
+  top: 288%;
   left: 50%;
   padding: 5px 0;
   -webkit-transform: translate(-50%, -50%);
@@ -2714,7 +2714,7 @@ footer .follow-me li a[href*="tiktok"]::before {
   border-radius: 30px;
   width: 85%;
   margin-left: 10px;
-  margin-bottom: 300px;
+  margin-bottom: 370px;
   background-color: rgba(255, 255, 255, 0.548);
 }
 
@@ -2912,7 +2912,7 @@ footer .follow-me li a[href*="tiktok"]::before {
   line-height: 30px;
   border-bottom: 2px dotted red;
   color: #333;
-  font-size: 24px;
+  font-size: 22px;
   margin-bottom: 5px;
 }
 
@@ -2990,7 +2990,7 @@ footer .follow-me li a[href*="tiktok"]::before {
   margin: 2em 0;
   margin-top: 50px;
   margin-left: 10px;
-  margin-bottom: 500px;
+  margin-bottom: 550px;
   padding: 0.5em 1em;
   border: solid 3px #ea551c;
   border-radius: 30px;
