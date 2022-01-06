@@ -71,13 +71,13 @@
     position: relative;
     padding: 10px 20px;
     padding-left: 63px;
-    line-height: 30px;
+    line-height: 20px;
     border-bottom: 2px dotted red;
     color: #333;
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 5px;
     @include overTab {
-      font-size: 30px;
+      font-size: 28px;
       margin-bottom: 30px;
       padding: 1rem 1rem;
       margin: 1rem;
@@ -124,10 +124,10 @@
       position: absolute;
       margin-top: 80px;
       display: block;
-      width: 300px;
+      width: 280px;
       height: auto;
       z-index: 4;
-      top: 250%;
+      top: 310%;
       left: 45%;
       transform: translate(-50%, -50%);
       @include overTab {
@@ -139,7 +139,7 @@
     .kira1 {
       width: 120px;
       position: absolute;
-      top: 216%;
+      top: 266%;
       left: 20%;
       transform: translate(-50%, -50%);
       z-index: 5;
@@ -152,7 +152,7 @@
     .kira2 {
       width: 180px;
       position: absolute;
-      top: 218%;
+      top: 268%;
       left: 55%;
       transform: translate(-50%, -50%);
       z-index: 5;
@@ -165,7 +165,7 @@
     .kira3 {
       width: 140px;
       position: absolute;
-      top: 230%;
+      top: 280%;
       left: 55%;
       transform: translate(-50%, -50%);
       transform: rotate(90deg);
@@ -193,54 +193,55 @@
   }
   .mokumoku {
     position: absolute;
-    top: -12%;
+    top: -24%;
     left: 60%;
     transform: translate(-50%, -50%);
     transform: rotate(15deg);
-    width: 150px;
-    height: 60px;
+    width: 140px;
+    height: 80px;
     @include overTab {
       top: -20%;
       left: 45%;
-      width: 300px;
+      width: 230px;
       height: 120px;
     }
   }
   .point {
     position: absolute;
-    font-size: 18px;
+    font-size: 30px;
     font-weight: bold;
-    top: -8%;
-    left: 62%;
+    top: -15%;
+    left: 67%;
     transform: translate(-50%, -50%);
     transform: rotate(18deg);
     z-index: 6;
     @include overTab {
-      font-size: 25px;
-      top: -9%;
-      left: 49%;
+      font-size: 40px;
+      top: -11%;
+      left: 50%;
     }
-    &::before {
-      font-family: "Font Awesome 5 Free";
-      content: "\f521";
-      padding: 5px;
-      font-weight: 900;
-      color: #ffdc00;
-    }
+  }
+  #emoji1:before {
+    content: "\01F440";
+    padding-right: 3px;
+  }
+  #emoji2:before {
+    content: "\01F447";
+    padding-right: 3px;
   }
   .circle {
     position: absolute;
-    top: 285%;
+    top: 365%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: white;
     border-radius: 50%;
     box-shadow: 0.375em 0.375em 0 0 rgb(247, 247, 125);
-    height: 10em;
-    width: 20em;
+    height: 7em;
+    width: 18em;
     @include overTab {
-      height: 13em;
-      width: 30em;
+      height: 12em;
+      width: 28em;
       top: 70%;
       left:81%;
       transform: translate(-50%, -50%);
@@ -249,14 +250,14 @@
   .gbps-text {
     position: absolute;
     width: 220px;
-    top: 300%;
+    top: 380%;
     left: 50%;
     padding: 5px 0;
     transform: translate(-50%, -50%);
     z-index: 5;
     background-color: rgb(228, 8, 8);
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-style: italic;
     letter-spacing: 0.1em;
     color: #fff;
@@ -291,7 +292,7 @@
       padding: 0 9px;
       height: 40px;
       line-height: 45px;
-      font-size: 30px;
+      font-size: 20px;
       background: #ea551c;
       color: #ffffff;
       font-weight: bold;
@@ -299,10 +300,6 @@
       @include overTab {
         font-size: 40px;
       }
-    }
-    #emoji4:before {
-      content: "\01F91D";
-      padding-right: 3px;
     }
     p {
       font-size: 22px;

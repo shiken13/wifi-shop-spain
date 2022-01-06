@@ -14,7 +14,7 @@ header {
   max-width: 1300px;
   margin: 0 auto;
   position: relative;
-  height: 370px;
+  height: 420px;
   @include overTab {
     height: 900px;
   }
@@ -79,11 +79,12 @@ header {
       border-radius: 30px;
       color: #fff;
       padding: 20px 20px;
-      font-size: 16px;
+      font-size: 25px;
       line-height: 1.5;
       margin-top: 80px;
+      text-align: center;
       @include overTab {
-        font-size: 35px;
+        font-size: 45px;
         padding: 40px 40px;
         padding-right: inherit;
         margin-top: 100px;
@@ -93,44 +94,21 @@ header {
       position: absolute;
       filter: drop-shadow(6px 2px 0 #ecca1c);
     }
+
     .profile1 {
-      top: 15%;
-      width: 120px;
-      left: 78%;
-      transform: translate(-50%, -50%);
-      @include overTab {
-        top: 10%;
-        left: 115%;
-        height: 220px;
-        width: 300px;
-      }
-    }
-    .profile2 {
       z-index: 5;
-      top: -76%;
-      width: 290px;
+      top: -75%;
+      width: 270px;
       left: 50%;
       transform: translate(-50%, -50%);
       // transform: rotate(-20deg);
       @include overTab {
-        top: -36%;
+        top: -40%;
         left: 50%;
         height: 210px;
         width: 410px;
       }
     }
-  }
-  #emoji1:before {
-    content: "\01F64F";
-    padding-right: 3px;
-  }
-  #emoji2:before {
-    content: "\01F1EA \01F1F8";
-    padding-right: 3px;
-  }
-  #emoji3:before {
-    content: "\01F1EF \01F1F5";
-    padding-right: 3px;
   }
   .video {
     width: 100%;

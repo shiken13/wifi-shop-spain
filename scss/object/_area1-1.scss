@@ -69,15 +69,16 @@
   }
   .list_design1 li {
     position: relative;
-    padding: 10px 20px;
+    padding: 25px 20px;
+    padding-top: 20px;
     padding-left: 63px;
-    line-height: 30px;
+    line-height: 20px;
     border-bottom: 2px dotted red;
     color: #333;
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 5px;
     @include overTab {
-      font-size: 30px;
+      font-size: 28px;
       margin-bottom: 30px;
       padding: 1rem 1rem;
       margin: 1rem;
@@ -117,7 +118,7 @@
     position: relative;
     margin-bottom: 40px;
   }
-  .area1-1-wifi1 {
+  .area1-1-gbps1 {
     display: grid;
     margin: 0 auto;
     img {
@@ -127,144 +128,29 @@
       width: 160px;
       height: auto;
       z-index: 4;
-      top: 275%;
-      left: 60%;
-      transform: translate(-50%, -50%);
-      @include overTab {
-        width: 270px;
-        top: 50%;
-        left: 85%;
-      }
-    }
-    .kira1 {
-      width: 120px;
-      position: absolute;
-      top: 256%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 5;
-      @include overTab {
-        width: 250px;
-        top: 25%;
-        left: 80%;
-      }
-    }
-    .kira2 {
-      width: 180px;
-      position: absolute;
-      top: 258%;
-      left: 55%;
-      transform: translate(-50%, -50%);
-      z-index: 5;
-      @include overTab {
-        width: 250px;
-        top: 25%;
-        left: 80%;
-      }
-    }
-    .kira3 {
-      width: 140px;
-      position: absolute;
-      top: 265%;
-      left: 65%;
-      transform: translate(-50%, -50%);
-      transform: rotate(90deg);
-      z-index: 5;
-      @include overTab {
-        width: 150px;
-        top: 30%;
-        left: 88%;
-      }
-    }
-    .kira4 {
-      width: 200px;
-      position: absolute;
-      top: 30%;
-      left: 82%;
-      transform: translate(-50%, -50%);
-      transform: rotate(90deg);
-      z-index: 5;
-      @include overTab {
-        width: 200px;
-        top: 40%;
-        left: 89%;
-      }
-    }
-    .circle {
-      position: absolute;
-      top: 315%;
-      left: 60%;
-      transform: translate(-50%, -50%);
-      background: white;
-      border-radius: 50%;
-      box-shadow: 0.375em 0.375em 0 0 rgb(247, 247, 125);
-      height: 5em;
-      width: 15em;
-      @include overTab {
-        height: 10em;
-        width: 20em;
-        top: 85%;
-        left:85%;
-        transform: translate(-50%, -50%);
-      }
-    }
-    // .wifi-text {
-    //   position: absolute;
-    //   width: 220px;
-    //   top: 315%;
-    //   left: 60%;
-    //   padding: 5px 0;
-    //   transform: translate(-50%, -50%);
-    //   z-index: 5;
-    //   background-color: rgb(228, 8, 8);
-    //   text-align: center;
-    //   font-size: 1.6rem;
-    //   font-style: italic;
-    //   letter-spacing: 0.1em;
-    //   color: #fff;
-    //   text-shadow: -3px 2px 0 #000;
-    //   @include overTab {
-    //     font-size: 1.8rem;
-    //     width: 220px;
-    //     top: 95%;
-    //     left: 85%;
-    //     transform: translate(-50%, -50%);
-    //   }
-    // }
-  }
-  .area1-1-gbps1 {
-    display: grid;
-    margin: 0 auto;
-    img {
-      position: absolute;
-      margin-top: 80px;
-      display: block;
-      width: 180px;
-      height: auto;
-      z-index: 4;
-      top: 225%;
+      top: 245%;
       left: 35%;
       transform: translate(-50%, -50%);
       @include overTab {
         width: 240px;
         top: 20%;
-        left: 68%;
+        left: 73%;
       }
     }
     .area1-1-gbps3{
-      top: 220%;
+      top: 240%;
       left: 70%;
-      width: 150px;
+      width: 130px;
       @include overTab {
         width: 200px;
         top: 15%;
-        left: 84%;
+        left: 87%;
       }
     }
     .kira1 {
       width: 120px;
       position: absolute;
-      top: 190%;
+      top: 210%;
       left: 25%;
       transform: translate(-50%, -50%);
       z-index: 5;
@@ -277,7 +163,7 @@
     .kira2 {
       width: 180px;
       position: absolute;
-      top: 190%;
+      top: 210%;
       left: 58%;
       transform: translate(-50%, -50%);
       z-index: 5;
@@ -303,7 +189,7 @@
     }
     .circle {
       position: absolute;
-      top: 265%;
+      top: 290%;
       left: 50%;
       transform: translate(-50%, -50%);
       background: white;
@@ -315,72 +201,72 @@
         height: 10em;
         width: 28em;
         top: 65%;
-        left:75%;
+        left:79%;
         transform: translate(-50%, -50%);
       }
     }
     .gbps-text {
       position: absolute;
       width: 220px;
-      top: 278%;
+      top: 298%;
       left: 50%;
       padding: 5px 0;
       transform: translate(-50%, -50%);
       z-index: 5;
       background-color: rgb(228, 8, 8);
       text-align: center;
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       font-style: italic;
       letter-spacing: 0.1em;
       color: #fff;
       text-shadow: -3px 2px 0 #000;
       @include overTab {
-        font-size: 2.0rem;
+        font-size: 1.6rem;
         width: 240px;
         top: 78%;
-        left: 76%;
+        left: 79%;
         transform: translate(-50%, -50%);
       }
     }
   }
   .mokumoku {
     position: absolute;
-    top: -12%;
+    top: -20%;
     left: 60%;
     transform: translate(-50%, -50%);
     transform: rotate(15deg);
-    width: 150px;
-    height: 60px;
+    width: 140px;
+    height: 80px;
     @include overTab {
       top: -20%;
-      left: 25%;
-      width: 300px;
+      left: 30%;
+      width: 230px;
       height: 120px;
     }
   }
   .point {
     position: absolute;
-    font-size: 15px;
+    font-size: 30px;
     font-weight: bold;
-    top: -7%;
-    left: 64%;
+    top: -15%;
+    left: 67%;
     transform: translate(-50%, -50%);
     transform: rotate(18deg);
     z-index: 6;
     @include overTab {
-      font-size: 25px;
-      top: -9%;
-      left: 30%;
-    }
-    &::before {
-      font-family: "Font Awesome 5 Free";
-      content: "\f521";
-      padding: 5px;
-      font-weight: 900;
-      color: #ffdc00;
+      font-size: 40px;
+      top: -12%;
+      left: 35%;
     }
   }
-  
+  #emoji1:before {
+    content: "\01F440";
+    padding-right: 3px;
+  }
+  #emoji2:before {
+    content: "\01F447";
+    padding-right: 3px;
+  }
   .area1-1-textarea {
     position: relative;
     margin: 3em 0;
@@ -403,7 +289,7 @@
       padding: 0 9px;
       height: 40px;
       line-height: 45px;
-      font-size: 30px;
+      font-size: 20px;
       background: #ea551c;
       color: #ffffff;
       font-weight: bold;
@@ -411,10 +297,6 @@
       @include overTab {
         font-size: 40px;
       }
-    }
-    #emoji4:before {
-      content: "\01F91D";
-      padding-right: 3px;
     }
     .text-display {
       display: none;

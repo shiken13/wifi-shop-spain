@@ -87,7 +87,7 @@
     background-color: rgba(255, 255, 255, 0.548);
     @include overTab {
       margin-left: 30px;
-      margin-bottom: 100px;
+      margin-bottom: 200px;
       width: 45%;
       max-width: 1300px;
     }
@@ -99,7 +99,7 @@
       padding: 0 9px;
       height: 40px;
       line-height: 45px;
-      font-size: 30px;
+      font-size: 20px;
       background: #ea551c;
       color: #ffffff;
       font-weight: bold;
@@ -112,7 +112,9 @@
       font-size: 22px;
       margin: 0;
       padding: 0;
-      overflow-wrap: break-word;
+      @include overTab {
+        font-size: 30px;
+      }
     }
   }
   #emoji7:before {
@@ -166,7 +168,7 @@
   .area5-image1 {
     width: 240px;
     position: absolute;
-    top: 112%;
+    top: 125%;
     left: 30%;
     transform: translate(-50%, -50%);
     z-index: 4;
@@ -179,7 +181,7 @@
   }
   .area5-image2 {
     width: 240px;
-    top: 120%;
+    top: 122%;
     left: 72%;
     @include overTab {
       width: 370px;
@@ -191,7 +193,7 @@
   .kira1 {
     width: 220px;
     position: absolute;
-    top: 105%;
+    top: 112%;
     left: 58%;
     transform: translate(-50%, -50%);
     z-index: 5;
@@ -204,7 +206,7 @@
   .kira2 {
     width: 220px;
     position: absolute;
-    top: 105%;
+    top: 112%;
     left: 35%;
     transform: translate(-50%, -50%);
     z-index: 5;
@@ -217,7 +219,7 @@
   .kira3 {
     width: 220px;
     position: absolute;
-    top: 105%;
+    top: 112%;
     left: 35%;
     transform: translate(-50%, -50%);
     z-index: 5;
@@ -229,13 +231,13 @@
   }
   .circle3 {
     position: absolute;
-    top: 122%;
+    top: 135%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: rgba(210, 244, 247, 0.808);
     border-radius: 50%;
     box-shadow: 0.375em 0.375em 0 0 rgb(210, 255, 174);
-    height: 10em;
+    height: 8em;
     width: 20em;
     @include overTab {
       height: 20em;
@@ -248,19 +250,19 @@
   .sim-text3 {
     position: absolute;
     width: 250px;
-    top: 128%;
+    top: 140%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 5;
     background-color: rgb(228, 8, 8);
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     font-style: italic;
     letter-spacing: 0.1em;
     color: #fff;
     text-shadow: -3px 2px 0 #000;
     @include overTab {
-      font-size: 2.4rem;
+      font-size: 2rem;
       width: 400px;
       top: 80%;
       left: 75%;
@@ -290,7 +292,10 @@
         width: 530px;
       }
     }
-   
+    #emoji1:before {
+      content: "\01F91D";
+      padding-right: 3px;
+    }
     .sagawa1,
     .sagawa2 {
       position: absolute;
@@ -311,7 +316,7 @@
       left: 55%;
       transform: translate(-50%, -50%);
       @include overTab {
-        top: 49%;
+        top: 47%;
         left: 77%;
         width: 60px;
       }
@@ -330,13 +335,13 @@
       position: absolute;
       padding: 5px 0;
       width: 250px;
-      top: 45%;
+      top: 47%;
       left: 55%;
       transform: translate(-50%, -50%);
       z-index: 5;
       text-align: center;
       font-size: 1.4rem;
-      font-weight:bold;
+      font-weight: bold;
       letter-spacing: 0.1em;
       color: rgb(245, 76, 188);
       text-shadow: -3px 2px 0 #000;
@@ -348,8 +353,8 @@
         left: 15%;
       }
     }
- 
-    .map-back{
+
+    .map-back {
       opacity: 0.4;
     }
     h2 {
@@ -358,7 +363,7 @@
       top: 40%;
       left: 55%;
       transform: translate(-50%, -50%);
-      font-size: 2.0rem;
+      font-size: 2rem;
       font-style: italic;
       color: #fff;
       text-shadow: -3px 2px 0 #000;
@@ -415,7 +420,7 @@
       content: "\f09a";
     }
     .follow-me li a[href*="wa.me"]::before {
-      background-color: #25D366;
+      background-color: #25d366;
       content: "\f40c";
     }
     .follow-me li a[href*="youtube.com"]::before {
@@ -464,7 +469,7 @@
       border-radius: 50px;
       color: white;
       text-align: center;
-      background: #25D366;
+      background: #25d366;
       padding: 18px 0;
       margin: auto;
       margin-bottom: 20px;
@@ -506,8 +511,7 @@
     height: 350px;
     position: relative;
     margin: 0 auto;
-    box-shadow: 1px 3px 20px 10px white,
-    inset 10px 3px 20px 10px whitesmoke;
+    box-shadow: 1px 3px 20px 10px white, inset 10px 3px 20px 10px whitesmoke;
     @include overTab {
       height: 400px;
       max-width: 1500px;
@@ -522,7 +526,7 @@
     top: 0;
     bottom: 0;
   }
-  
+
   .map h1,
   .map h2 {
     letter-spacing: 0.1em;
@@ -531,12 +535,11 @@
     font-size: 12px;
     z-index: 10;
   }
-  
-  
+
   .map h1 {
     color: white;
     position: absolute;
-    font-size: 30px;
+    font-size: 22px;
     margin-bottom: 30px;
     display: inline-block;
     text-align: left;
@@ -550,22 +553,22 @@
     @include overTab {
       width: inherit;
       font-size: 38px;
-      top: 20%;
+      top: 10%;
       left: 10%;
     }
   }
-  
+
   @media print, screen and (min-width: 768px) {
     .map h1 {
       font-size: 2rem;
     }
   }
-  
+
   .map h2 {
     color: white;
     position: absolute;
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 18px;
     top: 15%;
     left: 10%;
     letter-spacing: inherit;
@@ -574,18 +577,20 @@
     font-weight: bold;
     text-align: left;
     letter-spacing: 0.15rem;
+    padding-left: 10px;
     @include overTab {
-      top: 35%;
+      top: 21%;
+      padding-left: inherit;
     }
   }
-  
+
   @media print, screen and (min-width: 768px) {
     .map h2 {
       margin-bottom: inherit;
       font-size: 1.5rem;
     }
   }
-  
+
   .map .map-back {
     height: 60%;
     width: 100%;
@@ -594,17 +599,16 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
-  
+
   @media print, screen and (min-width: 768px) {
     .map .map-back {
       height: 200px;
       width: 70%;
     }
   }
-
 
   .container-area {
     display: flex;
@@ -673,7 +677,7 @@
       width: 90px;
       height: 90px;
     }
-    img{
+    img {
       position: relative;
       border-radius: 1px solid black;
       top: 0.5px;
@@ -755,14 +759,14 @@
     font-family: FontAwesome;
   }
   .what a[href*="wa.me"]::before {
-    background-color: #25D366;
+    background-color: #25d366;
     content: "\f40c";
   }
   .what a::after {
     font-family: FontAwesome;
   }
   .what a[href*="wa.me"]::after {
-    background-color: #25D366;
+    background-color: #25d366;
     content: "\f40c";
   }
   /* Social media links: facebook  */

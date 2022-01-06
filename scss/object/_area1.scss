@@ -72,9 +72,9 @@
     height: 15vh;
     display: flex;
     align-items: center;
-    padding: 50px 0;
+    padding: 60px 0;
     @include overTab {
-      padding: 70px 0;
+      padding: 100px 0;
       padding-left: 20px;
       width: 100%;
       height: 18vh;
@@ -102,34 +102,34 @@
     z-index: 4;
     filter: drop-shadow(0px 0px 20px rgb(250, 250, 59));
     @include overTab {
-      width:220px;
-      top: -15%;
+      width: 220px;
+      top: -20%;
       left: 65%;
     }
   }
-  .area1-image2-1{
+  .area1-image2-1 {
     left: 72%;
     @include overTab {
-      width:200px;
-      top: 20%;
+      width: 200px;
+      top: 10%;
       left: 70%;
     }
   }
-  .area1-image2-2{
-    width:120px;
-    top: 35%;
-    left: 65%;
+  .area1-image2-2 {
+    width: 100px;
+    top: 15%;
+    left: 78%;
     @include overTab {
-      width:280px;
-      top: 18%;
+      width: 280px;
+      top: 15%;
       left: 80%;
     }
   }
   .area1-image3 {
-    width: 110px;
+    width: 100px;
     position: absolute;
-    top: 0%;
-    left: 68%;
+    top: -10%;
+    left: 70%;
     transform: rotate(10deg);
     box-shadow: 1px 3px 20px 10px rgb(247, 247, 125),
       inset 10px 3px 20px 10px rgb(247, 247, 125);
@@ -147,8 +147,8 @@
     filter: drop-shadow(0px 0px 20px rgb(250, 250, 59));
     @include overTab {
       top: -5%;
-      left: 55%;
-      width: 320px;
+      left: 60%;
+      width: 300px;
       height: 200px;
     }
   }
@@ -160,7 +160,7 @@
     filter: drop-shadow(0px 0px 20px rgb(250, 250, 59));
     @include overTab {
       top: -5%;
-      left: 75%;
+      left: 78%;
       width: 320px;
       height: 200px;
     }
@@ -172,7 +172,7 @@
     align-items: center;
     padding: 55px 0;
     @include overTab {
-      padding: 70px 0;
+      padding: 80px 0;
       padding-left: 20px;
       width: 100%;
       height: 18vh;
@@ -218,16 +218,16 @@
       left: 63%;
     }
   }
-  .area1-image11{
+  .area1-image11 {
     box-shadow: none;
     width: 150px;
     top: 10%;
-    left:60%;
+    left: 60%;
     filter: drop-shadow(0px 0px 20px rgb(250, 250, 59));
     @include overTab {
       width: 300px;
       top: -10%;
-      left:76%;
+      left: 76%;
     }
   }
   .intro-text1 {
@@ -248,7 +248,7 @@
     }
     .text1-title {
       color: #f3d53d;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.342),
         -1px -1px 0 rgba(255, 255, 255, 0.342),
         -1px 1px 0 rgba(255, 255, 255, 0.342),
@@ -257,48 +257,60 @@
         0 -1px 0 rgba(255, 255, 255, 0.342), -1px 0 0 rgba(255, 255, 255, 0.342),
         1px 0 0 rgba(255, 255, 255, 0.342);
       @include overTab {
-        font-size: 2.4rem;
+        font-size: 2.2rem;
+      }
+    }
+    .text1-1-title {
+      font-size: 1.0rem;
+      @include overTab {
+        font-size: 1.8rem;
       }
     }
     .GB1 {
-      font-size: 1.0rem;
+      font-size: 1rem;
       color: #fff;
-      text-shadow: 3px 3px 0 #000, -3px -3px 0 #000, -3px 3px 0 #000,
+      text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, -1px 1px 0 #000,
+        1px -1px 0 #000, 0px 1px 0 #000, 0 -1px 0 #000, -1px 0 0 #000,
+        1px 0 0 #000;
+      @include overTab {
+        text-shadow: 3px 3px 0 #000, -3px -3px 0 #000, -3px 3px 0 #000,
         3px -3px 0 #000, 0px 3px 0 #000, 0 -3px 0 #000, -3px 0 0 #000,
         3px 0 0 #000;
-      @include overTab {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
       }
     }
     .text-line2 {
       background-image: linear-gradient(rgba(0, 0, 0, 0) 40%, yellow 70%);
     }
     .GB {
-      font-size: 1.2rem;
+      font-size: 0.9rem;
       color: #fff;
-      text-shadow: 3px 3px 0 #000, -3px -3px 0 #000, -3px 3px 0 #000,
+      text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, -1px 1px 0 #000,
+        1px -1px 0 #000, 0px 1px 0 #000, 0 -1px 0 #000, -1px 0 0 #000,
+        1px 0 0 #000;
+      @include overTab {
+        text-shadow: 3px 3px 0 #000, -3px -3px 0 #000, -3px 3px 0 #000,
         3px -3px 0 #000, 0px 3px 0 #000, 0 -3px 0 #000, -3px 0 0 #000,
         3px 0 0 #000;
-      @include overTab {
-        font-size: 2rem;
+        font-size: 1.5rem;
       }
     }
     .price1,
     .price2 {
       color: #e43e5a;
       font-weight: 900;
-      font-size: 1.5rem;
+      font-size: 1.0rem;
       text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, -1px 1px 0 #fff,
         1px -1px 0 #fff, 0px 1px 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff,
         1px 0 0 #fff;
       @include overTab {
-        font-size: 2.5rem;
+        font-size: 2rem;
       }
     }
     .price2 {
-      font-size: 1.1rem;
+      font-size: 1.0rem;
       @include overTab {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
       }
     }
   }
@@ -325,6 +337,7 @@
     height: 200px;
     position: relative;
     margin-top: 50px;
+    margin-bottom: 50px;
     @include overTab {
       height: 400px;
     }
@@ -357,7 +370,7 @@
     border-radius: 30px;
     margin: 0 auto;
     @include overTab {
-    width: 1200px;
+      width: 1200px;
     }
     &::before {
       content: "";
@@ -400,11 +413,11 @@
         margin-right: 10px;
       }
     }
-    img{
+    img {
       border-radius: 40px;
     }
-    div{
-      margin-right:5px ;
+    div {
+      margin-right: 5px;
       margin-left: 2px;
     }
   }
@@ -419,7 +432,7 @@
   }
 
   .fukidashi1 {
-    width: 50vw;
+    width: 70vw;
     height: 80px;
     top: -60px;
     position: absolute;
@@ -428,23 +441,52 @@
     @include overTab {
       height: 120px;
       top: -100px;
-      width: 25vw;
-      left: 200px;
+      width: 33vw;
+      left: 205px;
     }
   }
   .customer-text {
     top: -40px;
-    left: 46px;
+    left: 35px;
     position: absolute;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: bold;
     z-index: 12;
+    line-height: 1;
     @include overTab {
-      font-size: 3.0rem;
-      top: -78px;
+      font-size: 1.8rem;
+      top: -73px;
       left: 250px;
     }
   }
+  #emoji1:before {
+    content: "\01F604";
+  }
+  #emoji2:before {
+    content: "\01F60A";
+  }
+  #emoji3:before {
+    content: "\01F601";
+  }
+  #emoji4:before {
+    content: "\01F606";
+  }
+  #emoji5:before {
+    content: "\01F929";
+  }
+  #emoji6:before {
+    content: "\01F60A";
+  }
+  #emoji7:before {
+    content: "\01F609";
+  }
+  #emoji8:before {
+    content: "\01F603";
+  }
+  #emoji9:before {
+    content: "\01F447";
+  }
+
   .balloon1 {
     position: relative;
     display: inline-block;
@@ -543,7 +585,7 @@
     content: "\f09a";
   }
   .follow-me li a[href*="wa.me"]::before {
-    background-color: #25D366;
+    background-color: #25d366;
     content: "\f40c";
   }
   .follow-me li a[href*="twitter.com"]::before {
@@ -596,7 +638,7 @@
     border-radius: 50px;
     color: white;
     text-align: center;
-    background: #25D366;
+    background: #25d366;
     padding: 18px 0;
     margin: auto;
     margin-bottom: 20px;
