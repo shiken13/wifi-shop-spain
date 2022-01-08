@@ -116,7 +116,6 @@ header {
     height: 0px;
     position: relative;
     margin-bottom: 100px;
-
     @include overTab {
       padding-bottom: 56.25%;
       margin-bottom: inherit;
@@ -145,7 +144,7 @@ header {
   height: 80px;
   border: white 1px solid;
   position: fixed;
-  right: 0px;
+  right: 15px;
   bottom: 90px;
   background: #d1022f;
   border-radius: 20px;

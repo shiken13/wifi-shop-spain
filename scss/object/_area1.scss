@@ -108,7 +108,7 @@
     }
   }
   .area1-image2-1 {
-    left:62%;
+    left: 62%;
     @include overTab {
       width: 200px;
       top: 10%;
@@ -261,7 +261,7 @@
       }
     }
     .text1-1-title {
-      font-size: 1.0rem;
+      font-size: 1rem;
       @include overTab {
         font-size: 1.8rem;
       }
@@ -274,8 +274,8 @@
         1px 0 0 #000;
       @include overTab {
         text-shadow: 3px 3px 0 #000, -3px -3px 0 #000, -3px 3px 0 #000,
-        3px -3px 0 #000, 0px 3px 0 #000, 0 -3px 0 #000, -3px 0 0 #000,
-        3px 0 0 #000;
+          3px -3px 0 #000, 0px 3px 0 #000, 0 -3px 0 #000, -3px 0 0 #000,
+          3px 0 0 #000;
         font-size: 1.8rem;
       }
     }
@@ -290,8 +290,8 @@
         1px 0 0 #000;
       @include overTab {
         text-shadow: 3px 3px 0 #000, -3px -3px 0 #000, -3px 3px 0 #000,
-        3px -3px 0 #000, 0px 3px 0 #000, 0 -3px 0 #000, -3px 0 0 #000,
-        3px 0 0 #000;
+          3px -3px 0 #000, 0px 3px 0 #000, 0 -3px 0 #000, -3px 0 0 #000,
+          3px 0 0 #000;
         font-size: 1.5rem;
       }
     }
@@ -299,7 +299,7 @@
     .price2 {
       color: #e43e5a;
       font-weight: 900;
-      font-size: 1.0rem;
+      font-size: 1rem;
       text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, -1px 1px 0 #fff,
         1px -1px 0 #fff, 0px 1px 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff,
         1px 0 0 #fff;
@@ -308,7 +308,7 @@
       }
     }
     .price2 {
-      font-size: 1.0rem;
+      font-size: 1rem;
       @include overTab {
         font-size: 1.7rem;
       }
@@ -350,8 +350,9 @@
     width: auto;
     height: 200px;
     @include overTab {
-      width: 70%;
+      width: 80%;
       height: 100%;
+      max-width: 1200px;
     }
   }
 
@@ -359,6 +360,7 @@
     position: relative;
     margin-left: 5px;
     margin-right: 5px;
+    margin-top: 60px;
     @include overTab {
       margin-top: 60px;
       margin-left: inherit;
